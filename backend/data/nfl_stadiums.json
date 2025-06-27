@@ -1,0 +1,520 @@
+{
+  "Highmark Stadium": {
+    "name": "Highmark Stadium",
+    "capacity": 71608,
+    "surface": "Artificial Turf",
+    "gps_coordinates": {
+      "lat": 42.7738,
+      "lng": -78.7867
+    },
+    "city": "Buffalo",
+    "state": "NY",
+    "teams": [
+      {
+        "name": "Buffalo Bills",
+        "team_uid": "NFL_134918"
+      }
+    ]
+  },
+  "Hard Rock Stadium": {
+    "name": "Hard Rock Stadium",
+    "capacity": 65326,
+    "surface": "Grass",
+    "gps_coordinates": {
+      "lat": 25.958,
+      "lng": -80.2389
+    },
+    "city": "Miami Gardens",
+    "state": "FL",
+    "teams": [
+      {
+        "name": "Miami Dolphins",
+        "team_uid": "NFL_134919"
+      }
+    ]
+  },
+  "M&T Bank Stadium": {
+    "name": "M&T Bank Stadium",
+    "capacity": 71008,
+    "surface": "Grass",
+    "gps_coordinates": {
+      "lat": 39.278,
+      "lng": -76.6227
+    },
+    "city": "Baltimore",
+    "state": "MD",
+    "teams": [
+      {
+        "name": "Baltimore Ravens",
+        "team_uid": "NFL_134922"
+      }
+    ]
+  },
+  "Gillette Stadium": {
+    "name": "Gillette Stadium",
+    "capacity": 65878,
+    "surface": "Artificial Turf",
+    "gps_coordinates": {
+      "lat": 42.0909,
+      "lng": -71.2643
+    },
+    "city": "Foxborough",
+    "state": "MA",
+    "teams": [
+      {
+        "name": "New England Patriots",
+        "team_uid": "NFL_134920"
+      }
+    ]
+  },
+  "MetLife Stadium": {
+    "name": "MetLife Stadium",
+    "capacity": 82500,
+    "surface": "Artificial Turf",
+    "gps_coordinates": {
+      "lat": 40.8135,
+      "lng": -74.0745
+    },
+    "city": "East Rutherford",
+    "state": "NJ",
+    "teams": [
+      {
+        "name": "New York Jets",
+        "team_uid": "NFL_134921"
+      },
+      {
+        "name": "New York Giants",
+        "team_uid": "NFL_134935"
+      }
+    ]
+  },
+  "Paycor Stadium": {
+    "name": "Paycor Stadium",
+    "capacity": 65515,
+    "surface": "Artificial Turf",
+    "gps_coordinates": {
+      "lat": 39.0955,
+      "lng": -84.5161
+    },
+    "city": "Cincinnati",
+    "state": "OH",
+    "teams": [
+      {
+        "name": "Cincinnati Bengals",
+        "team_uid": "NFL_134923"
+      }
+    ]
+  },
+  "FirstEnergy Stadium": {
+    "name": "FirstEnergy Stadium",
+    "capacity": 67431,
+    "surface": "Grass",
+    "gps_coordinates": {
+      "lat": 41.5061,
+      "lng": -81.6995
+    },
+    "city": "Cleveland",
+    "state": "OH",
+    "teams": [
+      {
+        "name": "Cleveland Browns",
+        "team_uid": "NFL_134924"
+      }
+    ]
+  },
+  "Acrisure Stadium": {
+    "name": "Acrisure Stadium",
+    "capacity": 68400,
+    "surface": "Grass",
+    "gps_coordinates": {
+      "lat": 40.4468,
+      "lng": -80.0158
+    },
+    "city": "Pittsburgh",
+    "state": "PA",
+    "teams": [
+      {
+        "name": "Pittsburgh Steelers",
+        "team_uid": "NFL_134925"
+      }
+    ]
+  },
+  "NRG Stadium": {
+    "name": "NRG Stadium",
+    "capacity": 72220,
+    "surface": "Grass",
+    "gps_coordinates": {
+      "lat": 29.6847,
+      "lng": -95.4107
+    },
+    "city": "Houston",
+    "state": "TX",
+    "teams": [
+      {
+        "name": "Houston Texans",
+        "team_uid": "NFL_134926"
+      }
+    ]
+  },
+  "Lucas Oil Stadium": {
+    "name": "Lucas Oil Stadium",
+    "capacity": 67000,
+    "surface": "Artificial Turf",
+    "gps_coordinates": {
+      "lat": 39.7601,
+      "lng": -86.1639
+    },
+    "city": "Indianapolis",
+    "state": "IN",
+    "teams": [
+      {
+        "name": "Indianapolis Colts",
+        "team_uid": "NFL_134927"
+      }
+    ]
+  },
+  "TIAA Bank Field": {
+    "name": "TIAA Bank Field",
+    "capacity": 69132,
+    "surface": "Grass",
+    "gps_coordinates": {
+      "lat": 30.324,
+      "lng": -81.6374
+    },
+    "city": "Jacksonville",
+    "state": "FL",
+    "teams": [
+      {
+        "name": "Jacksonville Jaguars",
+        "team_uid": "NFL_134928"
+      }
+    ]
+  },
+  "Nissan Stadium": {
+    "name": "Nissan Stadium",
+    "capacity": 69143,
+    "surface": "Grass",
+    "gps_coordinates": {
+      "lat": 36.1665,
+      "lng": -86.7713
+    },
+    "city": "Nashville",
+    "state": "TN",
+    "teams": [
+      {
+        "name": "Tennessee Titans",
+        "team_uid": "NFL_134929"
+      }
+    ]
+  },
+  "Empower Field at Mile High": {
+    "name": "Empower Field at Mile High",
+    "capacity": 76125,
+    "surface": "Grass",
+    "gps_coordinates": {
+      "lat": 39.7439,
+      "lng": -105.0201
+    },
+    "city": "Denver",
+    "state": "CO",
+    "teams": [
+      {
+        "name": "Denver Broncos",
+        "team_uid": "NFL_134930"
+      }
+    ]
+  },
+  "GEHA Field at Arrowhead Stadium": {
+    "name": "GEHA Field at Arrowhead Stadium",
+    "capacity": 76416,
+    "surface": "Grass",
+    "gps_coordinates": {
+      "lat": 39.0489,
+      "lng": -94.4839
+    },
+    "city": "Kansas City",
+    "state": "MO",
+    "teams": [
+      {
+        "name": "Kansas City Chiefs",
+        "team_uid": "NFL_134931"
+      }
+    ]
+  },
+  "Allegiant Stadium": {
+    "name": "Allegiant Stadium",
+    "capacity": 65000,
+    "surface": "Grass",
+    "gps_coordinates": {
+      "lat": 36.0909,
+      "lng": -115.1833
+    },
+    "city": "Las Vegas",
+    "state": "NV",
+    "teams": [
+      {
+        "name": "Las Vegas Raiders",
+        "team_uid": "NFL_134932"
+      }
+    ]
+  },
+  "AT&T Stadium": {
+    "name": "AT&T Stadium",
+    "capacity": 80000,
+    "surface": "Artificial Turf",
+    "gps_coordinates": {
+      "lat": 32.7473,
+      "lng": -97.0945
+    },
+    "city": "Arlington",
+    "state": "TX",
+    "teams": [
+      {
+        "name": "Dallas Cowboys",
+        "team_uid": "NFL_134934"
+      }
+    ]
+  },
+  "Lincoln Financial Field": {
+    "name": "Lincoln Financial Field",
+    "capacity": 69176,
+    "surface": "Grass",
+    "gps_coordinates": {
+      "lat": 39.9008,
+      "lng": -75.1675
+    },
+    "city": "Philadelphia",
+    "state": "PA",
+    "teams": [
+      {
+        "name": "Philadelphia Eagles",
+        "team_uid": "NFL_134936"
+      }
+    ]
+  },
+  "FedExField": {
+    "name": "FedExField",
+    "capacity": 82000,
+    "surface": "Grass",
+    "gps_coordinates": {
+      "lat": 38.9076,
+      "lng": -76.8645
+    },
+    "city": "Landover",
+    "state": "MD",
+    "teams": [
+      {
+        "name": "Washington Commanders",
+        "team_uid": "NFL_134937"
+      }
+    ]
+  },
+  "Soldier Field": {
+    "name": "Soldier Field",
+    "capacity": 61500,
+    "surface": "Grass",
+    "gps_coordinates": {
+      "lat": 41.8623,
+      "lng": -87.6167
+    },
+    "city": "Chicago",
+    "state": "IL",
+    "teams": [
+      {
+        "name": "Chicago Bears",
+        "team_uid": "NFL_134938"
+      }
+    ]
+  },
+  "Ford Field": {
+    "name": "Ford Field",
+    "capacity": 65000,
+    "surface": "Artificial Turf",
+    "gps_coordinates": {
+      "lat": 42.34,
+      "lng": -83.0456
+    },
+    "city": "Detroit",
+    "state": "MI",
+    "teams": [
+      {
+        "name": "Detroit Lions",
+        "team_uid": "NFL_134939"
+      }
+    ]
+  },
+  "Lambeau Field": {
+    "name": "Lambeau Field",
+    "capacity": 81441,
+    "surface": "Grass",
+    "gps_coordinates": {
+      "lat": 44.5013,
+      "lng": -88.0622
+    },
+    "city": "Green Bay",
+    "state": "WI",
+    "teams": [
+      {
+        "name": "Green Bay Packers",
+        "team_uid": "NFL_134940"
+      }
+    ]
+  },
+  "U.S. Bank Stadium": {
+    "name": "U.S. Bank Stadium",
+    "capacity": 66860,
+    "surface": "Artificial Turf",
+    "gps_coordinates": {
+      "lat": 44.9738,
+      "lng": -93.2581
+    },
+    "city": "Minneapolis",
+    "state": "MN",
+    "teams": [
+      {
+        "name": "Minnesota Vikings",
+        "team_uid": "NFL_134941"
+      }
+    ]
+  },
+  "Mercedes-Benz Stadium": {
+    "name": "Mercedes-Benz Stadium",
+    "capacity": 71000,
+    "surface": "Artificial Turf",
+    "gps_coordinates": {
+      "lat": 33.7553,
+      "lng": -84.4006
+    },
+    "city": "Atlanta",
+    "state": "GA",
+    "teams": [
+      {
+        "name": "Atlanta Falcons",
+        "team_uid": "NFL_134942"
+      }
+    ]
+  },
+  "Bank of America Stadium": {
+    "name": "Bank of America Stadium",
+    "capacity": 75523,
+    "surface": "Grass",
+    "gps_coordinates": {
+      "lat": 35.2258,
+      "lng": -80.8531
+    },
+    "city": "Charlotte",
+    "state": "NC",
+    "teams": [
+      {
+        "name": "Carolina Panthers",
+        "team_uid": "NFL_134943"
+      }
+    ]
+  },
+  "Caesars Superdome": {
+    "name": "Caesars Superdome",
+    "capacity": 73208,
+    "surface": "Artificial Turf",
+    "gps_coordinates": {
+      "lat": 29.9511,
+      "lng": -90.0812
+    },
+    "city": "New Orleans",
+    "state": "LA",
+    "teams": [
+      {
+        "name": "New Orleans Saints",
+        "team_uid": "NFL_134944"
+      }
+    ]
+  },
+  "Raymond James Stadium": {
+    "name": "Raymond James Stadium",
+    "capacity": 69218,
+    "surface": "Grass",
+    "gps_coordinates": {
+      "lat": 27.9759,
+      "lng": -82.5033
+    },
+    "city": "Tampa",
+    "state": "FL",
+    "teams": [
+      {
+        "name": "Tampa Bay Buccaneers",
+        "team_uid": "NFL_134945"
+      }
+    ]
+  },
+  "State Farm Stadium": {
+    "name": "State Farm Stadium",
+    "capacity": 63400,
+    "surface": "Grass",
+    "gps_coordinates": {
+      "lat": 33.5276,
+      "lng": -112.2626
+    },
+    "city": "Glendale",
+    "state": "AZ",
+    "teams": [
+      {
+        "name": "Arizona Cardinals",
+        "team_uid": "NFL_134946"
+      }
+    ]
+  },
+  "Levi's Stadium": {
+    "name": "Levi's Stadium",
+    "capacity": 68500,
+    "surface": "Grass",
+    "gps_coordinates": {
+      "lat": 37.403,
+      "lng": -121.9697
+    },
+    "city": "Santa Clara",
+    "state": "CA",
+    "teams": [
+      {
+        "name": "San Francisco 49ers",
+        "team_uid": "NFL_134948"
+      }
+    ]
+  },
+  "Lumen Field": {
+    "name": "Lumen Field",
+    "capacity": 69000,
+    "surface": "Artificial Turf",
+    "gps_coordinates": {
+      "lat": 47.5952,
+      "lng": -122.3316
+    },
+    "city": "Seattle",
+    "state": "WA",
+    "teams": [
+      {
+        "name": "Seattle Seahawks",
+        "team_uid": "NFL_134949"
+      }
+    ]
+  },
+  "SoFi Stadium": {
+    "name": "SoFi Stadium",
+    "capacity": 70240,
+    "surface": "Artificial Turf",
+    "gps_coordinates": {
+      "lat": 33.9535,
+      "lng": -118.3392
+    },
+    "city": "Los Angeles",
+    "state": "CA",
+    "teams": [
+      {
+        "name": "Los Angeles Rams",
+        "team_uid": "NFL_135907"
+      },
+      {
+        "name": "Los Angeles Chargers",
+        "team_uid": "NFL_135908"
+      }
+    ]
+  }
+}

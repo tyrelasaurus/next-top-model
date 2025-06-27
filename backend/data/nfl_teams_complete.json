@@ -1,0 +1,1299 @@
+{
+  "NFL_134918": {
+    "team_uid": "NFL_134918",
+    "name": "Buffalo Bills",
+    "league": "NFL",
+    "city": "Buffalo",
+    "state": "NY",
+    "division": "AFC East",
+    "founded": 1960,
+    "colors": [
+      "#00338D",
+      "#C60C30"
+    ],
+    "head_coach": "Sean McDermott",
+    "stadium": {
+      "name": "Highmark Stadium",
+      "capacity": 71608,
+      "surface": "Artificial Turf",
+      "gps_coordinates": {
+        "lat": 42.7738,
+        "lng": -78.7867
+      },
+      "city": "Buffalo",
+      "state": "NY"
+    },
+    "stats": {
+      "total_games_played": 57,
+      "total_wins": 41,
+      "total_losses": 16,
+      "win_percentage": 0.719,
+      "home_record": {
+        "wins": 26,
+        "losses": 5
+      },
+      "away_record": {
+        "wins": 15,
+        "losses": 11
+      }
+    },
+    "last_updated": "2025-06-27T20:27:42.356421"
+  },
+  "NFL_134919": {
+    "team_uid": "NFL_134919",
+    "name": "Miami Dolphins",
+    "league": "NFL",
+    "city": "Miami Gardens",
+    "state": "FL",
+    "division": "AFC East",
+    "founded": 1966,
+    "colors": [
+      "#008E97",
+      "#FC4C02",
+      "#005778"
+    ],
+    "head_coach": "Mike McDaniel",
+    "stadium": {
+      "name": "Hard Rock Stadium",
+      "capacity": 65326,
+      "surface": "Grass",
+      "gps_coordinates": {
+        "lat": 25.958,
+        "lng": -80.2389
+      },
+      "city": "Miami Gardens",
+      "state": "FL"
+    },
+    "stats": {
+      "total_games_played": 53,
+      "total_wins": 28,
+      "total_losses": 25,
+      "win_percentage": 0.528,
+      "home_record": {
+        "wins": 18,
+        "losses": 7
+      },
+      "away_record": {
+        "wins": 10,
+        "losses": 18
+      }
+    },
+    "last_updated": "2025-06-27T20:27:42.358421"
+  },
+  "NFL_134922": {
+    "team_uid": "NFL_134922",
+    "name": "Baltimore Ravens",
+    "league": "NFL",
+    "city": "Baltimore",
+    "state": "MD",
+    "division": "AFC North",
+    "founded": 1996,
+    "colors": [
+      "#241773",
+      "#000000",
+      "#9E7C0C"
+    ],
+    "head_coach": "John Harbaugh",
+    "stadium": {
+      "name": "M&T Bank Stadium",
+      "capacity": 71008,
+      "surface": "Grass",
+      "gps_coordinates": {
+        "lat": 39.278,
+        "lng": -76.6227
+      },
+      "city": "Baltimore",
+      "state": "MD"
+    },
+    "stats": {
+      "total_games_played": 56,
+      "total_wins": 37,
+      "total_losses": 19,
+      "win_percentage": 0.661,
+      "home_record": {
+        "wins": 19,
+        "losses": 9
+      },
+      "away_record": {
+        "wins": 18,
+        "losses": 10
+      }
+    },
+    "last_updated": "2025-06-27T20:27:42.360490"
+  },
+  "NFL_134920": {
+    "team_uid": "NFL_134920",
+    "name": "New England Patriots",
+    "league": "NFL",
+    "city": "Foxborough",
+    "state": "MA",
+    "division": "AFC East",
+    "founded": 1960,
+    "colors": [
+      "#002244",
+      "#C60C30",
+      "#B0B7BC"
+    ],
+    "head_coach": "Jerod Mayo",
+    "stadium": {
+      "name": "Gillette Stadium",
+      "capacity": 65878,
+      "surface": "Artificial Turf",
+      "gps_coordinates": {
+        "lat": 42.0909,
+        "lng": -71.2643
+      },
+      "city": "Foxborough",
+      "state": "MA"
+    },
+    "stats": {
+      "total_games_played": 51,
+      "total_wins": 16,
+      "total_losses": 35,
+      "win_percentage": 0.314,
+      "home_record": {
+        "wins": 7,
+        "losses": 18
+      },
+      "away_record": {
+        "wins": 9,
+        "losses": 17
+      }
+    },
+    "last_updated": "2025-06-27T20:27:42.362434"
+  },
+  "NFL_134921": {
+    "team_uid": "NFL_134921",
+    "name": "New York Jets",
+    "league": "NFL",
+    "city": "East Rutherford",
+    "state": "NJ",
+    "division": "AFC East",
+    "founded": 1960,
+    "colors": [
+      "#125740",
+      "#000000",
+      "#FFFFFF"
+    ],
+    "head_coach": "Robert Saleh",
+    "stadium": {
+      "name": "MetLife Stadium",
+      "capacity": 82500,
+      "surface": "Artificial Turf",
+      "gps_coordinates": {
+        "lat": 40.8135,
+        "lng": -74.0745
+      },
+      "city": "East Rutherford",
+      "state": "NJ"
+    },
+    "stats": {
+      "total_games_played": 51,
+      "total_wins": 19,
+      "total_losses": 32,
+      "win_percentage": 0.373,
+      "home_record": {
+        "wins": 10,
+        "losses": 15
+      },
+      "away_record": {
+        "wins": 9,
+        "losses": 17
+      }
+    },
+    "last_updated": "2025-06-27T20:27:42.364297"
+  },
+  "NFL_134923": {
+    "team_uid": "NFL_134923",
+    "name": "Cincinnati Bengals",
+    "league": "NFL",
+    "city": "Cincinnati",
+    "state": "OH",
+    "division": "AFC North",
+    "founded": 1968,
+    "colors": [
+      "#FB4F14",
+      "#000000"
+    ],
+    "head_coach": "Zac Taylor",
+    "stadium": {
+      "name": "Paycor Stadium",
+      "capacity": 65515,
+      "surface": "Artificial Turf",
+      "gps_coordinates": {
+        "lat": 39.0955,
+        "lng": -84.5161
+      },
+      "city": "Cincinnati",
+      "state": "OH"
+    },
+    "stats": {
+      "total_games_played": 53,
+      "total_wins": 32,
+      "total_losses": 21,
+      "win_percentage": 0.604,
+      "home_record": {
+        "wins": 16,
+        "losses": 9
+      },
+      "away_record": {
+        "wins": 16,
+        "losses": 12
+      }
+    },
+    "last_updated": "2025-06-27T20:27:42.366717"
+  },
+  "NFL_134924": {
+    "team_uid": "NFL_134924",
+    "name": "Cleveland Browns",
+    "league": "NFL",
+    "city": "Cleveland",
+    "state": "OH",
+    "division": "AFC North",
+    "founded": 1946,
+    "colors": [
+      "#311D00",
+      "#FF3C00"
+    ],
+    "head_coach": "Kevin Stefanski",
+    "stadium": {
+      "name": "FirstEnergy Stadium",
+      "capacity": 67431,
+      "surface": "Grass",
+      "gps_coordinates": {
+        "lat": 41.5061,
+        "lng": -81.6995
+      },
+      "city": "Cleveland",
+      "state": "OH"
+    },
+    "stats": {
+      "total_games_played": 52,
+      "total_wins": 21,
+      "total_losses": 31,
+      "win_percentage": 0.404,
+      "home_record": {
+        "wins": 14,
+        "losses": 11
+      },
+      "away_record": {
+        "wins": 7,
+        "losses": 20
+      }
+    },
+    "last_updated": "2025-06-27T20:27:42.368225"
+  },
+  "NFL_134925": {
+    "team_uid": "NFL_134925",
+    "name": "Pittsburgh Steelers",
+    "league": "NFL",
+    "city": "Pittsburgh",
+    "state": "PA",
+    "division": "AFC North",
+    "founded": 1933,
+    "colors": [
+      "#FFB612",
+      "#101820"
+    ],
+    "head_coach": "Mike Tomlin",
+    "stadium": {
+      "name": "Acrisure Stadium",
+      "capacity": 68400,
+      "surface": "Grass",
+      "gps_coordinates": {
+        "lat": 40.4468,
+        "lng": -80.0158
+      },
+      "city": "Pittsburgh",
+      "state": "PA"
+    },
+    "stats": {
+      "total_games_played": 53,
+      "total_wins": 29,
+      "total_losses": 24,
+      "win_percentage": 0.547,
+      "home_record": {
+        "wins": 14,
+        "losses": 11
+      },
+      "away_record": {
+        "wins": 15,
+        "losses": 13
+      }
+    },
+    "last_updated": "2025-06-27T20:27:42.369536"
+  },
+  "NFL_134926": {
+    "team_uid": "NFL_134926",
+    "name": "Houston Texans",
+    "league": "NFL",
+    "city": "Houston",
+    "state": "TX",
+    "division": "AFC South",
+    "founded": 2002,
+    "colors": [
+      "#03202F",
+      "#A71930"
+    ],
+    "head_coach": "DeMeco Ryans",
+    "stadium": {
+      "name": "NRG Stadium",
+      "capacity": 72220,
+      "surface": "Grass",
+      "gps_coordinates": {
+        "lat": 29.6847,
+        "lng": -95.4107
+      },
+      "city": "Houston",
+      "state": "TX"
+    },
+    "stats": {
+      "total_games_played": 55,
+      "total_wins": 25,
+      "total_losses": 30,
+      "win_percentage": 0.455,
+      "home_record": {
+        "wins": 13,
+        "losses": 14
+      },
+      "away_record": {
+        "wins": 12,
+        "losses": 16
+      }
+    },
+    "last_updated": "2025-06-27T20:27:42.370889"
+  },
+  "NFL_134927": {
+    "team_uid": "NFL_134927",
+    "name": "Indianapolis Colts",
+    "league": "NFL",
+    "city": "Indianapolis",
+    "state": "IN",
+    "division": "AFC South",
+    "founded": 1953,
+    "colors": [
+      "#002C5F",
+      "#A2AAAD"
+    ],
+    "head_coach": "Shane Steichen",
+    "stadium": {
+      "name": "Lucas Oil Stadium",
+      "capacity": 67000,
+      "surface": "Artificial Turf",
+      "gps_coordinates": {
+        "lat": 39.7601,
+        "lng": -86.1639
+      },
+      "city": "Indianapolis",
+      "state": "IN"
+    },
+    "stats": {
+      "total_games_played": 51,
+      "total_wins": 21,
+      "total_losses": 30,
+      "win_percentage": 0.412,
+      "home_record": {
+        "wins": 11,
+        "losses": 14
+      },
+      "away_record": {
+        "wins": 10,
+        "losses": 16
+      }
+    },
+    "last_updated": "2025-06-27T20:27:42.372059"
+  },
+  "NFL_134928": {
+    "team_uid": "NFL_134928",
+    "name": "Jacksonville Jaguars",
+    "league": "NFL",
+    "city": "Jacksonville",
+    "state": "FL",
+    "division": "AFC South",
+    "founded": 1995,
+    "colors": [
+      "#006778",
+      "#9F792C",
+      "#000000"
+    ],
+    "head_coach": "Doug Pederson",
+    "stadium": {
+      "name": "TIAA Bank Field",
+      "capacity": 69132,
+      "surface": "Grass",
+      "gps_coordinates": {
+        "lat": 30.324,
+        "lng": -81.6374
+      },
+      "city": "Jacksonville",
+      "state": "FL"
+    },
+    "stats": {
+      "total_games_played": 53,
+      "total_wins": 23,
+      "total_losses": 30,
+      "win_percentage": 0.434,
+      "home_record": {
+        "wins": 13,
+        "losses": 13
+      },
+      "away_record": {
+        "wins": 10,
+        "losses": 17
+      }
+    },
+    "last_updated": "2025-06-27T20:27:42.373243"
+  },
+  "NFL_134929": {
+    "team_uid": "NFL_134929",
+    "name": "Tennessee Titans",
+    "league": "NFL",
+    "city": "Nashville",
+    "state": "TN",
+    "division": "AFC South",
+    "founded": 1960,
+    "colors": [
+      "#0C2340",
+      "#4B92DB",
+      "#C8102E"
+    ],
+    "head_coach": "Brian Callahan",
+    "stadium": {
+      "name": "Nissan Stadium",
+      "capacity": 69143,
+      "surface": "Grass",
+      "gps_coordinates": {
+        "lat": 36.1665,
+        "lng": -86.7713
+      },
+      "city": "Nashville",
+      "state": "TN"
+    },
+    "stats": {
+      "total_games_played": 51,
+      "total_wins": 16,
+      "total_losses": 35,
+      "win_percentage": 0.314,
+      "home_record": {
+        "wins": 9,
+        "losses": 16
+      },
+      "away_record": {
+        "wins": 7,
+        "losses": 19
+      }
+    },
+    "last_updated": "2025-06-27T20:27:42.374403"
+  },
+  "NFL_134930": {
+    "team_uid": "NFL_134930",
+    "name": "Denver Broncos",
+    "league": "NFL",
+    "city": "Denver",
+    "state": "CO",
+    "division": "AFC West",
+    "founded": 1960,
+    "colors": [
+      "#FB4F14",
+      "#002244"
+    ],
+    "head_coach": "Sean Payton",
+    "stadium": {
+      "name": "Empower Field at Mile High",
+      "capacity": 76125,
+      "surface": "Grass",
+      "gps_coordinates": {
+        "lat": 39.7439,
+        "lng": -105.0201
+      },
+      "city": "Denver",
+      "state": "CO"
+    },
+    "stats": {
+      "total_games_played": 52,
+      "total_wins": 23,
+      "total_losses": 29,
+      "win_percentage": 0.442,
+      "home_record": {
+        "wins": 15,
+        "losses": 10
+      },
+      "away_record": {
+        "wins": 8,
+        "losses": 19
+      }
+    },
+    "last_updated": "2025-06-27T20:27:42.375492"
+  },
+  "NFL_134931": {
+    "team_uid": "NFL_134931",
+    "name": "Kansas City Chiefs",
+    "league": "NFL",
+    "city": "Kansas City",
+    "state": "MO",
+    "division": "AFC West",
+    "founded": 1960,
+    "colors": [
+      "#E31837",
+      "#FFB81C"
+    ],
+    "head_coach": "Andy Reid",
+    "stadium": {
+      "name": "GEHA Field at Arrowhead Stadium",
+      "capacity": 76416,
+      "surface": "Grass",
+      "gps_coordinates": {
+        "lat": 39.0489,
+        "lng": -94.4839
+      },
+      "city": "Kansas City",
+      "state": "MO"
+    },
+    "stats": {
+      "total_games_played": 61,
+      "total_wins": 49,
+      "total_losses": 12,
+      "win_percentage": 0.803,
+      "home_record": {
+        "wins": 27,
+        "losses": 5
+      },
+      "away_record": {
+        "wins": 22,
+        "losses": 7
+      }
+    },
+    "last_updated": "2025-06-27T20:27:42.376728"
+  },
+  "NFL_134932": {
+    "team_uid": "NFL_134932",
+    "name": "Las Vegas Raiders",
+    "league": "NFL",
+    "city": "Las Vegas",
+    "state": "NV",
+    "division": "AFC West",
+    "founded": 1960,
+    "colors": [
+      "#000000",
+      "#A5ACAF"
+    ],
+    "head_coach": "Antonio Pierce",
+    "stadium": {
+      "name": "Allegiant Stadium",
+      "capacity": 65000,
+      "surface": "Grass",
+      "gps_coordinates": {
+        "lat": 36.0909,
+        "lng": -115.1833
+      },
+      "city": "Las Vegas",
+      "state": "NV"
+    },
+    "stats": {
+      "total_games_played": 51,
+      "total_wins": 18,
+      "total_losses": 33,
+      "win_percentage": 0.353,
+      "home_record": {
+        "wins": 12,
+        "losses": 13
+      },
+      "away_record": {
+        "wins": 6,
+        "losses": 20
+      }
+    },
+    "last_updated": "2025-06-27T20:27:42.377906"
+  },
+  "NFL_134934": {
+    "team_uid": "NFL_134934",
+    "name": "Dallas Cowboys",
+    "league": "NFL",
+    "city": "Arlington",
+    "state": "TX",
+    "division": "NFC East",
+    "founded": 1960,
+    "colors": [
+      "#003594",
+      "#041E42",
+      "#869397"
+    ],
+    "head_coach": "Mike McCarthy",
+    "stadium": {
+      "name": "AT&T Stadium",
+      "capacity": 80000,
+      "surface": "Artificial Turf",
+      "gps_coordinates": {
+        "lat": 32.7473,
+        "lng": -97.0945
+      },
+      "city": "Arlington",
+      "state": "TX"
+    },
+    "stats": {
+      "total_games_played": 54,
+      "total_wins": 32,
+      "total_losses": 22,
+      "win_percentage": 0.593,
+      "home_record": {
+        "wins": 18,
+        "losses": 9
+      },
+      "away_record": {
+        "wins": 14,
+        "losses": 13
+      }
+    },
+    "last_updated": "2025-06-27T20:27:42.379222"
+  },
+  "NFL_134935": {
+    "team_uid": "NFL_134935",
+    "name": "New York Giants",
+    "league": "NFL",
+    "city": "East Rutherford",
+    "state": "NJ",
+    "division": "NFC East",
+    "founded": 1925,
+    "colors": [
+      "#0B2265",
+      "#A71930",
+      "#A5ACAF"
+    ],
+    "head_coach": "Brian Daboll",
+    "stadium": {
+      "name": "MetLife Stadium",
+      "capacity": 82500,
+      "surface": "Artificial Turf",
+      "gps_coordinates": {
+        "lat": 40.8135,
+        "lng": -74.0745
+      },
+      "city": "East Rutherford",
+      "state": "NJ"
+    },
+    "stats": {
+      "total_games_played": 53,
+      "total_wins": 19,
+      "total_losses": 34,
+      "win_percentage": 0.358,
+      "home_record": {
+        "wins": 10,
+        "losses": 16
+      },
+      "away_record": {
+        "wins": 9,
+        "losses": 18
+      }
+    },
+    "last_updated": "2025-06-27T20:27:42.380584"
+  },
+  "NFL_134936": {
+    "team_uid": "NFL_134936",
+    "name": "Philadelphia Eagles",
+    "league": "NFL",
+    "city": "Philadelphia",
+    "state": "PA",
+    "division": "NFC East",
+    "founded": 1933,
+    "colors": [
+      "#004C54",
+      "#A5ACAF",
+      "#ACC0C6"
+    ],
+    "head_coach": "Nick Sirianni",
+    "stadium": {
+      "name": "Lincoln Financial Field",
+      "capacity": 69176,
+      "surface": "Grass",
+      "gps_coordinates": {
+        "lat": 39.9008,
+        "lng": -75.1675
+      },
+      "city": "Philadelphia",
+      "state": "PA"
+    },
+    "stats": {
+      "total_games_played": 59,
+      "total_wins": 45,
+      "total_losses": 14,
+      "win_percentage": 0.763,
+      "home_record": {
+        "wins": 27,
+        "losses": 5
+      },
+      "away_record": {
+        "wins": 18,
+        "losses": 9
+      }
+    },
+    "last_updated": "2025-06-27T20:27:42.382013"
+  },
+  "NFL_134937": {
+    "team_uid": "NFL_134937",
+    "name": "Washington Commanders",
+    "league": "NFL",
+    "city": "Landover",
+    "state": "MD",
+    "division": "NFC East",
+    "founded": 1932,
+    "colors": [
+      "#5A1414",
+      "#FFB612"
+    ],
+    "head_coach": "Dan Quinn",
+    "stadium": {
+      "name": "FedExField",
+      "capacity": 82000,
+      "surface": "Grass",
+      "gps_coordinates": {
+        "lat": 38.9076,
+        "lng": -76.8645
+      },
+      "city": "Landover",
+      "state": "MD"
+    },
+    "stats": {
+      "total_games_played": 54,
+      "total_wins": 26,
+      "total_losses": 28,
+      "win_percentage": 0.481,
+      "home_record": {
+        "wins": 12,
+        "losses": 14
+      },
+      "away_record": {
+        "wins": 14,
+        "losses": 14
+      }
+    },
+    "last_updated": "2025-06-27T20:27:42.383399"
+  },
+  "NFL_134938": {
+    "team_uid": "NFL_134938",
+    "name": "Chicago Bears",
+    "league": "NFL",
+    "city": "Chicago",
+    "state": "IL",
+    "division": "NFC North",
+    "founded": 1920,
+    "colors": [
+      "#0B162A",
+      "#C83803"
+    ],
+    "head_coach": "Matt Eberflus",
+    "stadium": {
+      "name": "Soldier Field",
+      "capacity": 61500,
+      "surface": "Grass",
+      "gps_coordinates": {
+        "lat": 41.8623,
+        "lng": -87.6167
+      },
+      "city": "Chicago",
+      "state": "IL"
+    },
+    "stats": {
+      "total_games_played": 51,
+      "total_wins": 15,
+      "total_losses": 36,
+      "win_percentage": 0.294,
+      "home_record": {
+        "wins": 11,
+        "losses": 15
+      },
+      "away_record": {
+        "wins": 4,
+        "losses": 21
+      }
+    },
+    "last_updated": "2025-06-27T20:27:42.384687"
+  },
+  "NFL_134939": {
+    "team_uid": "NFL_134939",
+    "name": "Detroit Lions",
+    "league": "NFL",
+    "city": "Detroit",
+    "state": "MI",
+    "division": "NFC North",
+    "founded": 1930,
+    "colors": [
+      "#0076B6",
+      "#B0B7BC",
+      "#000000"
+    ],
+    "head_coach": "Dan Campbell",
+    "stadium": {
+      "name": "Ford Field",
+      "capacity": 65000,
+      "surface": "Artificial Turf",
+      "gps_coordinates": {
+        "lat": 42.34,
+        "lng": -83.0456
+      },
+      "city": "Detroit",
+      "state": "MI"
+    },
+    "stats": {
+      "total_games_played": 55,
+      "total_wins": 38,
+      "total_losses": 17,
+      "win_percentage": 0.691,
+      "home_record": {
+        "wins": 20,
+        "losses": 9
+      },
+      "away_record": {
+        "wins": 18,
+        "losses": 8
+      }
+    },
+    "last_updated": "2025-06-27T20:27:42.386171"
+  },
+  "NFL_134940": {
+    "team_uid": "NFL_134940",
+    "name": "Green Bay Packers",
+    "league": "NFL",
+    "city": "Green Bay",
+    "state": "WI",
+    "division": "NFC North",
+    "founded": 1919,
+    "colors": [
+      "#203731",
+      "#FFB612"
+    ],
+    "head_coach": "Matt LaFleur",
+    "stadium": {
+      "name": "Lambeau Field",
+      "capacity": 81441,
+      "surface": "Grass",
+      "gps_coordinates": {
+        "lat": 44.5013,
+        "lng": -88.0622
+      },
+      "city": "Green Bay",
+      "state": "WI"
+    },
+    "stats": {
+      "total_games_played": 54,
+      "total_wins": 29,
+      "total_losses": 25,
+      "win_percentage": 0.537,
+      "home_record": {
+        "wins": 16,
+        "losses": 10
+      },
+      "away_record": {
+        "wins": 13,
+        "losses": 15
+      }
+    },
+    "last_updated": "2025-06-27T20:27:42.387608"
+  },
+  "NFL_134941": {
+    "team_uid": "NFL_134941",
+    "name": "Minnesota Vikings",
+    "league": "NFL",
+    "city": "Minneapolis",
+    "state": "MN",
+    "division": "NFC North",
+    "founded": 1961,
+    "colors": [
+      "#4F2683",
+      "#FFC62F"
+    ],
+    "head_coach": "Kevin O'Connell",
+    "stadium": {
+      "name": "U.S. Bank Stadium",
+      "capacity": 66860,
+      "surface": "Artificial Turf",
+      "gps_coordinates": {
+        "lat": 44.9738,
+        "lng": -93.2581
+      },
+      "city": "Minneapolis",
+      "state": "MN"
+    },
+    "stats": {
+      "total_games_played": 53,
+      "total_wins": 34,
+      "total_losses": 19,
+      "win_percentage": 0.642,
+      "home_record": {
+        "wins": 18,
+        "losses": 9
+      },
+      "away_record": {
+        "wins": 16,
+        "losses": 10
+      }
+    },
+    "last_updated": "2025-06-27T20:27:42.388845"
+  },
+  "NFL_134942": {
+    "team_uid": "NFL_134942",
+    "name": "Atlanta Falcons",
+    "league": "NFL",
+    "city": "Atlanta",
+    "state": "GA",
+    "division": "NFC South",
+    "founded": 1966,
+    "colors": [
+      "#A71930",
+      "#000000",
+      "#A5ACAF"
+    ],
+    "head_coach": "Raheem Morris",
+    "stadium": {
+      "name": "Mercedes-Benz Stadium",
+      "capacity": 71000,
+      "surface": "Artificial Turf",
+      "gps_coordinates": {
+        "lat": 33.7553,
+        "lng": -84.4006
+      },
+      "city": "Atlanta",
+      "state": "GA"
+    },
+    "stats": {
+      "total_games_played": 51,
+      "total_wins": 22,
+      "total_losses": 29,
+      "win_percentage": 0.431,
+      "home_record": {
+        "wins": 15,
+        "losses": 11
+      },
+      "away_record": {
+        "wins": 7,
+        "losses": 18
+      }
+    },
+    "last_updated": "2025-06-27T20:27:42.390156"
+  },
+  "NFL_134943": {
+    "team_uid": "NFL_134943",
+    "name": "Carolina Panthers",
+    "league": "NFL",
+    "city": "Charlotte",
+    "state": "NC",
+    "division": "NFC South",
+    "founded": 1995,
+    "colors": [
+      "#0085CA",
+      "#101820",
+      "#BFC0BF"
+    ],
+    "head_coach": "Dave Canales",
+    "stadium": {
+      "name": "Bank of America Stadium",
+      "capacity": 75523,
+      "surface": "Grass",
+      "gps_coordinates": {
+        "lat": 35.2258,
+        "lng": -80.8531
+      },
+      "city": "Charlotte",
+      "state": "NC"
+    },
+    "stats": {
+      "total_games_played": 51,
+      "total_wins": 14,
+      "total_losses": 37,
+      "win_percentage": 0.275,
+      "home_record": {
+        "wins": 10,
+        "losses": 16
+      },
+      "away_record": {
+        "wins": 4,
+        "losses": 21
+      }
+    },
+    "last_updated": "2025-06-27T20:27:42.391484"
+  },
+  "NFL_134944": {
+    "team_uid": "NFL_134944",
+    "name": "New Orleans Saints",
+    "league": "NFL",
+    "city": "New Orleans",
+    "state": "LA",
+    "division": "NFC South",
+    "founded": 1967,
+    "colors": [
+      "#D3BC8D",
+      "#101820"
+    ],
+    "head_coach": "Dennis Allen",
+    "stadium": {
+      "name": "Caesars Superdome",
+      "capacity": 73208,
+      "surface": "Artificial Turf",
+      "gps_coordinates": {
+        "lat": 29.9511,
+        "lng": -90.0812
+      },
+      "city": "New Orleans",
+      "state": "LA"
+    },
+    "stats": {
+      "total_games_played": 51,
+      "total_wins": 21,
+      "total_losses": 30,
+      "win_percentage": 0.412,
+      "home_record": {
+        "wins": 12,
+        "losses": 14
+      },
+      "away_record": {
+        "wins": 9,
+        "losses": 16
+      }
+    },
+    "last_updated": "2025-06-27T20:27:42.392743"
+  },
+  "NFL_134945": {
+    "team_uid": "NFL_134945",
+    "name": "Tampa Bay Buccaneers",
+    "league": "NFL",
+    "city": "Tampa",
+    "state": "FL",
+    "division": "NFC South",
+    "founded": 1976,
+    "colors": [
+      "#D50A0A",
+      "#FF7900",
+      "#0A0A08"
+    ],
+    "head_coach": "Todd Bowles",
+    "stadium": {
+      "name": "Raymond James Stadium",
+      "capacity": 69218,
+      "surface": "Grass",
+      "gps_coordinates": {
+        "lat": 27.9759,
+        "lng": -82.5033
+      },
+      "city": "Tampa",
+      "state": "FL"
+    },
+    "stats": {
+      "total_games_played": 55,
+      "total_wins": 28,
+      "total_losses": 27,
+      "win_percentage": 0.509,
+      "home_record": {
+        "wins": 15,
+        "losses": 14
+      },
+      "away_record": {
+        "wins": 13,
+        "losses": 13
+      }
+    },
+    "last_updated": "2025-06-27T20:27:42.395211"
+  },
+  "NFL_134946": {
+    "team_uid": "NFL_134946",
+    "name": "Arizona Cardinals",
+    "league": "NFL",
+    "city": "Glendale",
+    "state": "AZ",
+    "division": "NFC West",
+    "founded": 1898,
+    "colors": [
+      "#97233F",
+      "#000000",
+      "#FFB612"
+    ],
+    "head_coach": "Jonathan Gannon",
+    "stadium": {
+      "name": "State Farm Stadium",
+      "capacity": 63400,
+      "surface": "Grass",
+      "gps_coordinates": {
+        "lat": 33.5276,
+        "lng": -112.2626
+      },
+      "city": "Glendale",
+      "state": "AZ"
+    },
+    "stats": {
+      "total_games_played": 51,
+      "total_wins": 16,
+      "total_losses": 35,
+      "win_percentage": 0.314,
+      "home_record": {
+        "wins": 9,
+        "losses": 17
+      },
+      "away_record": {
+        "wins": 7,
+        "losses": 18
+      }
+    },
+    "last_updated": "2025-06-27T20:27:42.397003"
+  },
+  "NFL_134948": {
+    "team_uid": "NFL_134948",
+    "name": "San Francisco 49ers",
+    "league": "NFL",
+    "city": "Santa Clara",
+    "state": "CA",
+    "division": "NFC West",
+    "founded": 1946,
+    "colors": [
+      "#AA0000",
+      "#B3995D"
+    ],
+    "head_coach": "Kyle Shanahan",
+    "stadium": {
+      "name": "Levi's Stadium",
+      "capacity": 68500,
+      "surface": "Grass",
+      "gps_coordinates": {
+        "lat": 37.403,
+        "lng": -121.9697
+      },
+      "city": "Santa Clara",
+      "state": "CA"
+    },
+    "stats": {
+      "total_games_played": 57,
+      "total_wins": 35,
+      "total_losses": 22,
+      "win_percentage": 0.614,
+      "home_record": {
+        "wins": 21,
+        "losses": 9
+      },
+      "away_record": {
+        "wins": 14,
+        "losses": 13
+      }
+    },
+    "last_updated": "2025-06-27T20:27:42.398739"
+  },
+  "NFL_134949": {
+    "team_uid": "NFL_134949",
+    "name": "Seattle Seahawks",
+    "league": "NFL",
+    "city": "Seattle",
+    "state": "WA",
+    "division": "NFC West",
+    "founded": 1976,
+    "colors": [
+      "#002244",
+      "#69BE28",
+      "#A5ACAF"
+    ],
+    "head_coach": "Mike Macdonald",
+    "stadium": {
+      "name": "Lumen Field",
+      "capacity": 69000,
+      "surface": "Artificial Turf",
+      "gps_coordinates": {
+        "lat": 47.5952,
+        "lng": -122.3316
+      },
+      "city": "Seattle",
+      "state": "WA"
+    },
+    "stats": {
+      "total_games_played": 52,
+      "total_wins": 28,
+      "total_losses": 24,
+      "win_percentage": 0.538,
+      "home_record": {
+        "wins": 13,
+        "losses": 13
+      },
+      "away_record": {
+        "wins": 15,
+        "losses": 11
+      }
+    },
+    "last_updated": "2025-06-27T20:27:42.400469"
+  },
+  "NFL_135907": {
+    "team_uid": "NFL_135907",
+    "name": "Los Angeles Rams",
+    "league": "NFL",
+    "city": "Los Angeles",
+    "state": "CA",
+    "division": "NFC West",
+    "founded": 1936,
+    "colors": [
+      "#003594",
+      "#FFA300",
+      "#FF8200"
+    ],
+    "head_coach": "Sean McVay",
+    "stadium": {
+      "name": "SoFi Stadium",
+      "capacity": 70240,
+      "surface": "Artificial Turf",
+      "gps_coordinates": {
+        "lat": 33.9535,
+        "lng": -118.3392
+      },
+      "city": "Los Angeles",
+      "state": "CA"
+    },
+    "stats": {
+      "total_games_played": 54,
+      "total_wins": 26,
+      "total_losses": 28,
+      "win_percentage": 0.481,
+      "home_record": {
+        "wins": 15,
+        "losses": 12
+      },
+      "away_record": {
+        "wins": 11,
+        "losses": 16
+      }
+    },
+    "last_updated": "2025-06-27T20:27:42.402108"
+  },
+  "NFL_135908": {
+    "team_uid": "NFL_135908",
+    "name": "Los Angeles Chargers",
+    "league": "NFL",
+    "city": "Los Angeles",
+    "state": "CA",
+    "division": "AFC West",
+    "founded": 1960,
+    "colors": [
+      "#0080C6",
+      "#FFC20E",
+      "#FFFFFF"
+    ],
+    "head_coach": "Jim Harbaugh",
+    "stadium": {
+      "name": "SoFi Stadium",
+      "capacity": 70240,
+      "surface": "Artificial Turf",
+      "gps_coordinates": {
+        "lat": 33.9535,
+        "lng": -118.3392
+      },
+      "city": "Los Angeles",
+      "state": "CA"
+    },
+    "stats": {
+      "total_games_played": 53,
+      "total_wins": 26,
+      "total_losses": 27,
+      "win_percentage": 0.491,
+      "home_record": {
+        "wins": 12,
+        "losses": 13
+      },
+      "away_record": {
+        "wins": 14,
+        "losses": 14
+      }
+    },
+    "last_updated": "2025-06-27T20:27:42.403736"
+  }
+}

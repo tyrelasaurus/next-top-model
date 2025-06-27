@@ -1,0 +1,194 @@
+{
+  "Buffalo Bills": {
+    "team_uid": "NFL_134918",
+    "city": "Buffalo",
+    "division": "AFC East",
+    "stadium": "Highmark Stadium"
+  },
+  "Miami Dolphins": {
+    "team_uid": "NFL_134919",
+    "city": "Miami Gardens",
+    "division": "AFC East",
+    "stadium": "Hard Rock Stadium"
+  },
+  "Baltimore Ravens": {
+    "team_uid": "NFL_134922",
+    "city": "Baltimore",
+    "division": "AFC North",
+    "stadium": "M&T Bank Stadium"
+  },
+  "New England Patriots": {
+    "team_uid": "NFL_134920",
+    "city": "Foxborough",
+    "division": "AFC East",
+    "stadium": "Gillette Stadium"
+  },
+  "New York Jets": {
+    "team_uid": "NFL_134921",
+    "city": "East Rutherford",
+    "division": "AFC East",
+    "stadium": "MetLife Stadium"
+  },
+  "Cincinnati Bengals": {
+    "team_uid": "NFL_134923",
+    "city": "Cincinnati",
+    "division": "AFC North",
+    "stadium": "Paycor Stadium"
+  },
+  "Cleveland Browns": {
+    "team_uid": "NFL_134924",
+    "city": "Cleveland",
+    "division": "AFC North",
+    "stadium": "FirstEnergy Stadium"
+  },
+  "Pittsburgh Steelers": {
+    "team_uid": "NFL_134925",
+    "city": "Pittsburgh",
+    "division": "AFC North",
+    "stadium": "Acrisure Stadium"
+  },
+  "Houston Texans": {
+    "team_uid": "NFL_134926",
+    "city": "Houston",
+    "division": "AFC South",
+    "stadium": "NRG Stadium"
+  },
+  "Indianapolis Colts": {
+    "team_uid": "NFL_134927",
+    "city": "Indianapolis",
+    "division": "AFC South",
+    "stadium": "Lucas Oil Stadium"
+  },
+  "Jacksonville Jaguars": {
+    "team_uid": "NFL_134928",
+    "city": "Jacksonville",
+    "division": "AFC South",
+    "stadium": "TIAA Bank Field"
+  },
+  "Tennessee Titans": {
+    "team_uid": "NFL_134929",
+    "city": "Nashville",
+    "division": "AFC South",
+    "stadium": "Nissan Stadium"
+  },
+  "Denver Broncos": {
+    "team_uid": "NFL_134930",
+    "city": "Denver",
+    "division": "AFC West",
+    "stadium": "Empower Field at Mile High"
+  },
+  "Kansas City Chiefs": {
+    "team_uid": "NFL_134931",
+    "city": "Kansas City",
+    "division": "AFC West",
+    "stadium": "GEHA Field at Arrowhead Stadium"
+  },
+  "Las Vegas Raiders": {
+    "team_uid": "NFL_134932",
+    "city": "Las Vegas",
+    "division": "AFC West",
+    "stadium": "Allegiant Stadium"
+  },
+  "Dallas Cowboys": {
+    "team_uid": "NFL_134934",
+    "city": "Arlington",
+    "division": "NFC East",
+    "stadium": "AT&T Stadium"
+  },
+  "New York Giants": {
+    "team_uid": "NFL_134935",
+    "city": "East Rutherford",
+    "division": "NFC East",
+    "stadium": "MetLife Stadium"
+  },
+  "Philadelphia Eagles": {
+    "team_uid": "NFL_134936",
+    "city": "Philadelphia",
+    "division": "NFC East",
+    "stadium": "Lincoln Financial Field"
+  },
+  "Washington Commanders": {
+    "team_uid": "NFL_134937",
+    "city": "Landover",
+    "division": "NFC East",
+    "stadium": "FedExField"
+  },
+  "Chicago Bears": {
+    "team_uid": "NFL_134938",
+    "city": "Chicago",
+    "division": "NFC North",
+    "stadium": "Soldier Field"
+  },
+  "Detroit Lions": {
+    "team_uid": "NFL_134939",
+    "city": "Detroit",
+    "division": "NFC North",
+    "stadium": "Ford Field"
+  },
+  "Green Bay Packers": {
+    "team_uid": "NFL_134940",
+    "city": "Green Bay",
+    "division": "NFC North",
+    "stadium": "Lambeau Field"
+  },
+  "Minnesota Vikings": {
+    "team_uid": "NFL_134941",
+    "city": "Minneapolis",
+    "division": "NFC North",
+    "stadium": "U.S. Bank Stadium"
+  },
+  "Atlanta Falcons": {
+    "team_uid": "NFL_134942",
+    "city": "Atlanta",
+    "division": "NFC South",
+    "stadium": "Mercedes-Benz Stadium"
+  },
+  "Carolina Panthers": {
+    "team_uid": "NFL_134943",
+    "city": "Charlotte",
+    "division": "NFC South",
+    "stadium": "Bank of America Stadium"
+  },
+  "New Orleans Saints": {
+    "team_uid": "NFL_134944",
+    "city": "New Orleans",
+    "division": "NFC South",
+    "stadium": "Caesars Superdome"
+  },
+  "Tampa Bay Buccaneers": {
+    "team_uid": "NFL_134945",
+    "city": "Tampa",
+    "division": "NFC South",
+    "stadium": "Raymond James Stadium"
+  },
+  "Arizona Cardinals": {
+    "team_uid": "NFL_134946",
+    "city": "Glendale",
+    "division": "NFC West",
+    "stadium": "State Farm Stadium"
+  },
+  "San Francisco 49ers": {
+    "team_uid": "NFL_134948",
+    "city": "Santa Clara",
+    "division": "NFC West",
+    "stadium": "Levi's Stadium"
+  },
+  "Seattle Seahawks": {
+    "team_uid": "NFL_134949",
+    "city": "Seattle",
+    "division": "NFC West",
+    "stadium": "Lumen Field"
+  },
+  "Los Angeles Rams": {
+    "team_uid": "NFL_135907",
+    "city": "Los Angeles",
+    "division": "NFC West",
+    "stadium": "SoFi Stadium"
+  },
+  "Los Angeles Chargers": {
+    "team_uid": "NFL_135908",
+    "city": "Los Angeles",
+    "division": "AFC West",
+    "stadium": "SoFi Stadium"
+  }
+}

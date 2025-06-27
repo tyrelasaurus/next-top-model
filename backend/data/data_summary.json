@@ -1,0 +1,30 @@
+{
+  "export_date": "2025-06-27T20:27:42.528273",
+  "total_teams": 32,
+  "total_games": 854,
+  "seasons_covered": [
+    2022,
+    2023,
+    2024
+  ],
+  "files_created": [
+    "nfl_games_complete.csv",
+    "nfl_games_2022.csv",
+    "nfl_games_2023.csv",
+    "nfl_games_2024.csv",
+    "nfl_results.csv",
+    "nfl_teams_complete.json",
+    "nfl_teams_lookup.json",
+    "nfl_stadiums.json",
+    "nfl_team_season_stats.csv"
+  ],
+  "data_sources": [
+    "pro_football_reference"
+  ],
+  "description": "Complete NFL dataset with 3 seasons of games, enhanced team information, and stadium details",
+  "data_notes": {
+    "game_dates": "Dates are stored as YYYY-MM-DD format. Kickoff times are not available from Pro Football Reference, so only dates are provided.",
+    "playoff_games": "Playoff games are categorized by type: regular, wildcard, divisional, conference, superbowl",
+    "historical_data": "All data is historical through February 9, 2025 (2024 season Super Bowl)"
+  }
+}

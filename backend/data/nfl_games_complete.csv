@@ -1,0 +1,855 @@
+game_id,season,week,game_type,date,home_team,away_team,home_team_uid,away_team_uid,home_score,away_score,total_points,point_differential,winner,source
+NFL_202209080ram,2022,1.0,regular,2022-09-08,Los Angeles Rams,Buffalo Bills,NFL_135907,NFL_134918,10,31,41,21,away,pro_football_reference
+NFL_202209110atl,2022,1.0,regular,2022-09-11,Atlanta Falcons,New Orleans Saints,NFL_134942,NFL_134944,26,27,53,1,away,pro_football_reference
+NFL_202209110car,2022,1.0,regular,2022-09-11,Carolina Panthers,Cleveland Browns,NFL_134943,NFL_134924,24,26,50,2,away,pro_football_reference
+NFL_202209110chi,2022,1.0,regular,2022-09-11,Chicago Bears,San Francisco 49ers,NFL_134938,NFL_134948,19,10,29,9,home,pro_football_reference
+NFL_202209110cin,2022,1.0,regular,2022-09-11,Cincinnati Bengals,Pittsburgh Steelers,NFL_134923,NFL_134925,20,23,43,3,away,pro_football_reference
+NFL_202209110crd,2022,1.0,regular,2022-09-11,Arizona Cardinals,Kansas City Chiefs,NFL_134946,NFL_134931,21,44,65,23,away,pro_football_reference
+NFL_202209110dal,2022,1.0,regular,2022-09-11,Dallas Cowboys,Tampa Bay Buccaneers,NFL_134934,NFL_134945,3,19,22,16,away,pro_football_reference
+NFL_202209110det,2022,1.0,regular,2022-09-11,Detroit Lions,Philadelphia Eagles,NFL_134939,NFL_134936,35,38,73,3,away,pro_football_reference
+NFL_202209110htx,2022,1.0,regular,2022-09-11,Houston Texans,Indianapolis Colts,NFL_134926,NFL_134927,20,20,40,0,tie,pro_football_reference
+NFL_202209110mia,2022,1.0,regular,2022-09-11,Miami Dolphins,New England Patriots,NFL_134919,NFL_134920,20,7,27,13,home,pro_football_reference
+NFL_202209110min,2022,1.0,regular,2022-09-11,Minnesota Vikings,Green Bay Packers,NFL_134941,NFL_134940,23,7,30,16,home,pro_football_reference
+NFL_202209110nyj,2022,1.0,regular,2022-09-11,New York Jets,Baltimore Ravens,NFL_134921,NFL_134922,9,24,33,15,away,pro_football_reference
+NFL_202209110oti,2022,1.0,regular,2022-09-11,Tennessee Titans,New York Giants,NFL_134929,NFL_134935,20,21,41,1,away,pro_football_reference
+NFL_202209110sdg,2022,1.0,regular,2022-09-11,Los Angeles Chargers,Las Vegas Raiders,NFL_135908,NFL_134932,24,19,43,5,home,pro_football_reference
+NFL_202209180rav,2022,2.0,regular,2022-09-18,Baltimore Ravens,Miami Dolphins,NFL_134922,NFL_134919,38,42,80,4,away,pro_football_reference
+NFL_202209180sfo,2022,2.0,regular,2022-09-18,San Francisco 49ers,Seattle Seahawks,NFL_134948,NFL_134949,27,7,34,20,home,pro_football_reference
+NFL_202209190buf,2022,2.0,regular,2022-09-19,Buffalo Bills,Tennessee Titans,NFL_134918,NFL_134929,41,7,48,34,home,pro_football_reference
+NFL_202209190phi,2022,2.0,regular,2022-09-19,Philadelphia Eagles,Minnesota Vikings,NFL_134936,NFL_134941,24,7,31,17,home,pro_football_reference
+NFL_202209220cle,2022,3.0,regular,2022-09-22,Cleveland Browns,Pittsburgh Steelers,NFL_134924,NFL_134925,29,17,46,12,home,pro_football_reference
+NFL_202209250car,2022,3.0,regular,2022-09-25,Carolina Panthers,New Orleans Saints,NFL_134943,NFL_134944,22,14,36,8,home,pro_football_reference
+NFL_202209250chi,2022,3.0,regular,2022-09-25,Chicago Bears,Houston Texans,NFL_134938,NFL_134926,23,20,43,3,home,pro_football_reference
+NFL_202209250clt,2022,3.0,regular,2022-09-25,Indianapolis Colts,Kansas City Chiefs,NFL_134927,NFL_134931,20,17,37,3,home,pro_football_reference
+NFL_202209250crd,2022,3.0,regular,2022-09-25,Arizona Cardinals,Los Angeles Rams,NFL_134946,NFL_135907,12,20,32,8,away,pro_football_reference
+NFL_202209250den,2022,3.0,regular,2022-09-25,Denver Broncos,San Francisco 49ers,NFL_134930,NFL_134948,11,10,21,1,home,pro_football_reference
+NFL_202209250mia,2022,3.0,regular,2022-09-25,Miami Dolphins,Buffalo Bills,NFL_134919,NFL_134918,21,19,40,2,home,pro_football_reference
+NFL_202209250min,2022,3.0,regular,2022-09-25,Minnesota Vikings,Detroit Lions,NFL_134941,NFL_134939,28,24,52,4,home,pro_football_reference
+NFL_202209250nwe,2022,3.0,regular,2022-09-25,New England Patriots,Baltimore Ravens,NFL_134920,NFL_134922,26,37,63,11,away,pro_football_reference
+NFL_202209250nyj,2022,3.0,regular,2022-09-25,New York Jets,Cincinnati Bengals,NFL_134921,NFL_134923,12,27,39,15,away,pro_football_reference
+NFL_202209250oti,2022,3.0,regular,2022-09-25,Tennessee Titans,Las Vegas Raiders,NFL_134929,NFL_134932,24,22,46,2,home,pro_football_reference
+NFL_202209250sdg,2022,3.0,regular,2022-09-25,Los Angeles Chargers,Jacksonville Jaguars,NFL_135908,NFL_134928,10,38,48,28,away,pro_football_reference
+NFL_202209250sea,2022,3.0,regular,2022-09-25,Seattle Seahawks,Atlanta Falcons,NFL_134949,NFL_134942,23,27,50,4,away,pro_football_reference
+NFL_202209250tam,2022,3.0,regular,2022-09-25,Tampa Bay Buccaneers,Green Bay Packers,NFL_134945,NFL_134940,12,14,26,2,away,pro_football_reference
+NFL_202209250was,2022,3.0,regular,2022-09-25,Washington Commanders,Philadelphia Eagles,NFL_134937,NFL_134936,8,24,32,16,away,pro_football_reference
+NFL_202209260nyg,2022,3.0,regular,2022-09-26,New York Giants,Dallas Cowboys,NFL_134935,NFL_134934,16,23,39,7,away,pro_football_reference
+NFL_202209290cin,2022,4.0,regular,2022-09-29,Cincinnati Bengals,Miami Dolphins,NFL_134923,NFL_134919,27,15,42,12,home,pro_football_reference
+NFL_202210020atl,2022,4.0,regular,2022-10-02,Atlanta Falcons,Cleveland Browns,NFL_134942,NFL_134924,23,20,43,3,home,pro_football_reference
+NFL_202210020car,2022,4.0,regular,2022-10-02,Carolina Panthers,Arizona Cardinals,NFL_134943,NFL_134946,16,26,42,10,away,pro_football_reference
+NFL_202210020clt,2022,4.0,regular,2022-10-02,Indianapolis Colts,Tennessee Titans,NFL_134927,NFL_134929,17,24,41,7,away,pro_football_reference
+NFL_202210020dal,2022,4.0,regular,2022-10-02,Dallas Cowboys,Washington Commanders,NFL_134934,NFL_134937,25,10,35,15,home,pro_football_reference
+NFL_202210020det,2022,4.0,regular,2022-10-02,Detroit Lions,Seattle Seahawks,NFL_134939,NFL_134949,45,48,93,3,away,pro_football_reference
+NFL_202210020gnb,2022,4.0,regular,2022-10-02,Green Bay Packers,New England Patriots,NFL_134940,NFL_134920,27,24,51,3,home,pro_football_reference
+NFL_202210020htx,2022,4.0,regular,2022-10-02,Houston Texans,Los Angeles Chargers,NFL_134926,NFL_135908,24,34,58,10,away,pro_football_reference
+NFL_202210020nor,2022,4.0,regular,2022-10-02,New Orleans Saints,Minnesota Vikings,NFL_134944,NFL_134941,25,28,53,3,away,pro_football_reference
+NFL_202210020nyg,2022,4.0,regular,2022-10-02,New York Giants,Chicago Bears,NFL_134935,NFL_134938,20,12,32,8,home,pro_football_reference
+NFL_202210020phi,2022,4.0,regular,2022-10-02,Philadelphia Eagles,Jacksonville Jaguars,NFL_134936,NFL_134928,29,21,50,8,home,pro_football_reference
+NFL_202210020pit,2022,4.0,regular,2022-10-02,Pittsburgh Steelers,New York Jets,NFL_134925,NFL_134921,20,24,44,4,away,pro_football_reference
+NFL_202210020rai,2022,4.0,regular,2022-10-02,Las Vegas Raiders,Denver Broncos,NFL_134932,NFL_134930,32,23,55,9,home,pro_football_reference
+NFL_202210020rav,2022,4.0,regular,2022-10-02,Baltimore Ravens,Buffalo Bills,NFL_134922,NFL_134918,20,23,43,3,away,pro_football_reference
+NFL_202210020tam,2022,4.0,regular,2022-10-02,Tampa Bay Buccaneers,Kansas City Chiefs,NFL_134945,NFL_134931,31,41,72,10,away,pro_football_reference
+NFL_202210030sfo,2022,4.0,regular,2022-10-03,San Francisco 49ers,Los Angeles Rams,NFL_134948,NFL_135907,24,9,33,15,home,pro_football_reference
+NFL_202210060den,2022,5.0,regular,2022-10-06,Denver Broncos,Indianapolis Colts,NFL_134930,NFL_134927,9,12,21,3,away,pro_football_reference
+NFL_202210090buf,2022,5.0,regular,2022-10-09,Buffalo Bills,Pittsburgh Steelers,NFL_134918,NFL_134925,38,3,41,35,home,pro_football_reference
+NFL_202210090car,2022,5.0,regular,2022-10-09,Carolina Panthers,San Francisco 49ers,NFL_134943,NFL_134948,15,37,52,22,away,pro_football_reference
+NFL_202210090cle,2022,5.0,regular,2022-10-09,Cleveland Browns,Los Angeles Chargers,NFL_134924,NFL_135908,28,30,58,2,away,pro_football_reference
+NFL_202210090crd,2022,5.0,regular,2022-10-09,Arizona Cardinals,Philadelphia Eagles,NFL_134946,NFL_134936,17,20,37,3,away,pro_football_reference
+NFL_202210090gnb,2022,5.0,regular,2022-10-09,Green Bay Packers,New York Giants,NFL_134940,NFL_134935,22,27,49,5,away,pro_football_reference
+NFL_202210090jax,2022,5.0,regular,2022-10-09,Jacksonville Jaguars,Houston Texans,NFL_134928,NFL_134926,6,13,19,7,away,pro_football_reference
+NFL_202210090min,2022,5.0,regular,2022-10-09,Minnesota Vikings,Chicago Bears,NFL_134941,NFL_134938,29,22,51,7,home,pro_football_reference
+NFL_202210090nor,2022,5.0,regular,2022-10-09,New Orleans Saints,Seattle Seahawks,NFL_134944,NFL_134949,39,32,71,7,home,pro_football_reference
+NFL_202210090nwe,2022,5.0,regular,2022-10-09,New England Patriots,Detroit Lions,NFL_134920,NFL_134939,29,0,29,29,home,pro_football_reference
+NFL_202210090nyj,2022,5.0,regular,2022-10-09,New York Jets,Miami Dolphins,NFL_134921,NFL_134919,40,17,57,23,home,pro_football_reference
+NFL_202210090ram,2022,5.0,regular,2022-10-09,Los Angeles Rams,Dallas Cowboys,NFL_135907,NFL_134934,10,22,32,12,away,pro_football_reference
+NFL_202210090rav,2022,5.0,regular,2022-10-09,Baltimore Ravens,Cincinnati Bengals,NFL_134922,NFL_134923,19,17,36,2,home,pro_football_reference
+NFL_202210090tam,2022,5.0,regular,2022-10-09,Tampa Bay Buccaneers,Atlanta Falcons,NFL_134945,NFL_134942,21,15,36,6,home,pro_football_reference
+NFL_202210090was,2022,5.0,regular,2022-10-09,Washington Commanders,Tennessee Titans,NFL_134937,NFL_134929,17,21,38,4,away,pro_football_reference
+NFL_202210100kan,2022,5.0,regular,2022-10-10,Kansas City Chiefs,Las Vegas Raiders,NFL_134931,NFL_134932,30,29,59,1,home,pro_football_reference
+NFL_202210130chi,2022,6.0,regular,2022-10-13,Chicago Bears,Washington Commanders,NFL_134938,NFL_134937,7,12,19,5,away,pro_football_reference
+NFL_202210160atl,2022,6.0,regular,2022-10-16,Atlanta Falcons,San Francisco 49ers,NFL_134942,NFL_134948,28,14,42,14,home,pro_football_reference
+NFL_202210160cle,2022,6.0,regular,2022-10-16,Cleveland Browns,New England Patriots,NFL_134924,NFL_134920,15,38,53,23,away,pro_football_reference
+NFL_202210160clt,2022,6.0,regular,2022-10-16,Indianapolis Colts,Jacksonville Jaguars,NFL_134927,NFL_134928,34,27,61,7,home,pro_football_reference
+NFL_202210160gnb,2022,6.0,regular,2022-10-16,Green Bay Packers,New York Jets,NFL_134940,NFL_134921,10,27,37,17,away,pro_football_reference
+NFL_202210160kan,2022,6.0,regular,2022-10-16,Kansas City Chiefs,Buffalo Bills,NFL_134931,NFL_134918,20,24,44,4,away,pro_football_reference
+NFL_202210160mia,2022,6.0,regular,2022-10-16,Miami Dolphins,Minnesota Vikings,NFL_134919,NFL_134941,16,24,40,8,away,pro_football_reference
+NFL_202210160nor,2022,6.0,regular,2022-10-16,New Orleans Saints,Cincinnati Bengals,NFL_134944,NFL_134923,26,30,56,4,away,pro_football_reference
+NFL_202210160nyg,2022,6.0,regular,2022-10-16,New York Giants,Baltimore Ravens,NFL_134935,NFL_134922,24,20,44,4,home,pro_football_reference
+NFL_202210160phi,2022,6.0,regular,2022-10-16,Philadelphia Eagles,Dallas Cowboys,NFL_134936,NFL_134934,26,17,43,9,home,pro_football_reference
+NFL_202210160pit,2022,6.0,regular,2022-10-16,Pittsburgh Steelers,Tampa Bay Buccaneers,NFL_134925,NFL_134945,20,18,38,2,home,pro_football_reference
+NFL_202210160ram,2022,6.0,regular,2022-10-16,Los Angeles Rams,Carolina Panthers,NFL_135907,NFL_134943,24,10,34,14,home,pro_football_reference
+NFL_202210160sea,2022,6.0,regular,2022-10-16,Seattle Seahawks,Arizona Cardinals,NFL_134949,NFL_134946,19,9,28,10,home,pro_football_reference
+NFL_202210170sdg,2022,6.0,regular,2022-10-17,Los Angeles Chargers,Denver Broncos,NFL_135908,NFL_134930,19,16,35,3,home,pro_football_reference
+NFL_202210200crd,2022,7.0,regular,2022-10-20,Arizona Cardinals,New Orleans Saints,NFL_134946,NFL_134944,42,34,76,8,home,pro_football_reference
+NFL_202210230car,2022,7.0,regular,2022-10-23,Carolina Panthers,Tampa Bay Buccaneers,NFL_134943,NFL_134945,21,3,24,18,home,pro_football_reference
+NFL_202210230cin,2022,7.0,regular,2022-10-23,Cincinnati Bengals,Atlanta Falcons,NFL_134923,NFL_134942,35,17,52,18,home,pro_football_reference
+NFL_202210230dal,2022,7.0,regular,2022-10-23,Dallas Cowboys,Detroit Lions,NFL_134934,NFL_134939,24,6,30,18,home,pro_football_reference
+NFL_202210230den,2022,7.0,regular,2022-10-23,Denver Broncos,New York Jets,NFL_134930,NFL_134921,9,16,25,7,away,pro_football_reference
+NFL_202210230jax,2022,7.0,regular,2022-10-23,Jacksonville Jaguars,New York Giants,NFL_134928,NFL_134935,17,23,40,6,away,pro_football_reference
+NFL_202210230mia,2022,7.0,regular,2022-10-23,Miami Dolphins,Pittsburgh Steelers,NFL_134919,NFL_134925,16,10,26,6,home,pro_football_reference
+NFL_202210230oti,2022,7.0,regular,2022-10-23,Tennessee Titans,Indianapolis Colts,NFL_134929,NFL_134927,19,10,29,9,home,pro_football_reference
+NFL_202210230rai,2022,7.0,regular,2022-10-23,Las Vegas Raiders,Houston Texans,NFL_134932,NFL_134926,38,20,58,18,home,pro_football_reference
+NFL_202210230rav,2022,7.0,regular,2022-10-23,Baltimore Ravens,Cleveland Browns,NFL_134922,NFL_134924,23,20,43,3,home,pro_football_reference
+NFL_202210230sdg,2022,7.0,regular,2022-10-23,Los Angeles Chargers,Seattle Seahawks,NFL_135908,NFL_134949,23,37,60,14,away,pro_football_reference
+NFL_202210230sfo,2022,7.0,regular,2022-10-23,San Francisco 49ers,Kansas City Chiefs,NFL_134948,NFL_134931,23,44,67,21,away,pro_football_reference
+NFL_202210230was,2022,7.0,regular,2022-10-23,Washington Commanders,Green Bay Packers,NFL_134937,NFL_134940,23,21,44,2,home,pro_football_reference
+NFL_202210240nwe,2022,7.0,regular,2022-10-24,New England Patriots,Chicago Bears,NFL_134920,NFL_134938,14,33,47,19,away,pro_football_reference
+NFL_202210270tam,2022,8.0,regular,2022-10-27,Tampa Bay Buccaneers,Baltimore Ravens,NFL_134945,NFL_134922,22,27,49,5,away,pro_football_reference
+NFL_202210300atl,2022,8.0,regular,2022-10-30,Atlanta Falcons,Carolina Panthers,NFL_134942,NFL_134943,37,34,71,3,home,pro_football_reference
+NFL_202210300buf,2022,8.0,regular,2022-10-30,Buffalo Bills,Green Bay Packers,NFL_134918,NFL_134940,27,17,44,10,home,pro_football_reference
+NFL_202210300clt,2022,8.0,regular,2022-10-30,Indianapolis Colts,Washington Commanders,NFL_134927,NFL_134937,16,17,33,1,away,pro_football_reference
+NFL_202210300dal,2022,8.0,regular,2022-10-30,Dallas Cowboys,Chicago Bears,NFL_134934,NFL_134938,49,29,78,20,home,pro_football_reference
+NFL_202210300det,2022,8.0,regular,2022-10-30,Detroit Lions,Miami Dolphins,NFL_134939,NFL_134919,27,31,58,4,away,pro_football_reference
+NFL_202210300htx,2022,8.0,regular,2022-10-30,Houston Texans,Tennessee Titans,NFL_134926,NFL_134929,10,17,27,7,away,pro_football_reference
+NFL_202210300jax,2022,8.0,regular,2022-10-30,Jacksonville Jaguars,Denver Broncos,NFL_134928,NFL_134930,17,21,38,4,away,pro_football_reference
+NFL_202210300min,2022,8.0,regular,2022-10-30,Minnesota Vikings,Arizona Cardinals,NFL_134941,NFL_134946,34,26,60,8,home,pro_football_reference
+NFL_202210300nor,2022,8.0,regular,2022-10-30,New Orleans Saints,Las Vegas Raiders,NFL_134944,NFL_134932,24,0,24,24,home,pro_football_reference
+NFL_202210300nyj,2022,8.0,regular,2022-10-30,New York Jets,New England Patriots,NFL_134921,NFL_134920,17,22,39,5,away,pro_football_reference
+NFL_202210300phi,2022,8.0,regular,2022-10-30,Philadelphia Eagles,Pittsburgh Steelers,NFL_134936,NFL_134925,35,13,48,22,home,pro_football_reference
+NFL_202210300ram,2022,8.0,regular,2022-10-30,Los Angeles Rams,San Francisco 49ers,NFL_135907,NFL_134948,14,31,45,17,away,pro_football_reference
+NFL_202210300sea,2022,8.0,regular,2022-10-30,Seattle Seahawks,New York Giants,NFL_134949,NFL_134935,27,13,40,14,home,pro_football_reference
+NFL_202210310cle,2022,8.0,regular,2022-10-31,Cleveland Browns,Cincinnati Bengals,NFL_134924,NFL_134923,32,13,45,19,home,pro_football_reference
+NFL_202211030htx,2022,9.0,regular,2022-11-03,Houston Texans,Philadelphia Eagles,NFL_134926,NFL_134936,17,29,46,12,away,pro_football_reference
+NFL_202211060atl,2022,9.0,regular,2022-11-06,Atlanta Falcons,Los Angeles Chargers,NFL_134942,NFL_135908,17,20,37,3,away,pro_football_reference
+NFL_202211060chi,2022,9.0,regular,2022-11-06,Chicago Bears,Miami Dolphins,NFL_134938,NFL_134919,32,35,67,3,away,pro_football_reference
+NFL_202211060cin,2022,9.0,regular,2022-11-06,Cincinnati Bengals,Carolina Panthers,NFL_134923,NFL_134943,42,21,63,21,home,pro_football_reference
+NFL_202211060crd,2022,9.0,regular,2022-11-06,Arizona Cardinals,Seattle Seahawks,NFL_134946,NFL_134949,21,31,52,10,away,pro_football_reference
+NFL_202211060det,2022,9.0,regular,2022-11-06,Detroit Lions,Green Bay Packers,NFL_134939,NFL_134940,15,9,24,6,home,pro_football_reference
+NFL_202211060jax,2022,9.0,regular,2022-11-06,Jacksonville Jaguars,Las Vegas Raiders,NFL_134928,NFL_134932,27,20,47,7,home,pro_football_reference
+NFL_202211060kan,2022,9.0,regular,2022-11-06,Kansas City Chiefs,Tennessee Titans,NFL_134931,NFL_134929,20,17,37,3,home,pro_football_reference
+NFL_202211060nwe,2022,9.0,regular,2022-11-06,New England Patriots,Indianapolis Colts,NFL_134920,NFL_134927,26,3,29,23,home,pro_football_reference
+NFL_202211060nyj,2022,9.0,regular,2022-11-06,New York Jets,Buffalo Bills,NFL_134921,NFL_134918,20,17,37,3,home,pro_football_reference
+NFL_202211060tam,2022,9.0,regular,2022-11-06,Tampa Bay Buccaneers,Los Angeles Rams,NFL_134945,NFL_135907,16,13,29,3,home,pro_football_reference
+NFL_202211060was,2022,9.0,regular,2022-11-06,Washington Commanders,Minnesota Vikings,NFL_134937,NFL_134941,17,20,37,3,away,pro_football_reference
+NFL_202211070nor,2022,9.0,regular,2022-11-07,New Orleans Saints,Baltimore Ravens,NFL_134944,NFL_134922,13,27,40,14,away,pro_football_reference
+NFL_202211100car,2022,10.0,regular,2022-11-10,Carolina Panthers,Atlanta Falcons,NFL_134943,NFL_134942,25,15,40,10,home,pro_football_reference
+NFL_202211130buf,2022,10.0,regular,2022-11-13,Buffalo Bills,Minnesota Vikings,NFL_134918,NFL_134941,30,33,63,3,away,pro_football_reference
+NFL_202211130chi,2022,10.0,regular,2022-11-13,Chicago Bears,Detroit Lions,NFL_134938,NFL_134939,30,31,61,1,away,pro_football_reference
+NFL_202211130gnb,2022,10.0,regular,2022-11-13,Green Bay Packers,Dallas Cowboys,NFL_134940,NFL_134934,31,28,59,3,home,pro_football_reference
+NFL_202211130kan,2022,10.0,regular,2022-11-13,Kansas City Chiefs,Jacksonville Jaguars,NFL_134931,NFL_134928,27,17,44,10,home,pro_football_reference
+NFL_202211130mia,2022,10.0,regular,2022-11-13,Miami Dolphins,Cleveland Browns,NFL_134919,NFL_134924,39,17,56,22,home,pro_football_reference
+NFL_202211130nyg,2022,10.0,regular,2022-11-13,New York Giants,Houston Texans,NFL_134935,NFL_134926,24,16,40,8,home,pro_football_reference
+NFL_202211130oti,2022,10.0,regular,2022-11-13,Tennessee Titans,Denver Broncos,NFL_134929,NFL_134930,17,10,27,7,home,pro_football_reference
+NFL_202211130pit,2022,10.0,regular,2022-11-13,Pittsburgh Steelers,New Orleans Saints,NFL_134925,NFL_134944,20,10,30,10,home,pro_football_reference
+NFL_202211130rai,2022,10.0,regular,2022-11-13,Las Vegas Raiders,Indianapolis Colts,NFL_134932,NFL_134927,20,25,45,5,away,pro_football_reference
+NFL_202211130ram,2022,10.0,regular,2022-11-13,Los Angeles Rams,Arizona Cardinals,NFL_135907,NFL_134946,17,27,44,10,away,pro_football_reference
+NFL_202211130sfo,2022,10.0,regular,2022-11-13,San Francisco 49ers,Los Angeles Chargers,NFL_134948,NFL_135908,22,16,38,6,home,pro_football_reference
+NFL_202211130tam,2022,10.0,regular,2022-11-13,Tampa Bay Buccaneers,Seattle Seahawks,NFL_134945,NFL_134949,21,16,37,5,home,pro_football_reference
+NFL_202211140phi,2022,10.0,regular,2022-11-14,Philadelphia Eagles,Washington Commanders,NFL_134936,NFL_134937,21,32,53,11,away,pro_football_reference
+NFL_202211170gnb,2022,11.0,regular,2022-11-17,Green Bay Packers,Tennessee Titans,NFL_134940,NFL_134929,17,27,44,10,away,pro_football_reference
+NFL_202211200atl,2022,11.0,regular,2022-11-20,Atlanta Falcons,Chicago Bears,NFL_134942,NFL_134938,27,24,51,3,home,pro_football_reference
+NFL_202211200buf,2022,11.0,regular,2022-11-20,Buffalo Bills,Cleveland Browns,NFL_134918,NFL_134924,31,23,54,8,home,pro_football_reference
+NFL_202211200clt,2022,11.0,regular,2022-11-20,Indianapolis Colts,Philadelphia Eagles,NFL_134927,NFL_134936,16,17,33,1,away,pro_football_reference
+NFL_202211200den,2022,11.0,regular,2022-11-20,Denver Broncos,Las Vegas Raiders,NFL_134930,NFL_134932,16,22,38,6,away,pro_football_reference
+NFL_202211200htx,2022,11.0,regular,2022-11-20,Houston Texans,Washington Commanders,NFL_134926,NFL_134937,10,23,33,13,away,pro_football_reference
+NFL_202211200min,2022,11.0,regular,2022-11-20,Minnesota Vikings,Dallas Cowboys,NFL_134941,NFL_134934,3,40,43,37,away,pro_football_reference
+NFL_202211200nor,2022,11.0,regular,2022-11-20,New Orleans Saints,Los Angeles Rams,NFL_134944,NFL_135907,27,20,47,7,home,pro_football_reference
+NFL_202211200nwe,2022,11.0,regular,2022-11-20,New England Patriots,New York Jets,NFL_134920,NFL_134921,10,3,13,7,home,pro_football_reference
+NFL_202211200nyg,2022,11.0,regular,2022-11-20,New York Giants,Detroit Lions,NFL_134935,NFL_134939,18,31,49,13,away,pro_football_reference
+NFL_202211200pit,2022,11.0,regular,2022-11-20,Pittsburgh Steelers,Cincinnati Bengals,NFL_134925,NFL_134923,30,37,67,7,away,pro_football_reference
+NFL_202211200rav,2022,11.0,regular,2022-11-20,Baltimore Ravens,Carolina Panthers,NFL_134922,NFL_134943,13,3,16,10,home,pro_football_reference
+NFL_202211200sdg,2022,11.0,regular,2022-11-20,Los Angeles Chargers,Kansas City Chiefs,NFL_135908,NFL_134931,27,30,57,3,away,pro_football_reference
+NFL_202211210crd,2022,11.0,regular,2022-11-21,Arizona Cardinals,San Francisco 49ers,NFL_134946,NFL_134948,10,38,48,28,away,pro_football_reference
+NFL_202211240dal,2022,12.0,regular,2022-11-24,Dallas Cowboys,New York Giants,NFL_134934,NFL_134935,28,20,48,8,home,pro_football_reference
+NFL_202211240det,2022,12.0,regular,2022-11-24,Detroit Lions,Buffalo Bills,NFL_134939,NFL_134918,25,28,53,3,away,pro_football_reference
+NFL_202211240min,2022,12.0,regular,2022-11-24,Minnesota Vikings,New England Patriots,NFL_134941,NFL_134920,33,26,59,7,home,pro_football_reference
+NFL_202211270car,2022,12.0,regular,2022-11-27,Carolina Panthers,Denver Broncos,NFL_134943,NFL_134930,23,10,33,13,home,pro_football_reference
+NFL_202211270cle,2022,12.0,regular,2022-11-27,Cleveland Browns,Tampa Bay Buccaneers,NFL_134924,NFL_134945,23,17,40,6,home,pro_football_reference
+NFL_202211270crd,2022,12.0,regular,2022-11-27,Arizona Cardinals,Los Angeles Chargers,NFL_134946,NFL_135908,24,25,49,1,away,pro_football_reference
+NFL_202211270jax,2022,12.0,regular,2022-11-27,Jacksonville Jaguars,Baltimore Ravens,NFL_134928,NFL_134922,28,27,55,1,home,pro_football_reference
+NFL_202211270kan,2022,12.0,regular,2022-11-27,Kansas City Chiefs,Los Angeles Rams,NFL_134931,NFL_135907,26,10,36,16,home,pro_football_reference
+NFL_202211270mia,2022,12.0,regular,2022-11-27,Miami Dolphins,Houston Texans,NFL_134919,NFL_134926,30,15,45,15,home,pro_football_reference
+NFL_202211270nyj,2022,12.0,regular,2022-11-27,New York Jets,Chicago Bears,NFL_134921,NFL_134938,31,10,41,21,home,pro_football_reference
+NFL_202211270oti,2022,12.0,regular,2022-11-27,Tennessee Titans,Cincinnati Bengals,NFL_134929,NFL_134923,16,20,36,4,away,pro_football_reference
+NFL_202211270phi,2022,12.0,regular,2022-11-27,Philadelphia Eagles,Green Bay Packers,NFL_134936,NFL_134940,40,33,73,7,home,pro_football_reference
+NFL_202211270sea,2022,12.0,regular,2022-11-27,Seattle Seahawks,Las Vegas Raiders,NFL_134949,NFL_134932,34,40,74,6,away,pro_football_reference
+NFL_202211270sfo,2022,12.0,regular,2022-11-27,San Francisco 49ers,New Orleans Saints,NFL_134948,NFL_134944,13,0,13,13,home,pro_football_reference
+NFL_202211270was,2022,12.0,regular,2022-11-27,Washington Commanders,Atlanta Falcons,NFL_134937,NFL_134942,19,13,32,6,home,pro_football_reference
+NFL_202211280clt,2022,12.0,regular,2022-11-28,Indianapolis Colts,Pittsburgh Steelers,NFL_134927,NFL_134925,17,24,41,7,away,pro_football_reference
+NFL_202212010nwe,2022,13.0,regular,2022-12-01,New England Patriots,Buffalo Bills,NFL_134920,NFL_134918,10,24,34,14,away,pro_football_reference
+NFL_202212040atl,2022,13.0,regular,2022-12-04,Atlanta Falcons,Pittsburgh Steelers,NFL_134942,NFL_134925,16,19,35,3,away,pro_football_reference
+NFL_202212040chi,2022,13.0,regular,2022-12-04,Chicago Bears,Green Bay Packers,NFL_134938,NFL_134940,19,28,47,9,away,pro_football_reference
+NFL_202212040cin,2022,13.0,regular,2022-12-04,Cincinnati Bengals,Kansas City Chiefs,NFL_134923,NFL_134931,27,24,51,3,home,pro_football_reference
+NFL_202212040dal,2022,13.0,regular,2022-12-04,Dallas Cowboys,Indianapolis Colts,NFL_134934,NFL_134927,54,19,73,35,home,pro_football_reference
+NFL_202212040det,2022,13.0,regular,2022-12-04,Detroit Lions,Jacksonville Jaguars,NFL_134939,NFL_134928,40,14,54,26,home,pro_football_reference
+NFL_202212040htx,2022,13.0,regular,2022-12-04,Houston Texans,Cleveland Browns,NFL_134926,NFL_134924,14,27,41,13,away,pro_football_reference
+NFL_202212040min,2022,13.0,regular,2022-12-04,Minnesota Vikings,New York Jets,NFL_134941,NFL_134921,27,22,49,5,home,pro_football_reference
+NFL_202212040nyg,2022,13.0,regular,2022-12-04,New York Giants,Washington Commanders,NFL_134935,NFL_134937,20,20,40,0,tie,pro_football_reference
+NFL_202212040phi,2022,13.0,regular,2022-12-04,Philadelphia Eagles,Tennessee Titans,NFL_134936,NFL_134929,35,10,45,25,home,pro_football_reference
+NFL_202212040rai,2022,13.0,regular,2022-12-04,Las Vegas Raiders,Los Angeles Chargers,NFL_134932,NFL_135908,27,20,47,7,home,pro_football_reference
+NFL_202212040ram,2022,13.0,regular,2022-12-04,Los Angeles Rams,Seattle Seahawks,NFL_135907,NFL_134949,23,27,50,4,away,pro_football_reference
+NFL_202212040rav,2022,13.0,regular,2022-12-04,Baltimore Ravens,Denver Broncos,NFL_134922,NFL_134930,10,9,19,1,home,pro_football_reference
+NFL_202212040sfo,2022,13.0,regular,2022-12-04,San Francisco 49ers,Miami Dolphins,NFL_134948,NFL_134919,33,17,50,16,home,pro_football_reference
+NFL_202212050tam,2022,13.0,regular,2022-12-05,Tampa Bay Buccaneers,New Orleans Saints,NFL_134945,NFL_134944,17,16,33,1,home,pro_football_reference
+NFL_202212080ram,2022,14.0,regular,2022-12-08,Los Angeles Rams,Las Vegas Raiders,NFL_135907,NFL_134932,17,16,33,1,home,pro_football_reference
+NFL_202212110buf,2022,14.0,regular,2022-12-11,Buffalo Bills,New York Jets,NFL_134918,NFL_134921,20,12,32,8,home,pro_football_reference
+NFL_202212110cin,2022,14.0,regular,2022-12-11,Cincinnati Bengals,Cleveland Browns,NFL_134923,NFL_134924,23,10,33,13,home,pro_football_reference
+NFL_202212110dal,2022,14.0,regular,2022-12-11,Dallas Cowboys,Houston Texans,NFL_134934,NFL_134926,27,23,50,4,home,pro_football_reference
+NFL_202212110den,2022,14.0,regular,2022-12-11,Denver Broncos,Kansas City Chiefs,NFL_134930,NFL_134931,28,34,62,6,away,pro_football_reference
+NFL_202212110det,2022,14.0,regular,2022-12-11,Detroit Lions,Minnesota Vikings,NFL_134939,NFL_134941,34,23,57,11,home,pro_football_reference
+NFL_202212110nyg,2022,14.0,regular,2022-12-11,New York Giants,Philadelphia Eagles,NFL_134935,NFL_134936,22,48,70,26,away,pro_football_reference
+NFL_202212110oti,2022,14.0,regular,2022-12-11,Tennessee Titans,Jacksonville Jaguars,NFL_134929,NFL_134928,22,36,58,14,away,pro_football_reference
+NFL_202212110pit,2022,14.0,regular,2022-12-11,Pittsburgh Steelers,Baltimore Ravens,NFL_134925,NFL_134922,14,16,30,2,away,pro_football_reference
+NFL_202212110sdg,2022,14.0,regular,2022-12-11,Los Angeles Chargers,Miami Dolphins,NFL_135908,NFL_134919,23,17,40,6,home,pro_football_reference
+NFL_202212110sea,2022,14.0,regular,2022-12-11,Seattle Seahawks,Carolina Panthers,NFL_134949,NFL_134943,24,30,54,6,away,pro_football_reference
+NFL_202212110sfo,2022,14.0,regular,2022-12-11,San Francisco 49ers,Tampa Bay Buccaneers,NFL_134948,NFL_134945,35,7,42,28,home,pro_football_reference
+NFL_202212120crd,2022,14.0,regular,2022-12-12,Arizona Cardinals,New England Patriots,NFL_134946,NFL_134920,13,27,40,14,away,pro_football_reference
+NFL_202212150sea,2022,15.0,regular,2022-12-15,Seattle Seahawks,San Francisco 49ers,NFL_134949,NFL_134948,13,21,34,8,away,pro_football_reference
+NFL_202212170buf,2022,15.0,regular,2022-12-17,Buffalo Bills,Miami Dolphins,NFL_134918,NFL_134919,32,29,61,3,home,pro_football_reference
+NFL_202212170cle,2022,15.0,regular,2022-12-17,Cleveland Browns,Baltimore Ravens,NFL_134924,NFL_134922,13,3,16,10,home,pro_football_reference
+NFL_202212170min,2022,15.0,regular,2022-12-17,Minnesota Vikings,Indianapolis Colts,NFL_134941,NFL_134927,39,36,75,3,home,pro_football_reference
+NFL_202212180car,2022,15.0,regular,2022-12-18,Carolina Panthers,Pittsburgh Steelers,NFL_134943,NFL_134925,16,24,40,8,away,pro_football_reference
+NFL_202212180chi,2022,15.0,regular,2022-12-18,Chicago Bears,Philadelphia Eagles,NFL_134938,NFL_134936,20,25,45,5,away,pro_football_reference
+NFL_202212180den,2022,15.0,regular,2022-12-18,Denver Broncos,Arizona Cardinals,NFL_134930,NFL_134946,24,15,39,9,home,pro_football_reference
+NFL_202212180htx,2022,15.0,regular,2022-12-18,Houston Texans,Kansas City Chiefs,NFL_134926,NFL_134931,24,30,54,6,away,pro_football_reference
+NFL_202212180jax,2022,15.0,regular,2022-12-18,Jacksonville Jaguars,Dallas Cowboys,NFL_134928,NFL_134934,40,34,74,6,home,pro_football_reference
+NFL_202212180nor,2022,15.0,regular,2022-12-18,New Orleans Saints,Atlanta Falcons,NFL_134944,NFL_134942,21,18,39,3,home,pro_football_reference
+NFL_202212180nyj,2022,15.0,regular,2022-12-18,New York Jets,Detroit Lions,NFL_134921,NFL_134939,17,20,37,3,away,pro_football_reference
+NFL_202212180rai,2022,15.0,regular,2022-12-18,Las Vegas Raiders,New England Patriots,NFL_134932,NFL_134920,30,24,54,6,home,pro_football_reference
+NFL_202212180sdg,2022,15.0,regular,2022-12-18,Los Angeles Chargers,Tennessee Titans,NFL_135908,NFL_134929,17,14,31,3,home,pro_football_reference
+NFL_202212180tam,2022,15.0,regular,2022-12-18,Tampa Bay Buccaneers,Cincinnati Bengals,NFL_134945,NFL_134923,23,34,57,11,away,pro_football_reference
+NFL_202212180was,2022,15.0,regular,2022-12-18,Washington Commanders,New York Giants,NFL_134937,NFL_134935,12,20,32,8,away,pro_football_reference
+NFL_202212190gnb,2022,15.0,regular,2022-12-19,Green Bay Packers,Los Angeles Rams,NFL_134940,NFL_135907,24,12,36,12,home,pro_football_reference
+NFL_202212220nyj,2022,16.0,regular,2022-12-22,New York Jets,Jacksonville Jaguars,NFL_134921,NFL_134928,3,19,22,16,away,pro_football_reference
+NFL_202212240car,2022,16.0,regular,2022-12-24,Carolina Panthers,Detroit Lions,NFL_134943,NFL_134939,37,23,60,14,home,pro_football_reference
+NFL_202212240chi,2022,16.0,regular,2022-12-24,Chicago Bears,Buffalo Bills,NFL_134938,NFL_134918,13,35,48,22,away,pro_football_reference
+NFL_202212240cle,2022,16.0,regular,2022-12-24,Cleveland Browns,New Orleans Saints,NFL_134924,NFL_134944,10,17,27,7,away,pro_football_reference
+NFL_202212240dal,2022,16.0,regular,2022-12-24,Dallas Cowboys,Philadelphia Eagles,NFL_134934,NFL_134936,40,34,74,6,home,pro_football_reference
+NFL_202212240kan,2022,16.0,regular,2022-12-24,Kansas City Chiefs,Seattle Seahawks,NFL_134931,NFL_134949,24,10,34,14,home,pro_football_reference
+NFL_202212240min,2022,16.0,regular,2022-12-24,Minnesota Vikings,New York Giants,NFL_134941,NFL_134935,27,24,51,3,home,pro_football_reference
+NFL_202212240nwe,2022,16.0,regular,2022-12-24,New England Patriots,Cincinnati Bengals,NFL_134920,NFL_134923,18,22,40,4,away,pro_football_reference
+NFL_202212240oti,2022,16.0,regular,2022-12-24,Tennessee Titans,Houston Texans,NFL_134929,NFL_134926,14,19,33,5,away,pro_football_reference
+NFL_202212240pit,2022,16.0,regular,2022-12-24,Pittsburgh Steelers,Las Vegas Raiders,NFL_134925,NFL_134932,13,10,23,3,home,pro_football_reference
+NFL_202212240rav,2022,16.0,regular,2022-12-24,Baltimore Ravens,Atlanta Falcons,NFL_134922,NFL_134942,17,9,26,8,home,pro_football_reference
+NFL_202212240sfo,2022,16.0,regular,2022-12-24,San Francisco 49ers,Washington Commanders,NFL_134948,NFL_134937,37,20,57,17,home,pro_football_reference
+NFL_202212250crd,2022,16.0,regular,2022-12-25,Arizona Cardinals,Tampa Bay Buccaneers,NFL_134946,NFL_134945,16,19,35,3,away,pro_football_reference
+NFL_202212250mia,2022,16.0,regular,2022-12-25,Miami Dolphins,Green Bay Packers,NFL_134919,NFL_134940,20,26,46,6,away,pro_football_reference
+NFL_202212250ram,2022,16.0,regular,2022-12-25,Los Angeles Rams,Denver Broncos,NFL_135907,NFL_134930,51,14,65,37,home,pro_football_reference
+NFL_202212260clt,2022,16.0,regular,2022-12-26,Indianapolis Colts,Los Angeles Chargers,NFL_134927,NFL_135908,3,20,23,17,away,pro_football_reference
+NFL_202212290oti,2022,17.0,regular,2022-12-29,Tennessee Titans,Dallas Cowboys,NFL_134929,NFL_134934,13,27,40,14,away,pro_football_reference
+NFL_202301010atl,2022,17.0,regular,2023-01-01,Atlanta Falcons,Arizona Cardinals,NFL_134942,NFL_134946,20,19,39,1,home,pro_football_reference
+NFL_202301010det,2022,17.0,regular,2023-01-01,Detroit Lions,Chicago Bears,NFL_134939,NFL_134938,41,10,51,31,home,pro_football_reference
+NFL_202301010gnb,2022,17.0,regular,2023-01-01,Green Bay Packers,Minnesota Vikings,NFL_134940,NFL_134941,41,17,58,24,home,pro_football_reference
+NFL_202301010htx,2022,17.0,regular,2023-01-01,Houston Texans,Jacksonville Jaguars,NFL_134926,NFL_134928,3,31,34,28,away,pro_football_reference
+NFL_202301010kan,2022,17.0,regular,2023-01-01,Kansas City Chiefs,Denver Broncos,NFL_134931,NFL_134930,27,24,51,3,home,pro_football_reference
+NFL_202301010nwe,2022,17.0,regular,2023-01-01,New England Patriots,Miami Dolphins,NFL_134920,NFL_134919,23,21,44,2,home,pro_football_reference
+NFL_202301010nyg,2022,17.0,regular,2023-01-01,New York Giants,Indianapolis Colts,NFL_134935,NFL_134927,38,10,48,28,home,pro_football_reference
+NFL_202301010phi,2022,17.0,regular,2023-01-01,Philadelphia Eagles,New Orleans Saints,NFL_134936,NFL_134944,10,20,30,10,away,pro_football_reference
+NFL_202301010rai,2022,17.0,regular,2023-01-01,Las Vegas Raiders,San Francisco 49ers,NFL_134932,NFL_134948,34,37,71,3,away,pro_football_reference
+NFL_202301010rav,2022,17.0,regular,2023-01-01,Baltimore Ravens,Pittsburgh Steelers,NFL_134922,NFL_134925,13,16,29,3,away,pro_football_reference
+NFL_202301010sdg,2022,17.0,regular,2023-01-01,Los Angeles Chargers,Los Angeles Rams,NFL_135908,NFL_135907,31,10,41,21,home,pro_football_reference
+NFL_202301010sea,2022,17.0,regular,2023-01-01,Seattle Seahawks,New York Jets,NFL_134949,NFL_134921,23,6,29,17,home,pro_football_reference
+NFL_202301010tam,2022,17.0,regular,2023-01-01,Tampa Bay Buccaneers,Carolina Panthers,NFL_134945,NFL_134943,30,24,54,6,home,pro_football_reference
+NFL_202301010was,2022,17.0,regular,2023-01-01,Washington Commanders,Cleveland Browns,NFL_134937,NFL_134924,10,24,34,14,away,pro_football_reference
+NFL_202301070jax,2022,18.0,regular,2023-01-07,Jacksonville Jaguars,Tennessee Titans,NFL_134928,NFL_134929,20,16,36,4,home,pro_football_reference
+NFL_202301070rai,2022,18.0,regular,2023-01-07,Las Vegas Raiders,Kansas City Chiefs,NFL_134932,NFL_134931,13,31,44,18,away,pro_football_reference
+NFL_202301080atl,2022,18.0,regular,2023-01-08,Atlanta Falcons,Tampa Bay Buccaneers,NFL_134942,NFL_134945,30,17,47,13,home,pro_football_reference
+NFL_202301080buf,2022,18.0,regular,2023-01-08,Buffalo Bills,New England Patriots,NFL_134918,NFL_134920,35,23,58,12,home,pro_football_reference
+NFL_202301080chi,2022,18.0,regular,2023-01-08,Chicago Bears,Minnesota Vikings,NFL_134938,NFL_134941,13,29,42,16,away,pro_football_reference
+NFL_202301080cin,2022,18.0,regular,2023-01-08,Cincinnati Bengals,Baltimore Ravens,NFL_134923,NFL_134922,27,16,43,11,home,pro_football_reference
+NFL_202301080clt,2022,18.0,regular,2023-01-08,Indianapolis Colts,Houston Texans,NFL_134927,NFL_134926,31,32,63,1,away,pro_football_reference
+NFL_202301080den,2022,18.0,regular,2023-01-08,Denver Broncos,Los Angeles Chargers,NFL_134930,NFL_135908,31,28,59,3,home,pro_football_reference
+NFL_202301080gnb,2022,18.0,regular,2023-01-08,Green Bay Packers,Detroit Lions,NFL_134940,NFL_134939,16,20,36,4,away,pro_football_reference
+NFL_202301080mia,2022,18.0,regular,2023-01-08,Miami Dolphins,New York Jets,NFL_134919,NFL_134921,11,6,17,5,home,pro_football_reference
+NFL_202301080nor,2022,18.0,regular,2023-01-08,New Orleans Saints,Carolina Panthers,NFL_134944,NFL_134943,7,10,17,3,away,pro_football_reference
+NFL_202301080phi,2022,18.0,regular,2023-01-08,Philadelphia Eagles,New York Giants,NFL_134936,NFL_134935,22,16,38,6,home,pro_football_reference
+NFL_202301080pit,2022,18.0,regular,2023-01-08,Pittsburgh Steelers,Cleveland Browns,NFL_134925,NFL_134924,28,14,42,14,home,pro_football_reference
+NFL_202301080sea,2022,18.0,regular,2023-01-08,Seattle Seahawks,Los Angeles Rams,NFL_134949,NFL_135907,19,16,35,3,home,pro_football_reference
+NFL_202301080sfo,2022,18.0,regular,2023-01-08,San Francisco 49ers,Arizona Cardinals,NFL_134948,NFL_134946,38,13,51,25,home,pro_football_reference
+NFL_202301080was,2022,18.0,regular,2023-01-08,Washington Commanders,Dallas Cowboys,NFL_134937,NFL_134934,26,6,32,20,home,pro_football_reference
+NFL_202301140jax,2022,,,2023-01-14,Jacksonville Jaguars,Los Angeles Chargers,NFL_134928,NFL_135908,31,30,61,1,home,pro_football_reference
+NFL_202301140sfo,2022,,,2023-01-14,San Francisco 49ers,Seattle Seahawks,NFL_134948,NFL_134949,41,23,64,18,home,pro_football_reference
+NFL_202301150buf,2022,,,2023-01-15,Buffalo Bills,Miami Dolphins,NFL_134918,NFL_134919,34,31,65,3,home,pro_football_reference
+NFL_202301150cin,2022,,,2023-01-15,Cincinnati Bengals,Baltimore Ravens,NFL_134923,NFL_134922,24,17,41,7,home,pro_football_reference
+NFL_202301150min,2022,,,2023-01-15,Minnesota Vikings,New York Giants,NFL_134941,NFL_134935,24,31,55,7,away,pro_football_reference
+NFL_202301160tam,2022,,,2023-01-16,Tampa Bay Buccaneers,Dallas Cowboys,NFL_134945,NFL_134934,14,31,45,17,away,pro_football_reference
+NFL_202301210kan,2022,,,2023-01-21,Kansas City Chiefs,Jacksonville Jaguars,NFL_134931,NFL_134928,27,20,47,7,home,pro_football_reference
+NFL_202301210phi,2022,,,2023-01-21,Philadelphia Eagles,New York Giants,NFL_134936,NFL_134935,38,7,45,31,home,pro_football_reference
+NFL_202301220buf,2022,,,2023-01-22,Buffalo Bills,Cincinnati Bengals,NFL_134918,NFL_134923,10,27,37,17,away,pro_football_reference
+NFL_202301220sfo,2022,,,2023-01-22,San Francisco 49ers,Dallas Cowboys,NFL_134948,NFL_134934,19,12,31,7,home,pro_football_reference
+NFL_202301290kan,2022,,,2023-01-29,Kansas City Chiefs,Cincinnati Bengals,NFL_134931,NFL_134923,23,20,43,3,home,pro_football_reference
+NFL_202301290phi,2022,,,2023-01-29,Philadelphia Eagles,San Francisco 49ers,NFL_134936,NFL_134948,31,7,38,24,home,pro_football_reference
+NFL_202302120phi,2022,,,2023-02-12,Kansas City Chiefs,Philadelphia Eagles,NFL_134931,NFL_134936,38,35,73,3,home,pro_football_reference
+NFL_202309070kan,2023,1.0,regular,2023-09-07,Kansas City Chiefs,Detroit Lions,NFL_134931,NFL_134939,20,21,41,1,away,pro_football_reference
+NFL_202309100atl,2023,1.0,regular,2023-09-10,Atlanta Falcons,Carolina Panthers,NFL_134942,NFL_134943,24,10,34,14,home,pro_football_reference
+NFL_202309100chi,2023,1.0,regular,2023-09-10,Chicago Bears,Green Bay Packers,NFL_134938,NFL_134940,20,38,58,18,away,pro_football_reference
+NFL_202309100cle,2023,1.0,regular,2023-09-10,Cleveland Browns,Cincinnati Bengals,NFL_134924,NFL_134923,24,3,27,21,home,pro_football_reference
+NFL_202309100clt,2023,1.0,regular,2023-09-10,Indianapolis Colts,Jacksonville Jaguars,NFL_134927,NFL_134928,21,31,52,10,away,pro_football_reference
+NFL_202309100den,2023,1.0,regular,2023-09-10,Denver Broncos,Las Vegas Raiders,NFL_134930,NFL_134932,16,17,33,1,away,pro_football_reference
+NFL_202309100min,2023,1.0,regular,2023-09-10,Minnesota Vikings,Tampa Bay Buccaneers,NFL_134941,NFL_134945,17,20,37,3,away,pro_football_reference
+NFL_202309100nor,2023,1.0,regular,2023-09-10,New Orleans Saints,Tennessee Titans,NFL_134944,NFL_134929,16,15,31,1,home,pro_football_reference
+NFL_202309100nwe,2023,1.0,regular,2023-09-10,New England Patriots,Philadelphia Eagles,NFL_134920,NFL_134936,20,25,45,5,away,pro_football_reference
+NFL_202309100nyg,2023,1.0,regular,2023-09-10,New York Giants,Dallas Cowboys,NFL_134935,NFL_134934,0,40,40,40,away,pro_football_reference
+NFL_202309100pit,2023,1.0,regular,2023-09-10,Pittsburgh Steelers,San Francisco 49ers,NFL_134925,NFL_134948,7,30,37,23,away,pro_football_reference
+NFL_202309100rav,2023,1.0,regular,2023-09-10,Baltimore Ravens,Houston Texans,NFL_134922,NFL_134926,25,9,34,16,home,pro_football_reference
+NFL_202309100sdg,2023,1.0,regular,2023-09-10,Los Angeles Chargers,Miami Dolphins,NFL_135908,NFL_134919,34,36,70,2,away,pro_football_reference
+NFL_202309100sea,2023,1.0,regular,2023-09-10,Seattle Seahawks,Los Angeles Rams,NFL_134949,NFL_135907,13,30,43,17,away,pro_football_reference
+NFL_202309100was,2023,1.0,regular,2023-09-10,Washington Commanders,Arizona Cardinals,NFL_134937,NFL_134946,20,16,36,4,home,pro_football_reference
+NFL_202309110nyj,2023,1.0,regular,2023-09-11,New York Jets,Buffalo Bills,NFL_134921,NFL_134918,22,16,38,6,home,pro_football_reference
+NFL_202309140phi,2023,2.0,regular,2023-09-14,Philadelphia Eagles,Minnesota Vikings,NFL_134936,NFL_134941,34,28,62,6,home,pro_football_reference
+NFL_202309170atl,2023,2.0,regular,2023-09-17,Atlanta Falcons,Green Bay Packers,NFL_134942,NFL_134940,25,24,49,1,home,pro_football_reference
+NFL_202309170buf,2023,2.0,regular,2023-09-17,Buffalo Bills,Las Vegas Raiders,NFL_134918,NFL_134932,38,10,48,28,home,pro_football_reference
+NFL_202309170cin,2023,2.0,regular,2023-09-17,Cincinnati Bengals,Baltimore Ravens,NFL_134923,NFL_134922,24,27,51,3,away,pro_football_reference
+NFL_202309170crd,2023,2.0,regular,2023-09-17,Arizona Cardinals,New York Giants,NFL_134946,NFL_134935,28,31,59,3,away,pro_football_reference
+NFL_202309170dal,2023,2.0,regular,2023-09-17,Dallas Cowboys,New York Jets,NFL_134934,NFL_134921,30,10,40,20,home,pro_football_reference
+NFL_202309170den,2023,2.0,regular,2023-09-17,Denver Broncos,Washington Commanders,NFL_134930,NFL_134937,33,35,68,2,away,pro_football_reference
+NFL_202309170det,2023,2.0,regular,2023-09-17,Detroit Lions,Seattle Seahawks,NFL_134939,NFL_134949,31,37,68,6,away,pro_football_reference
+NFL_202309170htx,2023,2.0,regular,2023-09-17,Houston Texans,Indianapolis Colts,NFL_134926,NFL_134927,20,31,51,11,away,pro_football_reference
+NFL_202309170jax,2023,2.0,regular,2023-09-17,Jacksonville Jaguars,Kansas City Chiefs,NFL_134928,NFL_134931,9,17,26,8,away,pro_football_reference
+NFL_202309170nwe,2023,2.0,regular,2023-09-17,New England Patriots,Miami Dolphins,NFL_134920,NFL_134919,17,24,41,7,away,pro_football_reference
+NFL_202309170oti,2023,2.0,regular,2023-09-17,Tennessee Titans,Los Angeles Chargers,NFL_134929,NFL_135908,27,24,51,3,home,pro_football_reference
+NFL_202309170ram,2023,2.0,regular,2023-09-17,Los Angeles Rams,San Francisco 49ers,NFL_135907,NFL_134948,23,30,53,7,away,pro_football_reference
+NFL_202309170tam,2023,2.0,regular,2023-09-17,Tampa Bay Buccaneers,Chicago Bears,NFL_134945,NFL_134938,27,17,44,10,home,pro_football_reference
+NFL_202309180car,2023,2.0,regular,2023-09-18,Carolina Panthers,New Orleans Saints,NFL_134943,NFL_134944,17,20,37,3,away,pro_football_reference
+NFL_202309180pit,2023,2.0,regular,2023-09-18,Pittsburgh Steelers,Cleveland Browns,NFL_134925,NFL_134924,26,22,48,4,home,pro_football_reference
+NFL_202309210sfo,2023,3.0,regular,2023-09-21,San Francisco 49ers,New York Giants,NFL_134948,NFL_134935,30,12,42,18,home,pro_football_reference
+NFL_202309240cle,2023,3.0,regular,2023-09-24,Cleveland Browns,Tennessee Titans,NFL_134924,NFL_134929,27,3,30,24,home,pro_football_reference
+NFL_202309240crd,2023,3.0,regular,2023-09-24,Arizona Cardinals,Dallas Cowboys,NFL_134946,NFL_134934,28,16,44,12,home,pro_football_reference
+NFL_202309240det,2023,3.0,regular,2023-09-24,Detroit Lions,Atlanta Falcons,NFL_134939,NFL_134942,20,6,26,14,home,pro_football_reference
+NFL_202309240gnb,2023,3.0,regular,2023-09-24,Green Bay Packers,New Orleans Saints,NFL_134940,NFL_134944,18,17,35,1,home,pro_football_reference
+NFL_202309240jax,2023,3.0,regular,2023-09-24,Jacksonville Jaguars,Houston Texans,NFL_134928,NFL_134926,17,37,54,20,away,pro_football_reference
+NFL_202309240kan,2023,3.0,regular,2023-09-24,Kansas City Chiefs,Chicago Bears,NFL_134931,NFL_134938,41,10,51,31,home,pro_football_reference
+NFL_202309240mia,2023,3.0,regular,2023-09-24,Miami Dolphins,Denver Broncos,NFL_134919,NFL_134930,70,20,90,50,home,pro_football_reference
+NFL_202309240min,2023,3.0,regular,2023-09-24,Minnesota Vikings,Los Angeles Chargers,NFL_134941,NFL_135908,24,28,52,4,away,pro_football_reference
+NFL_202309240nyj,2023,3.0,regular,2023-09-24,New York Jets,New England Patriots,NFL_134921,NFL_134920,10,15,25,5,away,pro_football_reference
+NFL_202309240rai,2023,3.0,regular,2023-09-24,Las Vegas Raiders,Pittsburgh Steelers,NFL_134932,NFL_134925,18,23,41,5,away,pro_football_reference
+NFL_202309240rav,2023,3.0,regular,2023-09-24,Baltimore Ravens,Indianapolis Colts,NFL_134922,NFL_134927,19,22,41,3,away,pro_football_reference
+NFL_202309240sea,2023,3.0,regular,2023-09-24,Seattle Seahawks,Carolina Panthers,NFL_134949,NFL_134943,37,27,64,10,home,pro_football_reference
+NFL_202309240was,2023,3.0,regular,2023-09-24,Washington Commanders,Buffalo Bills,NFL_134937,NFL_134918,3,37,40,34,away,pro_football_reference
+NFL_202309250cin,2023,3.0,regular,2023-09-25,Cincinnati Bengals,Los Angeles Rams,NFL_134923,NFL_135907,19,16,35,3,home,pro_football_reference
+NFL_202309250tam,2023,3.0,regular,2023-09-25,Tampa Bay Buccaneers,Philadelphia Eagles,NFL_134945,NFL_134936,11,25,36,14,away,pro_football_reference
+NFL_202309280gnb,2023,4.0,regular,2023-09-28,Green Bay Packers,Detroit Lions,NFL_134940,NFL_134939,20,34,54,14,away,pro_football_reference
+NFL_202310010buf,2023,4.0,regular,2023-10-01,Buffalo Bills,Miami Dolphins,NFL_134918,NFL_134919,48,20,68,28,home,pro_football_reference
+NFL_202310010car,2023,4.0,regular,2023-10-01,Carolina Panthers,Minnesota Vikings,NFL_134943,NFL_134941,13,21,34,8,away,pro_football_reference
+NFL_202310010chi,2023,4.0,regular,2023-10-01,Chicago Bears,Denver Broncos,NFL_134938,NFL_134930,28,31,59,3,away,pro_football_reference
+NFL_202310010cle,2023,4.0,regular,2023-10-01,Cleveland Browns,Baltimore Ravens,NFL_134924,NFL_134922,3,28,31,25,away,pro_football_reference
+NFL_202310010clt,2023,4.0,regular,2023-10-01,Indianapolis Colts,Los Angeles Rams,NFL_134927,NFL_135907,23,29,52,6,away,pro_football_reference
+NFL_202310010dal,2023,4.0,regular,2023-10-01,Dallas Cowboys,New England Patriots,NFL_134934,NFL_134920,38,3,41,35,home,pro_football_reference
+NFL_202310010htx,2023,4.0,regular,2023-10-01,Houston Texans,Pittsburgh Steelers,NFL_134926,NFL_134925,30,6,36,24,home,pro_football_reference
+NFL_202310010jax,2023,4.0,regular,2023-10-01,Jacksonville Jaguars,Atlanta Falcons,NFL_134928,NFL_134942,23,7,30,16,home,pro_football_reference
+NFL_202310010nor,2023,4.0,regular,2023-10-01,New Orleans Saints,Tampa Bay Buccaneers,NFL_134944,NFL_134945,9,26,35,17,away,pro_football_reference
+NFL_202310010nyj,2023,4.0,regular,2023-10-01,New York Jets,Kansas City Chiefs,NFL_134921,NFL_134931,20,23,43,3,away,pro_football_reference
+NFL_202310010oti,2023,4.0,regular,2023-10-01,Tennessee Titans,Cincinnati Bengals,NFL_134929,NFL_134923,27,3,30,24,home,pro_football_reference
+NFL_202310010phi,2023,4.0,regular,2023-10-01,Philadelphia Eagles,Washington Commanders,NFL_134936,NFL_134937,34,31,65,3,home,pro_football_reference
+NFL_202310010sdg,2023,4.0,regular,2023-10-01,Los Angeles Chargers,Las Vegas Raiders,NFL_135908,NFL_134932,24,17,41,7,home,pro_football_reference
+NFL_202310010sfo,2023,4.0,regular,2023-10-01,San Francisco 49ers,Arizona Cardinals,NFL_134948,NFL_134946,35,16,51,19,home,pro_football_reference
+NFL_202310020nyg,2023,4.0,regular,2023-10-02,New York Giants,Seattle Seahawks,NFL_134935,NFL_134949,3,24,27,21,away,pro_football_reference
+NFL_202310050was,2023,5.0,regular,2023-10-05,Washington Commanders,Chicago Bears,NFL_134937,NFL_134938,20,40,60,20,away,pro_football_reference
+NFL_202310080atl,2023,5.0,regular,2023-10-08,Atlanta Falcons,Houston Texans,NFL_134942,NFL_134926,21,19,40,2,home,pro_football_reference
+NFL_202310080buf,2023,5.0,regular,2023-10-08,Buffalo Bills,Jacksonville Jaguars,NFL_134918,NFL_134928,20,25,45,5,away,pro_football_reference
+NFL_202310080clt,2023,5.0,regular,2023-10-08,Indianapolis Colts,Tennessee Titans,NFL_134927,NFL_134929,23,16,39,7,home,pro_football_reference
+NFL_202310080crd,2023,5.0,regular,2023-10-08,Arizona Cardinals,Cincinnati Bengals,NFL_134946,NFL_134923,20,34,54,14,away,pro_football_reference
+NFL_202310080den,2023,5.0,regular,2023-10-08,Denver Broncos,New York Jets,NFL_134930,NFL_134921,21,31,52,10,away,pro_football_reference
+NFL_202310080det,2023,5.0,regular,2023-10-08,Detroit Lions,Carolina Panthers,NFL_134939,NFL_134943,42,24,66,18,home,pro_football_reference
+NFL_202310080mia,2023,5.0,regular,2023-10-08,Miami Dolphins,New York Giants,NFL_134919,NFL_134935,31,16,47,15,home,pro_football_reference
+NFL_202310080min,2023,5.0,regular,2023-10-08,Minnesota Vikings,Kansas City Chiefs,NFL_134941,NFL_134931,20,27,47,7,away,pro_football_reference
+NFL_202310080nwe,2023,5.0,regular,2023-10-08,New England Patriots,New Orleans Saints,NFL_134920,NFL_134944,0,34,34,34,away,pro_football_reference
+NFL_202310080pit,2023,5.0,regular,2023-10-08,Pittsburgh Steelers,Baltimore Ravens,NFL_134925,NFL_134922,17,10,27,7,home,pro_football_reference
+NFL_202310080ram,2023,5.0,regular,2023-10-08,Los Angeles Rams,Philadelphia Eagles,NFL_135907,NFL_134936,14,23,37,9,away,pro_football_reference
+NFL_202310080sfo,2023,5.0,regular,2023-10-08,San Francisco 49ers,Dallas Cowboys,NFL_134948,NFL_134934,42,10,52,32,home,pro_football_reference
+NFL_202310090rai,2023,5.0,regular,2023-10-09,Las Vegas Raiders,Green Bay Packers,NFL_134932,NFL_134940,17,13,30,4,home,pro_football_reference
+NFL_202310120kan,2023,6.0,regular,2023-10-12,Kansas City Chiefs,Denver Broncos,NFL_134931,NFL_134930,19,8,27,11,home,pro_football_reference
+NFL_202310150atl,2023,6.0,regular,2023-10-15,Atlanta Falcons,Washington Commanders,NFL_134942,NFL_134937,16,24,40,8,away,pro_football_reference
+NFL_202310150buf,2023,6.0,regular,2023-10-15,Buffalo Bills,New York Giants,NFL_134918,NFL_134935,14,9,23,5,home,pro_football_reference
+NFL_202310150chi,2023,6.0,regular,2023-10-15,Chicago Bears,Minnesota Vikings,NFL_134938,NFL_134941,13,19,32,6,away,pro_football_reference
+NFL_202310150cin,2023,6.0,regular,2023-10-15,Cincinnati Bengals,Seattle Seahawks,NFL_134923,NFL_134949,17,13,30,4,home,pro_football_reference
+NFL_202310150cle,2023,6.0,regular,2023-10-15,Cleveland Browns,San Francisco 49ers,NFL_134924,NFL_134948,19,17,36,2,home,pro_football_reference
+NFL_202310150htx,2023,6.0,regular,2023-10-15,Houston Texans,New Orleans Saints,NFL_134926,NFL_134944,20,13,33,7,home,pro_football_reference
+NFL_202310150jax,2023,6.0,regular,2023-10-15,Jacksonville Jaguars,Indianapolis Colts,NFL_134928,NFL_134927,37,20,57,17,home,pro_football_reference
+NFL_202310150mia,2023,6.0,regular,2023-10-15,Miami Dolphins,Carolina Panthers,NFL_134919,NFL_134943,42,21,63,21,home,pro_football_reference
+NFL_202310150nyj,2023,6.0,regular,2023-10-15,New York Jets,Philadelphia Eagles,NFL_134921,NFL_134936,20,14,34,6,home,pro_football_reference
+NFL_202310150oti,2023,6.0,regular,2023-10-15,Tennessee Titans,Baltimore Ravens,NFL_134929,NFL_134922,16,24,40,8,away,pro_football_reference
+NFL_202310150rai,2023,6.0,regular,2023-10-15,Las Vegas Raiders,New England Patriots,NFL_134932,NFL_134920,21,17,38,4,home,pro_football_reference
+NFL_202310150ram,2023,6.0,regular,2023-10-15,Los Angeles Rams,Arizona Cardinals,NFL_135907,NFL_134946,26,9,35,17,home,pro_football_reference
+NFL_202310150tam,2023,6.0,regular,2023-10-15,Tampa Bay Buccaneers,Detroit Lions,NFL_134945,NFL_134939,6,20,26,14,away,pro_football_reference
+NFL_202310160sdg,2023,6.0,regular,2023-10-16,Los Angeles Chargers,Dallas Cowboys,NFL_135908,NFL_134934,17,20,37,3,away,pro_football_reference
+NFL_202310190nor,2023,7.0,regular,2023-10-19,New Orleans Saints,Jacksonville Jaguars,NFL_134944,NFL_134928,24,31,55,7,away,pro_football_reference
+NFL_202310220chi,2023,7.0,regular,2023-10-22,Chicago Bears,Las Vegas Raiders,NFL_134938,NFL_134932,30,12,42,18,home,pro_football_reference
+NFL_202310220clt,2023,7.0,regular,2023-10-22,Indianapolis Colts,Cleveland Browns,NFL_134927,NFL_134924,38,39,77,1,away,pro_football_reference
+NFL_202310220den,2023,7.0,regular,2023-10-22,Denver Broncos,Green Bay Packers,NFL_134930,NFL_134940,19,17,36,2,home,pro_football_reference
+NFL_202310220kan,2023,7.0,regular,2023-10-22,Kansas City Chiefs,Los Angeles Chargers,NFL_134931,NFL_135908,31,17,48,14,home,pro_football_reference
+NFL_202310220nwe,2023,7.0,regular,2023-10-22,New England Patriots,Buffalo Bills,NFL_134920,NFL_134918,29,25,54,4,home,pro_football_reference
+NFL_202310220nyg,2023,7.0,regular,2023-10-22,New York Giants,Washington Commanders,NFL_134935,NFL_134937,14,7,21,7,home,pro_football_reference
+NFL_202310220phi,2023,7.0,regular,2023-10-22,Philadelphia Eagles,Miami Dolphins,NFL_134936,NFL_134919,31,17,48,14,home,pro_football_reference
+NFL_202310220ram,2023,7.0,regular,2023-10-22,Los Angeles Rams,Pittsburgh Steelers,NFL_135907,NFL_134925,17,24,41,7,away,pro_football_reference
+NFL_202310220rav,2023,7.0,regular,2023-10-22,Baltimore Ravens,Detroit Lions,NFL_134922,NFL_134939,38,6,44,32,home,pro_football_reference
+NFL_202310220sea,2023,7.0,regular,2023-10-22,Seattle Seahawks,Arizona Cardinals,NFL_134949,NFL_134946,20,10,30,10,home,pro_football_reference
+NFL_202310220tam,2023,7.0,regular,2023-10-22,Tampa Bay Buccaneers,Atlanta Falcons,NFL_134945,NFL_134942,13,16,29,3,away,pro_football_reference
+NFL_202310230min,2023,7.0,regular,2023-10-23,Minnesota Vikings,San Francisco 49ers,NFL_134941,NFL_134948,22,17,39,5,home,pro_football_reference
+NFL_202310260buf,2023,8.0,regular,2023-10-26,Buffalo Bills,Tampa Bay Buccaneers,NFL_134918,NFL_134945,24,18,42,6,home,pro_football_reference
+NFL_202310290car,2023,8.0,regular,2023-10-29,Carolina Panthers,Houston Texans,NFL_134943,NFL_134926,15,13,28,2,home,pro_football_reference
+NFL_202310290clt,2023,8.0,regular,2023-10-29,Indianapolis Colts,New Orleans Saints,NFL_134927,NFL_134944,27,38,65,11,away,pro_football_reference
+NFL_202310290crd,2023,8.0,regular,2023-10-29,Arizona Cardinals,Baltimore Ravens,NFL_134946,NFL_134922,24,31,55,7,away,pro_football_reference
+NFL_202310290dal,2023,8.0,regular,2023-10-29,Dallas Cowboys,Los Angeles Rams,NFL_134934,NFL_135907,43,20,63,23,home,pro_football_reference
+NFL_202310290den,2023,8.0,regular,2023-10-29,Denver Broncos,Kansas City Chiefs,NFL_134930,NFL_134931,24,9,33,15,home,pro_football_reference
+NFL_202310290gnb,2023,8.0,regular,2023-10-29,Green Bay Packers,Minnesota Vikings,NFL_134940,NFL_134941,10,24,34,14,away,pro_football_reference
+NFL_202310290mia,2023,8.0,regular,2023-10-29,Miami Dolphins,New England Patriots,NFL_134919,NFL_134920,31,17,48,14,home,pro_football_reference
+NFL_202310290nyg,2023,8.0,regular,2023-10-29,New York Giants,New York Jets,NFL_134935,NFL_134921,10,13,23,3,away,pro_football_reference
+NFL_202310290oti,2023,8.0,regular,2023-10-29,Tennessee Titans,Atlanta Falcons,NFL_134929,NFL_134942,28,23,51,5,home,pro_football_reference
+NFL_202310290pit,2023,8.0,regular,2023-10-29,Pittsburgh Steelers,Jacksonville Jaguars,NFL_134925,NFL_134928,10,20,30,10,away,pro_football_reference
+NFL_202310290sdg,2023,8.0,regular,2023-10-29,Los Angeles Chargers,Chicago Bears,NFL_135908,NFL_134938,30,13,43,17,home,pro_football_reference
+NFL_202310290sea,2023,8.0,regular,2023-10-29,Seattle Seahawks,Cleveland Browns,NFL_134949,NFL_134924,24,20,44,4,home,pro_football_reference
+NFL_202310290sfo,2023,8.0,regular,2023-10-29,San Francisco 49ers,Cincinnati Bengals,NFL_134948,NFL_134923,17,31,48,14,away,pro_football_reference
+NFL_202310290was,2023,8.0,regular,2023-10-29,Washington Commanders,Philadelphia Eagles,NFL_134937,NFL_134936,31,38,69,7,away,pro_football_reference
+NFL_202310300det,2023,8.0,regular,2023-10-30,Detroit Lions,Las Vegas Raiders,NFL_134939,NFL_134932,26,14,40,12,home,pro_football_reference
+NFL_202311020pit,2023,9.0,regular,2023-11-02,Pittsburgh Steelers,Tennessee Titans,NFL_134925,NFL_134929,20,16,36,4,home,pro_football_reference
+NFL_202311050atl,2023,9.0,regular,2023-11-05,Atlanta Falcons,Minnesota Vikings,NFL_134942,NFL_134941,28,31,59,3,away,pro_football_reference
+NFL_202311050car,2023,9.0,regular,2023-11-05,Carolina Panthers,Indianapolis Colts,NFL_134943,NFL_134927,13,27,40,14,away,pro_football_reference
+NFL_202311050cin,2023,9.0,regular,2023-11-05,Cincinnati Bengals,Buffalo Bills,NFL_134923,NFL_134918,24,18,42,6,home,pro_football_reference
+NFL_202311050cle,2023,9.0,regular,2023-11-05,Cleveland Browns,Arizona Cardinals,NFL_134924,NFL_134946,27,0,27,27,home,pro_football_reference
+NFL_202311050gnb,2023,9.0,regular,2023-11-05,Green Bay Packers,Los Angeles Rams,NFL_134940,NFL_135907,20,3,23,17,home,pro_football_reference
+NFL_202311050htx,2023,9.0,regular,2023-11-05,Houston Texans,Tampa Bay Buccaneers,NFL_134926,NFL_134945,39,37,76,2,home,pro_football_reference
+NFL_202311050kan,2023,9.0,regular,2023-11-05,Kansas City Chiefs,Miami Dolphins,NFL_134931,NFL_134919,21,14,35,7,home,pro_football_reference
+NFL_202311050nor,2023,9.0,regular,2023-11-05,New Orleans Saints,Chicago Bears,NFL_134944,NFL_134938,24,17,41,7,home,pro_football_reference
+NFL_202311050nwe,2023,9.0,regular,2023-11-05,New England Patriots,Washington Commanders,NFL_134920,NFL_134937,17,20,37,3,away,pro_football_reference
+NFL_202311050phi,2023,9.0,regular,2023-11-05,Philadelphia Eagles,Dallas Cowboys,NFL_134936,NFL_134934,28,23,51,5,home,pro_football_reference
+NFL_202311050rai,2023,9.0,regular,2023-11-05,Las Vegas Raiders,New York Giants,NFL_134932,NFL_134935,30,6,36,24,home,pro_football_reference
+NFL_202311050rav,2023,9.0,regular,2023-11-05,Baltimore Ravens,Seattle Seahawks,NFL_134922,NFL_134949,37,3,40,34,home,pro_football_reference
+NFL_202311060nyj,2023,9.0,regular,2023-11-06,New York Jets,Los Angeles Chargers,NFL_134921,NFL_135908,6,27,33,21,away,pro_football_reference
+NFL_202311090chi,2023,10.0,regular,2023-11-09,Chicago Bears,Carolina Panthers,NFL_134938,NFL_134943,16,13,29,3,home,pro_football_reference
+NFL_202311120cin,2023,10.0,regular,2023-11-12,Cincinnati Bengals,Houston Texans,NFL_134923,NFL_134926,27,30,57,3,away,pro_football_reference
+NFL_202311120crd,2023,10.0,regular,2023-11-12,Arizona Cardinals,Atlanta Falcons,NFL_134946,NFL_134942,25,23,48,2,home,pro_football_reference
+NFL_202311120dal,2023,10.0,regular,2023-11-12,Dallas Cowboys,New York Giants,NFL_134934,NFL_134935,49,17,66,32,home,pro_football_reference
+NFL_202311120jax,2023,10.0,regular,2023-11-12,Jacksonville Jaguars,San Francisco 49ers,NFL_134928,NFL_134948,3,34,37,31,away,pro_football_reference
+NFL_202311120min,2023,10.0,regular,2023-11-12,Minnesota Vikings,New Orleans Saints,NFL_134941,NFL_134944,27,19,46,8,home,pro_football_reference
+NFL_202311120nwe,2023,10.0,regular,2023-11-12,New England Patriots,Indianapolis Colts,NFL_134920,NFL_134927,6,10,16,4,away,pro_football_reference
+NFL_202311120pit,2023,10.0,regular,2023-11-12,Pittsburgh Steelers,Green Bay Packers,NFL_134925,NFL_134940,23,19,42,4,home,pro_football_reference
+NFL_202311120rai,2023,10.0,regular,2023-11-12,Las Vegas Raiders,New York Jets,NFL_134932,NFL_134921,16,12,28,4,home,pro_football_reference
+NFL_202311120rav,2023,10.0,regular,2023-11-12,Baltimore Ravens,Cleveland Browns,NFL_134922,NFL_134924,31,33,64,2,away,pro_football_reference
+NFL_202311120sdg,2023,10.0,regular,2023-11-12,Los Angeles Chargers,Detroit Lions,NFL_135908,NFL_134939,38,41,79,3,away,pro_football_reference
+NFL_202311120sea,2023,10.0,regular,2023-11-12,Seattle Seahawks,Washington Commanders,NFL_134949,NFL_134937,29,26,55,3,home,pro_football_reference
+NFL_202311120tam,2023,10.0,regular,2023-11-12,Tampa Bay Buccaneers,Tennessee Titans,NFL_134945,NFL_134929,20,6,26,14,home,pro_football_reference
+NFL_202311130buf,2023,10.0,regular,2023-11-13,Buffalo Bills,Denver Broncos,NFL_134918,NFL_134930,22,24,46,2,away,pro_football_reference
+NFL_202311160rav,2023,11.0,regular,2023-11-16,Baltimore Ravens,Cincinnati Bengals,NFL_134922,NFL_134923,34,20,54,14,home,pro_football_reference
+NFL_202311190buf,2023,11.0,regular,2023-11-19,Buffalo Bills,New York Jets,NFL_134918,NFL_134921,32,6,38,26,home,pro_football_reference
+NFL_202311190car,2023,11.0,regular,2023-11-19,Carolina Panthers,Dallas Cowboys,NFL_134943,NFL_134934,10,33,43,23,away,pro_football_reference
+NFL_202311190cle,2023,11.0,regular,2023-11-19,Cleveland Browns,Pittsburgh Steelers,NFL_134924,NFL_134925,13,10,23,3,home,pro_football_reference
+NFL_202311190den,2023,11.0,regular,2023-11-19,Denver Broncos,Minnesota Vikings,NFL_134930,NFL_134941,21,20,41,1,home,pro_football_reference
+NFL_202311190det,2023,11.0,regular,2023-11-19,Detroit Lions,Chicago Bears,NFL_134939,NFL_134938,31,26,57,5,home,pro_football_reference
+NFL_202311190gnb,2023,11.0,regular,2023-11-19,Green Bay Packers,Los Angeles Chargers,NFL_134940,NFL_135908,23,20,43,3,home,pro_football_reference
+NFL_202311190htx,2023,11.0,regular,2023-11-19,Houston Texans,Arizona Cardinals,NFL_134926,NFL_134946,21,16,37,5,home,pro_football_reference
+NFL_202311190jax,2023,11.0,regular,2023-11-19,Jacksonville Jaguars,Tennessee Titans,NFL_134928,NFL_134929,34,14,48,20,home,pro_football_reference
+NFL_202311190mia,2023,11.0,regular,2023-11-19,Miami Dolphins,Las Vegas Raiders,NFL_134919,NFL_134932,20,13,33,7,home,pro_football_reference
+NFL_202311190ram,2023,11.0,regular,2023-11-19,Los Angeles Rams,Seattle Seahawks,NFL_135907,NFL_134949,17,16,33,1,home,pro_football_reference
+NFL_202311190sfo,2023,11.0,regular,2023-11-19,San Francisco 49ers,Tampa Bay Buccaneers,NFL_134948,NFL_134945,27,14,41,13,home,pro_football_reference
+NFL_202311190was,2023,11.0,regular,2023-11-19,Washington Commanders,New York Giants,NFL_134937,NFL_134935,19,31,50,12,away,pro_football_reference
+NFL_202311200kan,2023,11.0,regular,2023-11-20,Kansas City Chiefs,Philadelphia Eagles,NFL_134931,NFL_134936,17,21,38,4,away,pro_football_reference
+NFL_202311230dal,2023,12.0,regular,2023-11-23,Dallas Cowboys,Washington Commanders,NFL_134934,NFL_134937,45,10,55,35,home,pro_football_reference
+NFL_202311230det,2023,12.0,regular,2023-11-23,Detroit Lions,Green Bay Packers,NFL_134939,NFL_134940,22,29,51,7,away,pro_football_reference
+NFL_202311230sea,2023,12.0,regular,2023-11-23,Seattle Seahawks,San Francisco 49ers,NFL_134949,NFL_134948,13,31,44,18,away,pro_football_reference
+NFL_202311240nyj,2023,12.0,regular,2023-11-24,New York Jets,Miami Dolphins,NFL_134921,NFL_134919,13,34,47,21,away,pro_football_reference
+NFL_202311260atl,2023,12.0,regular,2023-11-26,Atlanta Falcons,New Orleans Saints,NFL_134942,NFL_134944,24,15,39,9,home,pro_football_reference
+NFL_202311260cin,2023,12.0,regular,2023-11-26,Cincinnati Bengals,Pittsburgh Steelers,NFL_134923,NFL_134925,10,16,26,6,away,pro_football_reference
+NFL_202311260clt,2023,12.0,regular,2023-11-26,Indianapolis Colts,Tampa Bay Buccaneers,NFL_134927,NFL_134945,27,20,47,7,home,pro_football_reference
+NFL_202311260crd,2023,12.0,regular,2023-11-26,Arizona Cardinals,Los Angeles Rams,NFL_134946,NFL_135907,14,37,51,23,away,pro_football_reference
+NFL_202311260den,2023,12.0,regular,2023-11-26,Denver Broncos,Cleveland Browns,NFL_134930,NFL_134924,29,12,41,17,home,pro_football_reference
+NFL_202311260htx,2023,12.0,regular,2023-11-26,Houston Texans,Jacksonville Jaguars,NFL_134926,NFL_134928,21,24,45,3,away,pro_football_reference
+NFL_202311260nyg,2023,12.0,regular,2023-11-26,New York Giants,New England Patriots,NFL_134935,NFL_134920,10,7,17,3,home,pro_football_reference
+NFL_202311260oti,2023,12.0,regular,2023-11-26,Tennessee Titans,Carolina Panthers,NFL_134929,NFL_134943,17,10,27,7,home,pro_football_reference
+NFL_202311260phi,2023,12.0,regular,2023-11-26,Philadelphia Eagles,Buffalo Bills,NFL_134936,NFL_134918,37,34,71,3,home,pro_football_reference
+NFL_202311260rai,2023,12.0,regular,2023-11-26,Las Vegas Raiders,Kansas City Chiefs,NFL_134932,NFL_134931,17,31,48,14,away,pro_football_reference
+NFL_202311260sdg,2023,12.0,regular,2023-11-26,Los Angeles Chargers,Baltimore Ravens,NFL_135908,NFL_134922,10,20,30,10,away,pro_football_reference
+NFL_202311270min,2023,12.0,regular,2023-11-27,Minnesota Vikings,Chicago Bears,NFL_134941,NFL_134938,10,12,22,2,away,pro_football_reference
+NFL_202311300dal,2023,13.0,regular,2023-11-30,Dallas Cowboys,Seattle Seahawks,NFL_134934,NFL_134949,41,35,76,6,home,pro_football_reference
+NFL_202312030gnb,2023,13.0,regular,2023-12-03,Green Bay Packers,Kansas City Chiefs,NFL_134940,NFL_134931,27,19,46,8,home,pro_football_reference
+NFL_202312030htx,2023,13.0,regular,2023-12-03,Houston Texans,Denver Broncos,NFL_134926,NFL_134930,22,17,39,5,home,pro_football_reference
+NFL_202312030nor,2023,13.0,regular,2023-12-03,New Orleans Saints,Detroit Lions,NFL_134944,NFL_134939,28,33,61,5,away,pro_football_reference
+NFL_202312030nwe,2023,13.0,regular,2023-12-03,New England Patriots,Los Angeles Chargers,NFL_134920,NFL_135908,0,6,6,6,away,pro_football_reference
+NFL_202312030nyj,2023,13.0,regular,2023-12-03,New York Jets,Atlanta Falcons,NFL_134921,NFL_134942,8,13,21,5,away,pro_football_reference
+NFL_202312030oti,2023,13.0,regular,2023-12-03,Tennessee Titans,Indianapolis Colts,NFL_134929,NFL_134927,28,31,59,3,away,pro_football_reference
+NFL_202312030phi,2023,13.0,regular,2023-12-03,Philadelphia Eagles,San Francisco 49ers,NFL_134936,NFL_134948,19,42,61,23,away,pro_football_reference
+NFL_202312030pit,2023,13.0,regular,2023-12-03,Pittsburgh Steelers,Arizona Cardinals,NFL_134925,NFL_134946,10,24,34,14,away,pro_football_reference
+NFL_202312030ram,2023,13.0,regular,2023-12-03,Los Angeles Rams,Cleveland Browns,NFL_135907,NFL_134924,36,19,55,17,home,pro_football_reference
+NFL_202312030tam,2023,13.0,regular,2023-12-03,Tampa Bay Buccaneers,Carolina Panthers,NFL_134945,NFL_134943,21,18,39,3,home,pro_football_reference
+NFL_202312030was,2023,13.0,regular,2023-12-03,Washington Commanders,Miami Dolphins,NFL_134937,NFL_134919,15,45,60,30,away,pro_football_reference
+NFL_202312040jax,2023,13.0,regular,2023-12-04,Jacksonville Jaguars,Cincinnati Bengals,NFL_134928,NFL_134923,31,34,65,3,away,pro_football_reference
+NFL_202312070pit,2023,14.0,regular,2023-12-07,Pittsburgh Steelers,New England Patriots,NFL_134925,NFL_134920,18,21,39,3,away,pro_football_reference
+NFL_202312100atl,2023,14.0,regular,2023-12-10,Atlanta Falcons,Tampa Bay Buccaneers,NFL_134942,NFL_134945,25,29,54,4,away,pro_football_reference
+NFL_202312100chi,2023,14.0,regular,2023-12-10,Chicago Bears,Detroit Lions,NFL_134938,NFL_134939,28,13,41,15,home,pro_football_reference
+NFL_202312100cin,2023,14.0,regular,2023-12-10,Cincinnati Bengals,Indianapolis Colts,NFL_134923,NFL_134927,34,14,48,20,home,pro_football_reference
+NFL_202312100cle,2023,14.0,regular,2023-12-10,Cleveland Browns,Jacksonville Jaguars,NFL_134924,NFL_134928,31,27,58,4,home,pro_football_reference
+NFL_202312100dal,2023,14.0,regular,2023-12-10,Dallas Cowboys,Philadelphia Eagles,NFL_134934,NFL_134936,33,13,46,20,home,pro_football_reference
+NFL_202312100kan,2023,14.0,regular,2023-12-10,Kansas City Chiefs,Buffalo Bills,NFL_134931,NFL_134918,17,20,37,3,away,pro_football_reference
+NFL_202312100nor,2023,14.0,regular,2023-12-10,New Orleans Saints,Carolina Panthers,NFL_134944,NFL_134943,28,6,34,22,home,pro_football_reference
+NFL_202312100nyj,2023,14.0,regular,2023-12-10,New York Jets,Houston Texans,NFL_134921,NFL_134926,30,6,36,24,home,pro_football_reference
+NFL_202312100rai,2023,14.0,regular,2023-12-10,Las Vegas Raiders,Minnesota Vikings,NFL_134932,NFL_134941,0,3,3,3,away,pro_football_reference
+NFL_202312100rav,2023,14.0,regular,2023-12-10,Baltimore Ravens,Los Angeles Rams,NFL_134922,NFL_135907,37,31,68,6,home,pro_football_reference
+NFL_202312100sdg,2023,14.0,regular,2023-12-10,Los Angeles Chargers,Denver Broncos,NFL_135908,NFL_134930,7,24,31,17,away,pro_football_reference
+NFL_202312100sfo,2023,14.0,regular,2023-12-10,San Francisco 49ers,Seattle Seahawks,NFL_134948,NFL_134949,28,16,44,12,home,pro_football_reference
+NFL_202312110mia,2023,14.0,regular,2023-12-11,Miami Dolphins,Tennessee Titans,NFL_134919,NFL_134929,27,28,55,1,away,pro_football_reference
+NFL_202312110nyg,2023,14.0,regular,2023-12-11,New York Giants,Green Bay Packers,NFL_134935,NFL_134940,24,22,46,2,home,pro_football_reference
+NFL_202312140rai,2023,15.0,regular,2023-12-14,Las Vegas Raiders,Los Angeles Chargers,NFL_134932,NFL_135908,63,21,84,42,home,pro_football_reference
+NFL_202312160cin,2023,15.0,regular,2023-12-16,Cincinnati Bengals,Minnesota Vikings,NFL_134923,NFL_134941,27,24,51,3,home,pro_football_reference
+NFL_202312160clt,2023,15.0,regular,2023-12-16,Indianapolis Colts,Pittsburgh Steelers,NFL_134927,NFL_134925,30,13,43,17,home,pro_football_reference
+NFL_202312160det,2023,15.0,regular,2023-12-16,Detroit Lions,Denver Broncos,NFL_134939,NFL_134930,42,17,59,25,home,pro_football_reference
+NFL_202312170buf,2023,15.0,regular,2023-12-17,Buffalo Bills,Dallas Cowboys,NFL_134918,NFL_134934,31,10,41,21,home,pro_football_reference
+NFL_202312170car,2023,15.0,regular,2023-12-17,Carolina Panthers,Atlanta Falcons,NFL_134943,NFL_134942,9,7,16,2,home,pro_football_reference
+NFL_202312170cle,2023,15.0,regular,2023-12-17,Cleveland Browns,Chicago Bears,NFL_134924,NFL_134938,20,17,37,3,home,pro_football_reference
+NFL_202312170crd,2023,15.0,regular,2023-12-17,Arizona Cardinals,San Francisco 49ers,NFL_134946,NFL_134948,29,45,74,16,away,pro_football_reference
+NFL_202312170gnb,2023,15.0,regular,2023-12-17,Green Bay Packers,Tampa Bay Buccaneers,NFL_134940,NFL_134945,20,34,54,14,away,pro_football_reference
+NFL_202312170jax,2023,15.0,regular,2023-12-17,Jacksonville Jaguars,Baltimore Ravens,NFL_134928,NFL_134922,7,23,30,16,away,pro_football_reference
+NFL_202312170mia,2023,15.0,regular,2023-12-17,Miami Dolphins,New York Jets,NFL_134919,NFL_134921,30,0,30,30,home,pro_football_reference
+NFL_202312170nor,2023,15.0,regular,2023-12-17,New Orleans Saints,New York Giants,NFL_134944,NFL_134935,24,6,30,18,home,pro_football_reference
+NFL_202312170nwe,2023,15.0,regular,2023-12-17,New England Patriots,Kansas City Chiefs,NFL_134920,NFL_134931,17,27,44,10,away,pro_football_reference
+NFL_202312170oti,2023,15.0,regular,2023-12-17,Tennessee Titans,Houston Texans,NFL_134929,NFL_134926,16,19,35,3,away,pro_football_reference
+NFL_202312170ram,2023,15.0,regular,2023-12-17,Los Angeles Rams,Washington Commanders,NFL_135907,NFL_134937,28,20,48,8,home,pro_football_reference
+NFL_202312180sea,2023,15.0,regular,2023-12-18,Seattle Seahawks,Philadelphia Eagles,NFL_134949,NFL_134936,20,17,37,3,home,pro_football_reference
+NFL_202312210ram,2023,16.0,regular,2023-12-21,Los Angeles Rams,New Orleans Saints,NFL_135907,NFL_134944,30,22,52,8,home,pro_football_reference
+NFL_202312230pit,2023,16.0,regular,2023-12-23,Pittsburgh Steelers,Cincinnati Bengals,NFL_134925,NFL_134923,34,11,45,23,home,pro_football_reference
+NFL_202312230sdg,2023,16.0,regular,2023-12-23,Los Angeles Chargers,Buffalo Bills,NFL_135908,NFL_134918,22,24,46,2,away,pro_football_reference
+NFL_202312240atl,2023,16.0,regular,2023-12-24,Atlanta Falcons,Indianapolis Colts,NFL_134942,NFL_134927,29,10,39,19,home,pro_football_reference
+NFL_202312240car,2023,16.0,regular,2023-12-24,Carolina Panthers,Green Bay Packers,NFL_134943,NFL_134940,30,33,63,3,away,pro_football_reference
+NFL_202312240chi,2023,16.0,regular,2023-12-24,Chicago Bears,Arizona Cardinals,NFL_134938,NFL_134946,27,16,43,11,home,pro_football_reference
+NFL_202312240den,2023,16.0,regular,2023-12-24,Denver Broncos,New England Patriots,NFL_134930,NFL_134920,23,26,49,3,away,pro_football_reference
+NFL_202312240htx,2023,16.0,regular,2023-12-24,Houston Texans,Cleveland Browns,NFL_134926,NFL_134924,22,36,58,14,away,pro_football_reference
+NFL_202312240mia,2023,16.0,regular,2023-12-24,Miami Dolphins,Dallas Cowboys,NFL_134919,NFL_134934,22,20,42,2,home,pro_football_reference
+NFL_202312240min,2023,16.0,regular,2023-12-24,Minnesota Vikings,Detroit Lions,NFL_134941,NFL_134939,24,30,54,6,away,pro_football_reference
+NFL_202312240nyj,2023,16.0,regular,2023-12-24,New York Jets,Washington Commanders,NFL_134921,NFL_134937,30,28,58,2,home,pro_football_reference
+NFL_202312240oti,2023,16.0,regular,2023-12-24,Tennessee Titans,Seattle Seahawks,NFL_134929,NFL_134949,17,20,37,3,away,pro_football_reference
+NFL_202312240tam,2023,16.0,regular,2023-12-24,Tampa Bay Buccaneers,Jacksonville Jaguars,NFL_134945,NFL_134928,30,12,42,18,home,pro_football_reference
+NFL_202312250kan,2023,16.0,regular,2023-12-25,Kansas City Chiefs,Las Vegas Raiders,NFL_134931,NFL_134932,14,20,34,6,away,pro_football_reference
+NFL_202312250phi,2023,16.0,regular,2023-12-25,Philadelphia Eagles,New York Giants,NFL_134936,NFL_134935,33,25,58,8,home,pro_football_reference
+NFL_202312250sfo,2023,16.0,regular,2023-12-25,San Francisco 49ers,Baltimore Ravens,NFL_134948,NFL_134922,19,33,52,14,away,pro_football_reference
+NFL_202312280cle,2023,17.0,regular,2023-12-28,Cleveland Browns,New York Jets,NFL_134924,NFL_134921,37,20,57,17,home,pro_football_reference
+NFL_202312300dal,2023,17.0,regular,2023-12-30,Dallas Cowboys,Detroit Lions,NFL_134934,NFL_134939,20,19,39,1,home,pro_football_reference
+NFL_202312310buf,2023,17.0,regular,2023-12-31,Buffalo Bills,New England Patriots,NFL_134918,NFL_134920,27,21,48,6,home,pro_football_reference
+NFL_202312310chi,2023,17.0,regular,2023-12-31,Chicago Bears,Atlanta Falcons,NFL_134938,NFL_134942,37,17,54,20,home,pro_football_reference
+NFL_202312310clt,2023,17.0,regular,2023-12-31,Indianapolis Colts,Las Vegas Raiders,NFL_134927,NFL_134932,23,20,43,3,home,pro_football_reference
+NFL_202312310den,2023,17.0,regular,2023-12-31,Denver Broncos,Los Angeles Chargers,NFL_134930,NFL_135908,16,9,25,7,home,pro_football_reference
+NFL_202312310htx,2023,17.0,regular,2023-12-31,Houston Texans,Tennessee Titans,NFL_134926,NFL_134929,26,3,29,23,home,pro_football_reference
+NFL_202312310jax,2023,17.0,regular,2023-12-31,Jacksonville Jaguars,Carolina Panthers,NFL_134928,NFL_134943,26,0,26,26,home,pro_football_reference
+NFL_202312310kan,2023,17.0,regular,2023-12-31,Kansas City Chiefs,Cincinnati Bengals,NFL_134931,NFL_134923,25,17,42,8,home,pro_football_reference
+NFL_202312310min,2023,17.0,regular,2023-12-31,Minnesota Vikings,Green Bay Packers,NFL_134941,NFL_134940,10,33,43,23,away,pro_football_reference
+NFL_202312310nyg,2023,17.0,regular,2023-12-31,New York Giants,Los Angeles Rams,NFL_134935,NFL_135907,25,26,51,1,away,pro_football_reference
+NFL_202312310phi,2023,17.0,regular,2023-12-31,Philadelphia Eagles,Arizona Cardinals,NFL_134936,NFL_134946,31,35,66,4,away,pro_football_reference
+NFL_202312310rav,2023,17.0,regular,2023-12-31,Baltimore Ravens,Miami Dolphins,NFL_134922,NFL_134919,56,19,75,37,home,pro_football_reference
+NFL_202312310sea,2023,17.0,regular,2023-12-31,Seattle Seahawks,Pittsburgh Steelers,NFL_134949,NFL_134925,23,30,53,7,away,pro_football_reference
+NFL_202312310tam,2023,17.0,regular,2023-12-31,Tampa Bay Buccaneers,New Orleans Saints,NFL_134945,NFL_134944,13,23,36,10,away,pro_football_reference
+NFL_202312310was,2023,17.0,regular,2023-12-31,Washington Commanders,San Francisco 49ers,NFL_134937,NFL_134948,10,27,37,17,away,pro_football_reference
+NFL_202401060clt,2023,18.0,regular,2024-01-06,Indianapolis Colts,Houston Texans,NFL_134927,NFL_134926,19,23,42,4,away,pro_football_reference
+NFL_202401060rav,2023,18.0,regular,2024-01-06,Baltimore Ravens,Pittsburgh Steelers,NFL_134922,NFL_134925,10,17,27,7,away,pro_football_reference
+NFL_202401070car,2023,18.0,regular,2024-01-07,Carolina Panthers,Tampa Bay Buccaneers,NFL_134943,NFL_134945,0,9,9,9,away,pro_football_reference
+NFL_202401070cin,2023,18.0,regular,2024-01-07,Cincinnati Bengals,Cleveland Browns,NFL_134923,NFL_134924,31,14,45,17,home,pro_football_reference
+NFL_202401070crd,2023,18.0,regular,2024-01-07,Arizona Cardinals,Seattle Seahawks,NFL_134946,NFL_134949,20,21,41,1,away,pro_football_reference
+NFL_202401070det,2023,18.0,regular,2024-01-07,Detroit Lions,Minnesota Vikings,NFL_134939,NFL_134941,30,20,50,10,home,pro_football_reference
+NFL_202401070gnb,2023,18.0,regular,2024-01-07,Green Bay Packers,Chicago Bears,NFL_134940,NFL_134938,17,9,26,8,home,pro_football_reference
+NFL_202401070mia,2023,18.0,regular,2024-01-07,Miami Dolphins,Buffalo Bills,NFL_134919,NFL_134918,14,21,35,7,away,pro_football_reference
+NFL_202401070nor,2023,18.0,regular,2024-01-07,New Orleans Saints,Atlanta Falcons,NFL_134944,NFL_134942,48,17,65,31,home,pro_football_reference
+NFL_202401070nwe,2023,18.0,regular,2024-01-07,New England Patriots,New York Jets,NFL_134920,NFL_134921,3,17,20,14,away,pro_football_reference
+NFL_202401070nyg,2023,18.0,regular,2024-01-07,New York Giants,Philadelphia Eagles,NFL_134935,NFL_134936,27,10,37,17,home,pro_football_reference
+NFL_202401070oti,2023,18.0,regular,2024-01-07,Tennessee Titans,Jacksonville Jaguars,NFL_134929,NFL_134928,28,20,48,8,home,pro_football_reference
+NFL_202401070rai,2023,18.0,regular,2024-01-07,Las Vegas Raiders,Denver Broncos,NFL_134932,NFL_134930,27,14,41,13,home,pro_football_reference
+NFL_202401070sdg,2023,18.0,regular,2024-01-07,Los Angeles Chargers,Kansas City Chiefs,NFL_135908,NFL_134931,12,13,25,1,away,pro_football_reference
+NFL_202401070sfo,2023,18.0,regular,2024-01-07,San Francisco 49ers,Los Angeles Rams,NFL_134948,NFL_135907,20,21,41,1,away,pro_football_reference
+NFL_202401070was,2023,18.0,regular,2024-01-07,Washington Commanders,Dallas Cowboys,NFL_134937,NFL_134934,10,38,48,28,away,pro_football_reference
+NFL_202401130htx,2023,,,2024-01-13,Houston Texans,Cleveland Browns,NFL_134926,NFL_134924,45,14,59,31,home,pro_football_reference
+NFL_202401130kan,2023,,,2024-01-13,Kansas City Chiefs,Miami Dolphins,NFL_134931,NFL_134919,26,7,33,19,home,pro_football_reference
+NFL_202401140dal,2023,,,2024-01-14,Dallas Cowboys,Green Bay Packers,NFL_134934,NFL_134940,32,48,80,16,away,pro_football_reference
+NFL_202401140det,2023,,,2024-01-14,Detroit Lions,Los Angeles Rams,NFL_134939,NFL_135907,24,23,47,1,home,pro_football_reference
+NFL_202401150buf,2023,,,2024-01-15,Buffalo Bills,Pittsburgh Steelers,NFL_134918,NFL_134925,31,17,48,14,home,pro_football_reference
+NFL_202401150tam,2023,,,2024-01-15,Tampa Bay Buccaneers,Philadelphia Eagles,NFL_134945,NFL_134936,32,9,41,23,home,pro_football_reference
+NFL_202401200rav,2023,,,2024-01-20,Baltimore Ravens,Houston Texans,NFL_134922,NFL_134926,34,10,44,24,home,pro_football_reference
+NFL_202401200sfo,2023,,,2024-01-20,San Francisco 49ers,Green Bay Packers,NFL_134948,NFL_134940,24,21,45,3,home,pro_football_reference
+NFL_202401210buf,2023,,,2024-01-21,Buffalo Bills,Kansas City Chiefs,NFL_134918,NFL_134931,24,27,51,3,away,pro_football_reference
+NFL_202401210det,2023,,,2024-01-21,Detroit Lions,Tampa Bay Buccaneers,NFL_134939,NFL_134945,31,23,54,8,home,pro_football_reference
+NFL_202401280rav,2023,,,2024-01-28,Baltimore Ravens,Kansas City Chiefs,NFL_134922,NFL_134931,10,17,27,7,away,pro_football_reference
+NFL_202401280sfo,2023,,,2024-01-28,San Francisco 49ers,Detroit Lions,NFL_134948,NFL_134939,34,31,65,3,home,pro_football_reference
+NFL_202402110kan,2023,,,2024-02-11,Kansas City Chiefs,San Francisco 49ers,NFL_134931,NFL_134948,25,22,47,3,home,pro_football_reference
+NFL_202409050kan,2024,1.0,regular,2024-09-05,Kansas City Chiefs,Baltimore Ravens,NFL_134931,NFL_134922,27,20,47,7,home,pro_football_reference
+NFL_202409060phi,2024,1.0,regular,2024-09-06,Philadelphia Eagles,Green Bay Packers,NFL_134936,NFL_134940,34,29,63,5,home,pro_football_reference
+NFL_202409080atl,2024,1.0,regular,2024-09-08,Atlanta Falcons,Pittsburgh Steelers,NFL_134942,NFL_134925,10,18,28,8,away,pro_football_reference
+NFL_202409080buf,2024,1.0,regular,2024-09-08,Buffalo Bills,Arizona Cardinals,NFL_134918,NFL_134946,34,28,62,6,home,pro_football_reference
+NFL_202409080chi,2024,1.0,regular,2024-09-08,Chicago Bears,Tennessee Titans,NFL_134938,NFL_134929,24,17,41,7,home,pro_football_reference
+NFL_202409080cin,2024,1.0,regular,2024-09-08,Cincinnati Bengals,New England Patriots,NFL_134923,NFL_134920,10,16,26,6,away,pro_football_reference
+NFL_202409080cle,2024,1.0,regular,2024-09-08,Cleveland Browns,Dallas Cowboys,NFL_134924,NFL_134934,17,33,50,16,away,pro_football_reference
+NFL_202409080clt,2024,1.0,regular,2024-09-08,Indianapolis Colts,Houston Texans,NFL_134927,NFL_134926,27,29,56,2,away,pro_football_reference
+NFL_202409080det,2024,1.0,regular,2024-09-08,Detroit Lions,Los Angeles Rams,NFL_134939,NFL_135907,26,20,46,6,home,pro_football_reference
+NFL_202409080mia,2024,1.0,regular,2024-09-08,Miami Dolphins,Jacksonville Jaguars,NFL_134919,NFL_134928,20,17,37,3,home,pro_football_reference
+NFL_202409080nor,2024,1.0,regular,2024-09-08,New Orleans Saints,Carolina Panthers,NFL_134944,NFL_134943,47,10,57,37,home,pro_football_reference
+NFL_202409080nyg,2024,1.0,regular,2024-09-08,New York Giants,Minnesota Vikings,NFL_134935,NFL_134941,6,28,34,22,away,pro_football_reference
+NFL_202409080sdg,2024,1.0,regular,2024-09-08,Los Angeles Chargers,Las Vegas Raiders,NFL_135908,NFL_134932,22,10,32,12,home,pro_football_reference
+NFL_202409080sea,2024,1.0,regular,2024-09-08,Seattle Seahawks,Denver Broncos,NFL_134949,NFL_134930,26,20,46,6,home,pro_football_reference
+NFL_202409080tam,2024,1.0,regular,2024-09-08,Tampa Bay Buccaneers,Washington Commanders,NFL_134945,NFL_134937,37,20,57,17,home,pro_football_reference
+NFL_202409090sfo,2024,1.0,regular,2024-09-09,San Francisco 49ers,New York Jets,NFL_134948,NFL_134921,32,19,51,13,home,pro_football_reference
+NFL_202409120mia,2024,2.0,regular,2024-09-12,Miami Dolphins,Buffalo Bills,NFL_134919,NFL_134918,10,31,41,21,away,pro_football_reference
+NFL_202409150car,2024,2.0,regular,2024-09-15,Carolina Panthers,Los Angeles Chargers,NFL_134943,NFL_135908,3,26,29,23,away,pro_football_reference
+NFL_202409150crd,2024,2.0,regular,2024-09-15,Arizona Cardinals,Los Angeles Rams,NFL_134946,NFL_135907,41,10,51,31,home,pro_football_reference
+NFL_202409150dal,2024,2.0,regular,2024-09-15,Dallas Cowboys,New Orleans Saints,NFL_134934,NFL_134944,19,44,63,25,away,pro_football_reference
+NFL_202409150den,2024,2.0,regular,2024-09-15,Denver Broncos,Pittsburgh Steelers,NFL_134930,NFL_134925,6,13,19,7,away,pro_football_reference
+NFL_202409150det,2024,2.0,regular,2024-09-15,Detroit Lions,Tampa Bay Buccaneers,NFL_134939,NFL_134945,16,20,36,4,away,pro_football_reference
+NFL_202409150gnb,2024,2.0,regular,2024-09-15,Green Bay Packers,Indianapolis Colts,NFL_134940,NFL_134927,16,10,26,6,home,pro_football_reference
+NFL_202409150htx,2024,2.0,regular,2024-09-15,Houston Texans,Chicago Bears,NFL_134926,NFL_134938,19,13,32,6,home,pro_football_reference
+NFL_202409150jax,2024,2.0,regular,2024-09-15,Jacksonville Jaguars,Cleveland Browns,NFL_134928,NFL_134924,13,18,31,5,away,pro_football_reference
+NFL_202409150kan,2024,2.0,regular,2024-09-15,Kansas City Chiefs,Cincinnati Bengals,NFL_134931,NFL_134923,26,25,51,1,home,pro_football_reference
+NFL_202409150min,2024,2.0,regular,2024-09-15,Minnesota Vikings,San Francisco 49ers,NFL_134941,NFL_134948,23,17,40,6,home,pro_football_reference
+NFL_202409150nwe,2024,2.0,regular,2024-09-15,New England Patriots,Seattle Seahawks,NFL_134920,NFL_134949,20,23,43,3,away,pro_football_reference
+NFL_202409150oti,2024,2.0,regular,2024-09-15,Tennessee Titans,New York Jets,NFL_134929,NFL_134921,17,24,41,7,away,pro_football_reference
+NFL_202409150rav,2024,2.0,regular,2024-09-15,Baltimore Ravens,Las Vegas Raiders,NFL_134922,NFL_134932,23,26,49,3,away,pro_football_reference
+NFL_202409150was,2024,2.0,regular,2024-09-15,Washington Commanders,New York Giants,NFL_134937,NFL_134935,21,18,39,3,home,pro_football_reference
+NFL_202409160phi,2024,2.0,regular,2024-09-16,Philadelphia Eagles,Atlanta Falcons,NFL_134936,NFL_134942,21,22,43,1,away,pro_football_reference
+NFL_202409190nyj,2024,3.0,regular,2024-09-19,New York Jets,New England Patriots,NFL_134921,NFL_134920,24,3,27,21,home,pro_football_reference
+NFL_202409220atl,2024,3.0,regular,2024-09-22,Atlanta Falcons,Kansas City Chiefs,NFL_134942,NFL_134931,17,22,39,5,away,pro_football_reference
+NFL_202409220cle,2024,3.0,regular,2024-09-22,Cleveland Browns,New York Giants,NFL_134924,NFL_134935,15,21,36,6,away,pro_football_reference
+NFL_202409220clt,2024,3.0,regular,2024-09-22,Indianapolis Colts,Chicago Bears,NFL_134927,NFL_134938,21,16,37,5,home,pro_football_reference
+NFL_202409220crd,2024,3.0,regular,2024-09-22,Arizona Cardinals,Detroit Lions,NFL_134946,NFL_134939,13,20,33,7,away,pro_football_reference
+NFL_202409220dal,2024,3.0,regular,2024-09-22,Dallas Cowboys,Baltimore Ravens,NFL_134934,NFL_134922,25,28,53,3,away,pro_football_reference
+NFL_202409220min,2024,3.0,regular,2024-09-22,Minnesota Vikings,Houston Texans,NFL_134941,NFL_134926,34,7,41,27,home,pro_football_reference
+NFL_202409220nor,2024,3.0,regular,2024-09-22,New Orleans Saints,Philadelphia Eagles,NFL_134944,NFL_134936,12,15,27,3,away,pro_football_reference
+NFL_202409220oti,2024,3.0,regular,2024-09-22,Tennessee Titans,Green Bay Packers,NFL_134929,NFL_134940,14,30,44,16,away,pro_football_reference
+NFL_202409220pit,2024,3.0,regular,2024-09-22,Pittsburgh Steelers,Los Angeles Chargers,NFL_134925,NFL_135908,20,10,30,10,home,pro_football_reference
+NFL_202409220rai,2024,3.0,regular,2024-09-22,Las Vegas Raiders,Carolina Panthers,NFL_134932,NFL_134943,22,36,58,14,away,pro_football_reference
+NFL_202409220ram,2024,3.0,regular,2024-09-22,Los Angeles Rams,San Francisco 49ers,NFL_135907,NFL_134948,27,24,51,3,home,pro_football_reference
+NFL_202409220sea,2024,3.0,regular,2024-09-22,Seattle Seahawks,Miami Dolphins,NFL_134949,NFL_134919,24,3,27,21,home,pro_football_reference
+NFL_202409220tam,2024,3.0,regular,2024-09-22,Tampa Bay Buccaneers,Denver Broncos,NFL_134945,NFL_134930,7,26,33,19,away,pro_football_reference
+NFL_202409230buf,2024,3.0,regular,2024-09-23,Buffalo Bills,Jacksonville Jaguars,NFL_134918,NFL_134928,47,10,57,37,home,pro_football_reference
+NFL_202409230cin,2024,3.0,regular,2024-09-23,Cincinnati Bengals,Washington Commanders,NFL_134923,NFL_134937,33,38,71,5,away,pro_football_reference
+NFL_202409260nyg,2024,4.0,regular,2024-09-26,New York Giants,Dallas Cowboys,NFL_134935,NFL_134934,15,20,35,5,away,pro_football_reference
+NFL_202409290atl,2024,4.0,regular,2024-09-29,Atlanta Falcons,New Orleans Saints,NFL_134942,NFL_134944,26,24,50,2,home,pro_football_reference
+NFL_202409290car,2024,4.0,regular,2024-09-29,Carolina Panthers,Cincinnati Bengals,NFL_134943,NFL_134923,24,34,58,10,away,pro_football_reference
+NFL_202409290chi,2024,4.0,regular,2024-09-29,Chicago Bears,Los Angeles Rams,NFL_134938,NFL_135907,24,18,42,6,home,pro_football_reference
+NFL_202409290clt,2024,4.0,regular,2024-09-29,Indianapolis Colts,Pittsburgh Steelers,NFL_134927,NFL_134925,27,24,51,3,home,pro_football_reference
+NFL_202409290crd,2024,4.0,regular,2024-09-29,Arizona Cardinals,Washington Commanders,NFL_134946,NFL_134937,14,42,56,28,away,pro_football_reference
+NFL_202409290gnb,2024,4.0,regular,2024-09-29,Green Bay Packers,Minnesota Vikings,NFL_134940,NFL_134941,29,31,60,2,away,pro_football_reference
+NFL_202409290htx,2024,4.0,regular,2024-09-29,Houston Texans,Jacksonville Jaguars,NFL_134926,NFL_134928,24,20,44,4,home,pro_football_reference
+NFL_202409290nyj,2024,4.0,regular,2024-09-29,New York Jets,Denver Broncos,NFL_134921,NFL_134930,9,10,19,1,away,pro_football_reference
+NFL_202409290rai,2024,4.0,regular,2024-09-29,Las Vegas Raiders,Cleveland Browns,NFL_134932,NFL_134924,20,16,36,4,home,pro_football_reference
+NFL_202409290rav,2024,4.0,regular,2024-09-29,Baltimore Ravens,Buffalo Bills,NFL_134922,NFL_134918,35,10,45,25,home,pro_football_reference
+NFL_202409290sdg,2024,4.0,regular,2024-09-29,Los Angeles Chargers,Kansas City Chiefs,NFL_135908,NFL_134931,10,17,27,7,away,pro_football_reference
+NFL_202409290sfo,2024,4.0,regular,2024-09-29,San Francisco 49ers,New England Patriots,NFL_134948,NFL_134920,30,13,43,17,home,pro_football_reference
+NFL_202409290tam,2024,4.0,regular,2024-09-29,Tampa Bay Buccaneers,Philadelphia Eagles,NFL_134945,NFL_134936,33,16,49,17,home,pro_football_reference
+NFL_202409300det,2024,4.0,regular,2024-09-30,Detroit Lions,Seattle Seahawks,NFL_134939,NFL_134949,42,29,71,13,home,pro_football_reference
+NFL_202409300mia,2024,4.0,regular,2024-09-30,Miami Dolphins,Tennessee Titans,NFL_134919,NFL_134929,12,31,43,19,away,pro_football_reference
+NFL_202410030atl,2024,5.0,regular,2024-10-03,Atlanta Falcons,Tampa Bay Buccaneers,NFL_134942,NFL_134945,36,30,66,6,home,pro_football_reference
+NFL_202410060chi,2024,5.0,regular,2024-10-06,Chicago Bears,Carolina Panthers,NFL_134938,NFL_134943,36,10,46,26,home,pro_football_reference
+NFL_202410060cin,2024,5.0,regular,2024-10-06,Cincinnati Bengals,Baltimore Ravens,NFL_134923,NFL_134922,38,41,79,3,away,pro_football_reference
+NFL_202410060den,2024,5.0,regular,2024-10-06,Denver Broncos,Las Vegas Raiders,NFL_134930,NFL_134932,34,18,52,16,home,pro_football_reference
+NFL_202410060htx,2024,5.0,regular,2024-10-06,Houston Texans,Buffalo Bills,NFL_134926,NFL_134918,23,20,43,3,home,pro_football_reference
+NFL_202410060jax,2024,5.0,regular,2024-10-06,Jacksonville Jaguars,Indianapolis Colts,NFL_134928,NFL_134927,37,34,71,3,home,pro_football_reference
+NFL_202410060min,2024,5.0,regular,2024-10-06,Minnesota Vikings,New York Jets,NFL_134941,NFL_134921,23,17,40,6,home,pro_football_reference
+NFL_202410060nwe,2024,5.0,regular,2024-10-06,New England Patriots,Miami Dolphins,NFL_134920,NFL_134919,10,15,25,5,away,pro_football_reference
+NFL_202410060pit,2024,5.0,regular,2024-10-06,Pittsburgh Steelers,Dallas Cowboys,NFL_134925,NFL_134934,17,20,37,3,away,pro_football_reference
+NFL_202410060ram,2024,5.0,regular,2024-10-06,Los Angeles Rams,Green Bay Packers,NFL_135907,NFL_134940,19,24,43,5,away,pro_football_reference
+NFL_202410060sea,2024,5.0,regular,2024-10-06,Seattle Seahawks,New York Giants,NFL_134949,NFL_134935,20,29,49,9,away,pro_football_reference
+NFL_202410060sfo,2024,5.0,regular,2024-10-06,San Francisco 49ers,Arizona Cardinals,NFL_134948,NFL_134946,23,24,47,1,away,pro_football_reference
+NFL_202410060was,2024,5.0,regular,2024-10-06,Washington Commanders,Cleveland Browns,NFL_134937,NFL_134924,34,13,47,21,home,pro_football_reference
+NFL_202410070kan,2024,5.0,regular,2024-10-07,Kansas City Chiefs,New Orleans Saints,NFL_134931,NFL_134944,26,13,39,13,home,pro_football_reference
+NFL_202410100sea,2024,6.0,regular,2024-10-10,Seattle Seahawks,San Francisco 49ers,NFL_134949,NFL_134948,24,36,60,12,away,pro_football_reference
+NFL_202410130car,2024,6.0,regular,2024-10-13,Carolina Panthers,Atlanta Falcons,NFL_134943,NFL_134942,20,38,58,18,away,pro_football_reference
+NFL_202410130chi,2024,6.0,regular,2024-10-13,Chicago Bears,Jacksonville Jaguars,NFL_134938,NFL_134928,35,16,51,19,home,pro_football_reference
+NFL_202410130dal,2024,6.0,regular,2024-10-13,Dallas Cowboys,Detroit Lions,NFL_134934,NFL_134939,9,47,56,38,away,pro_football_reference
+NFL_202410130den,2024,6.0,regular,2024-10-13,Denver Broncos,Los Angeles Chargers,NFL_134930,NFL_135908,16,23,39,7,away,pro_football_reference
+NFL_202410130gnb,2024,6.0,regular,2024-10-13,Green Bay Packers,Arizona Cardinals,NFL_134940,NFL_134946,34,13,47,21,home,pro_football_reference
+NFL_202410130nor,2024,6.0,regular,2024-10-13,New Orleans Saints,Tampa Bay Buccaneers,NFL_134944,NFL_134945,27,51,78,24,away,pro_football_reference
+NFL_202410130nwe,2024,6.0,regular,2024-10-13,New England Patriots,Houston Texans,NFL_134920,NFL_134926,21,41,62,20,away,pro_football_reference
+NFL_202410130nyg,2024,6.0,regular,2024-10-13,New York Giants,Cincinnati Bengals,NFL_134935,NFL_134923,7,17,24,10,away,pro_football_reference
+NFL_202410130oti,2024,6.0,regular,2024-10-13,Tennessee Titans,Indianapolis Colts,NFL_134929,NFL_134927,17,20,37,3,away,pro_football_reference
+NFL_202410130phi,2024,6.0,regular,2024-10-13,Philadelphia Eagles,Cleveland Browns,NFL_134936,NFL_134924,20,16,36,4,home,pro_football_reference
+NFL_202410130rai,2024,6.0,regular,2024-10-13,Las Vegas Raiders,Pittsburgh Steelers,NFL_134932,NFL_134925,13,32,45,19,away,pro_football_reference
+NFL_202410130rav,2024,6.0,regular,2024-10-13,Baltimore Ravens,Washington Commanders,NFL_134922,NFL_134937,30,23,53,7,home,pro_football_reference
+NFL_202410140nyj,2024,6.0,regular,2024-10-14,New York Jets,Buffalo Bills,NFL_134921,NFL_134918,20,23,43,3,away,pro_football_reference
+NFL_202410170nor,2024,7.0,regular,2024-10-17,New Orleans Saints,Denver Broncos,NFL_134944,NFL_134930,10,33,43,23,away,pro_football_reference
+NFL_202410200atl,2024,7.0,regular,2024-10-20,Atlanta Falcons,Seattle Seahawks,NFL_134942,NFL_134949,14,34,48,20,away,pro_football_reference
+NFL_202410200buf,2024,7.0,regular,2024-10-20,Buffalo Bills,Tennessee Titans,NFL_134918,NFL_134929,34,10,44,24,home,pro_football_reference
+NFL_202410200cle,2024,7.0,regular,2024-10-20,Cleveland Browns,Cincinnati Bengals,NFL_134924,NFL_134923,14,21,35,7,away,pro_football_reference
+NFL_202410200clt,2024,7.0,regular,2024-10-20,Indianapolis Colts,Miami Dolphins,NFL_134927,NFL_134919,16,10,26,6,home,pro_football_reference
+NFL_202410200gnb,2024,7.0,regular,2024-10-20,Green Bay Packers,Houston Texans,NFL_134940,NFL_134926,24,22,46,2,home,pro_football_reference
+NFL_202410200jax,2024,7.0,regular,2024-10-20,Jacksonville Jaguars,New England Patriots,NFL_134928,NFL_134920,32,16,48,16,home,pro_football_reference
+NFL_202410200min,2024,7.0,regular,2024-10-20,Minnesota Vikings,Detroit Lions,NFL_134941,NFL_134939,29,31,60,2,away,pro_football_reference
+NFL_202410200nyg,2024,7.0,regular,2024-10-20,New York Giants,Philadelphia Eagles,NFL_134935,NFL_134936,3,28,31,25,away,pro_football_reference
+NFL_202410200pit,2024,7.0,regular,2024-10-20,Pittsburgh Steelers,New York Jets,NFL_134925,NFL_134921,37,15,52,22,home,pro_football_reference
+NFL_202410200ram,2024,7.0,regular,2024-10-20,Los Angeles Rams,Las Vegas Raiders,NFL_135907,NFL_134932,20,15,35,5,home,pro_football_reference
+NFL_202410200sfo,2024,7.0,regular,2024-10-20,San Francisco 49ers,Kansas City Chiefs,NFL_134948,NFL_134931,18,28,46,10,away,pro_football_reference
+NFL_202410200was,2024,7.0,regular,2024-10-20,Washington Commanders,Carolina Panthers,NFL_134937,NFL_134943,40,7,47,33,home,pro_football_reference
+NFL_202410210crd,2024,7.0,regular,2024-10-21,Arizona Cardinals,Los Angeles Chargers,NFL_134946,NFL_135908,17,15,32,2,home,pro_football_reference
+NFL_202410210tam,2024,7.0,regular,2024-10-21,Tampa Bay Buccaneers,Baltimore Ravens,NFL_134945,NFL_134922,31,41,72,10,away,pro_football_reference
+NFL_202410240ram,2024,8.0,regular,2024-10-24,Los Angeles Rams,Minnesota Vikings,NFL_135907,NFL_134941,30,20,50,10,home,pro_football_reference
+NFL_202410270cin,2024,8.0,regular,2024-10-27,Cincinnati Bengals,Philadelphia Eagles,NFL_134923,NFL_134936,17,37,54,20,away,pro_football_reference
+NFL_202410270cle,2024,8.0,regular,2024-10-27,Cleveland Browns,Baltimore Ravens,NFL_134924,NFL_134922,29,24,53,5,home,pro_football_reference
+NFL_202410270den,2024,8.0,regular,2024-10-27,Denver Broncos,Carolina Panthers,NFL_134930,NFL_134943,28,14,42,14,home,pro_football_reference
+NFL_202410270det,2024,8.0,regular,2024-10-27,Detroit Lions,Tennessee Titans,NFL_134939,NFL_134929,52,14,66,38,home,pro_football_reference
+NFL_202410270htx,2024,8.0,regular,2024-10-27,Houston Texans,Indianapolis Colts,NFL_134926,NFL_134927,23,20,43,3,home,pro_football_reference
+NFL_202410270jax,2024,8.0,regular,2024-10-27,Jacksonville Jaguars,Green Bay Packers,NFL_134928,NFL_134940,27,30,57,3,away,pro_football_reference
+NFL_202410270mia,2024,8.0,regular,2024-10-27,Miami Dolphins,Arizona Cardinals,NFL_134919,NFL_134946,27,28,55,1,away,pro_football_reference
+NFL_202410270nwe,2024,8.0,regular,2024-10-27,New England Patriots,New York Jets,NFL_134920,NFL_134921,25,22,47,3,home,pro_football_reference
+NFL_202410270rai,2024,8.0,regular,2024-10-27,Las Vegas Raiders,Kansas City Chiefs,NFL_134932,NFL_134931,20,27,47,7,away,pro_football_reference
+NFL_202410270sdg,2024,8.0,regular,2024-10-27,Los Angeles Chargers,New Orleans Saints,NFL_135908,NFL_134944,26,8,34,18,home,pro_football_reference
+NFL_202410270sea,2024,8.0,regular,2024-10-27,Seattle Seahawks,Buffalo Bills,NFL_134949,NFL_134918,10,31,41,21,away,pro_football_reference
+NFL_202410270sfo,2024,8.0,regular,2024-10-27,San Francisco 49ers,Dallas Cowboys,NFL_134948,NFL_134934,30,24,54,6,home,pro_football_reference
+NFL_202410270tam,2024,8.0,regular,2024-10-27,Tampa Bay Buccaneers,Atlanta Falcons,NFL_134945,NFL_134942,26,31,57,5,away,pro_football_reference
+NFL_202410270was,2024,8.0,regular,2024-10-27,Washington Commanders,Chicago Bears,NFL_134937,NFL_134938,18,15,33,3,home,pro_football_reference
+NFL_202410280pit,2024,8.0,regular,2024-10-28,Pittsburgh Steelers,New York Giants,NFL_134925,NFL_134935,26,18,44,8,home,pro_football_reference
+NFL_202410310nyj,2024,9.0,regular,2024-10-31,New York Jets,Houston Texans,NFL_134921,NFL_134926,21,13,34,8,home,pro_football_reference
+NFL_202411030atl,2024,9.0,regular,2024-11-03,Atlanta Falcons,Dallas Cowboys,NFL_134942,NFL_134934,27,21,48,6,home,pro_football_reference
+NFL_202411030buf,2024,9.0,regular,2024-11-03,Buffalo Bills,Miami Dolphins,NFL_134918,NFL_134919,30,27,57,3,home,pro_football_reference
+NFL_202411030car,2024,9.0,regular,2024-11-03,Carolina Panthers,New Orleans Saints,NFL_134943,NFL_134944,23,22,45,1,home,pro_football_reference
+NFL_202411030cin,2024,9.0,regular,2024-11-03,Cincinnati Bengals,Las Vegas Raiders,NFL_134923,NFL_134932,41,24,65,17,home,pro_football_reference
+NFL_202411030cle,2024,9.0,regular,2024-11-03,Cleveland Browns,Los Angeles Chargers,NFL_134924,NFL_135908,10,27,37,17,away,pro_football_reference
+NFL_202411030crd,2024,9.0,regular,2024-11-03,Arizona Cardinals,Chicago Bears,NFL_134946,NFL_134938,29,9,38,20,home,pro_football_reference
+NFL_202411030gnb,2024,9.0,regular,2024-11-03,Green Bay Packers,Detroit Lions,NFL_134940,NFL_134939,14,24,38,10,away,pro_football_reference
+NFL_202411030min,2024,9.0,regular,2024-11-03,Minnesota Vikings,Indianapolis Colts,NFL_134941,NFL_134927,21,13,34,8,home,pro_football_reference
+NFL_202411030nyg,2024,9.0,regular,2024-11-03,New York Giants,Washington Commanders,NFL_134935,NFL_134937,22,27,49,5,away,pro_football_reference
+NFL_202411030oti,2024,9.0,regular,2024-11-03,Tennessee Titans,New England Patriots,NFL_134929,NFL_134920,20,17,37,3,home,pro_football_reference
+NFL_202411030phi,2024,9.0,regular,2024-11-03,Philadelphia Eagles,Jacksonville Jaguars,NFL_134936,NFL_134928,28,23,51,5,home,pro_football_reference
+NFL_202411030rav,2024,9.0,regular,2024-11-03,Baltimore Ravens,Denver Broncos,NFL_134922,NFL_134930,41,10,51,31,home,pro_football_reference
+NFL_202411030sea,2024,9.0,regular,2024-11-03,Seattle Seahawks,Los Angeles Rams,NFL_134949,NFL_135907,20,26,46,6,away,pro_football_reference
+NFL_202411040kan,2024,9.0,regular,2024-11-04,Kansas City Chiefs,Tampa Bay Buccaneers,NFL_134931,NFL_134945,30,24,54,6,home,pro_football_reference
+NFL_202411070rav,2024,10.0,regular,2024-11-07,Baltimore Ravens,Cincinnati Bengals,NFL_134922,NFL_134923,35,34,69,1,home,pro_football_reference
+NFL_202411100car,2024,10.0,regular,2024-11-10,Carolina Panthers,New York Giants,NFL_134943,NFL_134935,20,17,37,3,home,pro_football_reference
+NFL_202411100chi,2024,10.0,regular,2024-11-10,Chicago Bears,New England Patriots,NFL_134938,NFL_134920,3,19,22,16,away,pro_football_reference
+NFL_202411100clt,2024,10.0,regular,2024-11-10,Indianapolis Colts,Buffalo Bills,NFL_134927,NFL_134918,20,30,50,10,away,pro_football_reference
+NFL_202411100crd,2024,10.0,regular,2024-11-10,Arizona Cardinals,New York Jets,NFL_134946,NFL_134921,31,6,37,25,home,pro_football_reference
+NFL_202411100dal,2024,10.0,regular,2024-11-10,Dallas Cowboys,Philadelphia Eagles,NFL_134934,NFL_134936,6,34,40,28,away,pro_football_reference
+NFL_202411100htx,2024,10.0,regular,2024-11-10,Houston Texans,Detroit Lions,NFL_134926,NFL_134939,23,26,49,3,away,pro_football_reference
+NFL_202411100jax,2024,10.0,regular,2024-11-10,Jacksonville Jaguars,Minnesota Vikings,NFL_134928,NFL_134941,7,12,19,5,away,pro_football_reference
+NFL_202411100kan,2024,10.0,regular,2024-11-10,Kansas City Chiefs,Denver Broncos,NFL_134931,NFL_134930,16,14,30,2,home,pro_football_reference
+NFL_202411100nor,2024,10.0,regular,2024-11-10,New Orleans Saints,Atlanta Falcons,NFL_134944,NFL_134942,20,17,37,3,home,pro_football_reference
+NFL_202411100sdg,2024,10.0,regular,2024-11-10,Los Angeles Chargers,Tennessee Titans,NFL_135908,NFL_134929,27,17,44,10,home,pro_football_reference
+NFL_202411100tam,2024,10.0,regular,2024-11-10,Tampa Bay Buccaneers,San Francisco 49ers,NFL_134945,NFL_134948,20,23,43,3,away,pro_football_reference
+NFL_202411100was,2024,10.0,regular,2024-11-10,Washington Commanders,Pittsburgh Steelers,NFL_134937,NFL_134925,27,28,55,1,away,pro_football_reference
+NFL_202411110ram,2024,10.0,regular,2024-11-11,Los Angeles Rams,Miami Dolphins,NFL_135907,NFL_134919,15,23,38,8,away,pro_football_reference
+NFL_202411140phi,2024,11.0,regular,2024-11-14,Philadelphia Eagles,Washington Commanders,NFL_134936,NFL_134937,26,18,44,8,home,pro_football_reference
+NFL_202411170buf,2024,11.0,regular,2024-11-17,Buffalo Bills,Kansas City Chiefs,NFL_134918,NFL_134931,30,21,51,9,home,pro_football_reference
+NFL_202411170chi,2024,11.0,regular,2024-11-17,Chicago Bears,Green Bay Packers,NFL_134938,NFL_134940,19,20,39,1,away,pro_football_reference
+NFL_202411170den,2024,11.0,regular,2024-11-17,Denver Broncos,Atlanta Falcons,NFL_134930,NFL_134942,38,6,44,32,home,pro_football_reference
+NFL_202411170det,2024,11.0,regular,2024-11-17,Detroit Lions,Jacksonville Jaguars,NFL_134939,NFL_134928,52,6,58,46,home,pro_football_reference
+NFL_202411170mia,2024,11.0,regular,2024-11-17,Miami Dolphins,Las Vegas Raiders,NFL_134919,NFL_134932,34,19,53,15,home,pro_football_reference
+NFL_202411170nor,2024,11.0,regular,2024-11-17,New Orleans Saints,Cleveland Browns,NFL_134944,NFL_134924,35,14,49,21,home,pro_football_reference
+NFL_202411170nwe,2024,11.0,regular,2024-11-17,New England Patriots,Los Angeles Rams,NFL_134920,NFL_135907,22,28,50,6,away,pro_football_reference
+NFL_202411170nyj,2024,11.0,regular,2024-11-17,New York Jets,Indianapolis Colts,NFL_134921,NFL_134927,27,28,55,1,away,pro_football_reference
+NFL_202411170oti,2024,11.0,regular,2024-11-17,Tennessee Titans,Minnesota Vikings,NFL_134929,NFL_134941,13,23,36,10,away,pro_football_reference
+NFL_202411170pit,2024,11.0,regular,2024-11-17,Pittsburgh Steelers,Baltimore Ravens,NFL_134925,NFL_134922,18,16,34,2,home,pro_football_reference
+NFL_202411170sdg,2024,11.0,regular,2024-11-17,Los Angeles Chargers,Cincinnati Bengals,NFL_135908,NFL_134923,34,27,61,7,home,pro_football_reference
+NFL_202411170sfo,2024,11.0,regular,2024-11-17,San Francisco 49ers,Seattle Seahawks,NFL_134948,NFL_134949,17,20,37,3,away,pro_football_reference
+NFL_202411180dal,2024,11.0,regular,2024-11-18,Dallas Cowboys,Houston Texans,NFL_134934,NFL_134926,10,34,44,24,away,pro_football_reference
+NFL_202411210cle,2024,12.0,regular,2024-11-21,Cleveland Browns,Pittsburgh Steelers,NFL_134924,NFL_134925,24,19,43,5,home,pro_football_reference
+NFL_202411240car,2024,12.0,regular,2024-11-24,Carolina Panthers,Kansas City Chiefs,NFL_134943,NFL_134931,27,30,57,3,away,pro_football_reference
+NFL_202411240chi,2024,12.0,regular,2024-11-24,Chicago Bears,Minnesota Vikings,NFL_134938,NFL_134941,27,30,57,3,away,pro_football_reference
+NFL_202411240clt,2024,12.0,regular,2024-11-24,Indianapolis Colts,Detroit Lions,NFL_134927,NFL_134939,6,24,30,18,away,pro_football_reference
+NFL_202411240gnb,2024,12.0,regular,2024-11-24,Green Bay Packers,San Francisco 49ers,NFL_134940,NFL_134948,38,10,48,28,home,pro_football_reference
+NFL_202411240htx,2024,12.0,regular,2024-11-24,Houston Texans,Tennessee Titans,NFL_134926,NFL_134929,27,32,59,5,away,pro_football_reference
+NFL_202411240mia,2024,12.0,regular,2024-11-24,Miami Dolphins,New England Patriots,NFL_134919,NFL_134920,34,15,49,19,home,pro_football_reference
+NFL_202411240nyg,2024,12.0,regular,2024-11-24,New York Giants,Tampa Bay Buccaneers,NFL_134935,NFL_134945,7,30,37,23,away,pro_football_reference
+NFL_202411240rai,2024,12.0,regular,2024-11-24,Las Vegas Raiders,Denver Broncos,NFL_134932,NFL_134930,19,29,48,10,away,pro_football_reference
+NFL_202411240ram,2024,12.0,regular,2024-11-24,Los Angeles Rams,Philadelphia Eagles,NFL_135907,NFL_134936,20,37,57,17,away,pro_football_reference
+NFL_202411240sea,2024,12.0,regular,2024-11-24,Seattle Seahawks,Arizona Cardinals,NFL_134949,NFL_134946,16,6,22,10,home,pro_football_reference
+NFL_202411240was,2024,12.0,regular,2024-11-24,Washington Commanders,Dallas Cowboys,NFL_134937,NFL_134934,26,34,60,8,away,pro_football_reference
+NFL_202411250sdg,2024,12.0,regular,2024-11-25,Los Angeles Chargers,Baltimore Ravens,NFL_135908,NFL_134922,23,30,53,7,away,pro_football_reference
+NFL_202411280dal,2024,13.0,regular,2024-11-28,Dallas Cowboys,New York Giants,NFL_134934,NFL_134935,27,20,47,7,home,pro_football_reference
+NFL_202411280det,2024,13.0,regular,2024-11-28,Detroit Lions,Chicago Bears,NFL_134939,NFL_134938,23,20,43,3,home,pro_football_reference
+NFL_202411280gnb,2024,13.0,regular,2024-11-28,Green Bay Packers,Miami Dolphins,NFL_134940,NFL_134919,30,17,47,13,home,pro_football_reference
+NFL_202411290kan,2024,13.0,regular,2024-11-29,Kansas City Chiefs,Las Vegas Raiders,NFL_134931,NFL_134932,19,17,36,2,home,pro_football_reference
+NFL_202412010atl,2024,13.0,regular,2024-12-01,Atlanta Falcons,Los Angeles Chargers,NFL_134942,NFL_135908,13,17,30,4,away,pro_football_reference
+NFL_202412010buf,2024,13.0,regular,2024-12-01,Buffalo Bills,San Francisco 49ers,NFL_134918,NFL_134948,35,10,45,25,home,pro_football_reference
+NFL_202412010car,2024,13.0,regular,2024-12-01,Carolina Panthers,Tampa Bay Buccaneers,NFL_134943,NFL_134945,23,26,49,3,away,pro_football_reference
+NFL_202412010cin,2024,13.0,regular,2024-12-01,Cincinnati Bengals,Pittsburgh Steelers,NFL_134923,NFL_134925,38,44,82,6,away,pro_football_reference
+NFL_202412010jax,2024,13.0,regular,2024-12-01,Jacksonville Jaguars,Houston Texans,NFL_134928,NFL_134926,20,23,43,3,away,pro_football_reference
+NFL_202412010min,2024,13.0,regular,2024-12-01,Minnesota Vikings,Arizona Cardinals,NFL_134941,NFL_134946,23,22,45,1,home,pro_football_reference
+NFL_202412010nor,2024,13.0,regular,2024-12-01,New Orleans Saints,Los Angeles Rams,NFL_134944,NFL_135907,14,21,35,7,away,pro_football_reference
+NFL_202412010nwe,2024,13.0,regular,2024-12-01,New England Patriots,Indianapolis Colts,NFL_134920,NFL_134927,24,25,49,1,away,pro_football_reference
+NFL_202412010nyj,2024,13.0,regular,2024-12-01,New York Jets,Seattle Seahawks,NFL_134921,NFL_134949,21,26,47,5,away,pro_football_reference
+NFL_202412010rav,2024,13.0,regular,2024-12-01,Baltimore Ravens,Philadelphia Eagles,NFL_134922,NFL_134936,19,24,43,5,away,pro_football_reference
+NFL_202209110was,2022,1.0,regular,2022-09-11,Washington Commanders,Jacksonville Jaguars,NFL_134937,NFL_134928,28,22,50,6,home,pro_football_reference
+NFL_202209120sea,2022,1.0,regular,2022-09-12,Seattle Seahawks,Denver Broncos,NFL_134949,NFL_134930,17,16,33,1,home,pro_football_reference
+NFL_202209150kan,2022,2.0,regular,2022-09-15,Kansas City Chiefs,Los Angeles Chargers,NFL_134931,NFL_135908,27,24,51,3,home,pro_football_reference
+NFL_202209180cle,2022,2.0,regular,2022-09-18,Cleveland Browns,New York Jets,NFL_134924,NFL_134921,30,31,61,1,away,pro_football_reference
+NFL_202209180dal,2022,2.0,regular,2022-09-18,Dallas Cowboys,Cincinnati Bengals,NFL_134934,NFL_134923,20,17,37,3,home,pro_football_reference
+NFL_202209180den,2022,2.0,regular,2022-09-18,Denver Broncos,Houston Texans,NFL_134930,NFL_134926,16,9,25,7,home,pro_football_reference
+NFL_202209180det,2022,2.0,regular,2022-09-18,Detroit Lions,Washington Commanders,NFL_134939,NFL_134937,36,27,63,9,home,pro_football_reference
+NFL_202209180gnb,2022,2.0,regular,2022-09-18,Green Bay Packers,Chicago Bears,NFL_134940,NFL_134938,27,10,37,17,home,pro_football_reference
+NFL_202209180jax,2022,2.0,regular,2022-09-18,Jacksonville Jaguars,Indianapolis Colts,NFL_134928,NFL_134927,24,0,24,24,home,pro_football_reference
+NFL_202209180nor,2022,2.0,regular,2022-09-18,New Orleans Saints,Tampa Bay Buccaneers,NFL_134944,NFL_134945,10,20,30,10,away,pro_football_reference
+NFL_202209180nyg,2022,2.0,regular,2022-09-18,New York Giants,Carolina Panthers,NFL_134935,NFL_134943,19,16,35,3,home,pro_football_reference
+NFL_202209180pit,2022,2.0,regular,2022-09-18,Pittsburgh Steelers,New England Patriots,NFL_134925,NFL_134920,14,17,31,3,away,pro_football_reference
+NFL_202209180rai,2022,2.0,regular,2022-09-18,Las Vegas Raiders,Arizona Cardinals,NFL_134932,NFL_134946,23,29,52,6,away,pro_football_reference
+NFL_202209180ram,2022,2.0,regular,2022-09-18,Los Angeles Rams,Atlanta Falcons,NFL_135907,NFL_134942,31,27,58,4,home,pro_football_reference
+NFL_202412010was,2024,13.0,regular,2024-12-01,Washington Commanders,Tennessee Titans,NFL_134937,NFL_134929,42,19,61,23,home,pro_football_reference
+NFL_202412020den,2024,13.0,regular,2024-12-02,Denver Broncos,Cleveland Browns,NFL_134930,NFL_134924,41,32,73,9,home,pro_football_reference
+NFL_202412050det,2024,14.0,regular,2024-12-05,Detroit Lions,Green Bay Packers,NFL_134939,NFL_134940,34,31,65,3,home,pro_football_reference
+NFL_202412080crd,2024,14.0,regular,2024-12-08,Arizona Cardinals,Seattle Seahawks,NFL_134946,NFL_134949,18,30,48,12,away,pro_football_reference
+NFL_202412080kan,2024,14.0,regular,2024-12-08,Kansas City Chiefs,Los Angeles Chargers,NFL_134931,NFL_135908,19,17,36,2,home,pro_football_reference
+NFL_202412080mia,2024,14.0,regular,2024-12-08,Miami Dolphins,New York Jets,NFL_134919,NFL_134921,32,26,58,6,home,pro_football_reference
+NFL_202412080min,2024,14.0,regular,2024-12-08,Minnesota Vikings,Atlanta Falcons,NFL_134941,NFL_134942,42,21,63,21,home,pro_football_reference
+NFL_202412080nyg,2024,14.0,regular,2024-12-08,New York Giants,New Orleans Saints,NFL_134935,NFL_134944,11,14,25,3,away,pro_football_reference
+NFL_202412080oti,2024,14.0,regular,2024-12-08,Tennessee Titans,Jacksonville Jaguars,NFL_134929,NFL_134928,6,10,16,4,away,pro_football_reference
+NFL_202412080phi,2024,14.0,regular,2024-12-08,Philadelphia Eagles,Carolina Panthers,NFL_134936,NFL_134943,22,16,38,6,home,pro_football_reference
+NFL_202412080pit,2024,14.0,regular,2024-12-08,Pittsburgh Steelers,Cleveland Browns,NFL_134925,NFL_134924,27,14,41,13,home,pro_football_reference
+NFL_202412080ram,2024,14.0,regular,2024-12-08,Los Angeles Rams,Buffalo Bills,NFL_135907,NFL_134918,44,42,86,2,home,pro_football_reference
+NFL_202412080sfo,2024,14.0,regular,2024-12-08,San Francisco 49ers,Chicago Bears,NFL_134948,NFL_134938,38,13,51,25,home,pro_football_reference
+NFL_202412080tam,2024,14.0,regular,2024-12-08,Tampa Bay Buccaneers,Las Vegas Raiders,NFL_134945,NFL_134932,28,13,41,15,home,pro_football_reference
+NFL_202412090dal,2024,14.0,regular,2024-12-09,Dallas Cowboys,Cincinnati Bengals,NFL_134934,NFL_134923,20,27,47,7,away,pro_football_reference
+NFL_202412120sfo,2024,15.0,regular,2024-12-12,San Francisco 49ers,Los Angeles Rams,NFL_134948,NFL_135907,6,12,18,6,away,pro_football_reference
+NFL_202412150car,2024,15.0,regular,2024-12-15,Carolina Panthers,Dallas Cowboys,NFL_134943,NFL_134934,14,30,44,16,away,pro_football_reference
+NFL_202412150cle,2024,15.0,regular,2024-12-15,Cleveland Browns,Kansas City Chiefs,NFL_134924,NFL_134931,7,21,28,14,away,pro_football_reference
+NFL_202412150crd,2024,15.0,regular,2024-12-15,Arizona Cardinals,New England Patriots,NFL_134946,NFL_134920,30,17,47,13,home,pro_football_reference
+NFL_202412150den,2024,15.0,regular,2024-12-15,Denver Broncos,Indianapolis Colts,NFL_134930,NFL_134927,31,13,44,18,home,pro_football_reference
+NFL_202412150det,2024,15.0,regular,2024-12-15,Detroit Lions,Buffalo Bills,NFL_134939,NFL_134918,42,48,90,6,away,pro_football_reference
+NFL_202412150htx,2024,15.0,regular,2024-12-15,Houston Texans,Miami Dolphins,NFL_134926,NFL_134919,20,12,32,8,home,pro_football_reference
+NFL_202412150jax,2024,15.0,regular,2024-12-15,Jacksonville Jaguars,New York Jets,NFL_134928,NFL_134921,25,32,57,7,away,pro_football_reference
+NFL_202412150nor,2024,15.0,regular,2024-12-15,New Orleans Saints,Washington Commanders,NFL_134944,NFL_134937,19,20,39,1,away,pro_football_reference
+NFL_202412150nyg,2024,15.0,regular,2024-12-15,New York Giants,Baltimore Ravens,NFL_134935,NFL_134922,14,35,49,21,away,pro_football_reference
+NFL_202412150oti,2024,15.0,regular,2024-12-15,Tennessee Titans,Cincinnati Bengals,NFL_134929,NFL_134923,27,37,64,10,away,pro_football_reference
+NFL_202412150phi,2024,15.0,regular,2024-12-15,Philadelphia Eagles,Pittsburgh Steelers,NFL_134936,NFL_134925,27,13,40,14,home,pro_football_reference
+NFL_202412150sdg,2024,15.0,regular,2024-12-15,Los Angeles Chargers,Tampa Bay Buccaneers,NFL_135908,NFL_134945,17,40,57,23,away,pro_football_reference
+NFL_202412150sea,2024,15.0,regular,2024-12-15,Seattle Seahawks,Green Bay Packers,NFL_134949,NFL_134940,13,30,43,17,away,pro_football_reference
+NFL_202412160min,2024,15.0,regular,2024-12-16,Minnesota Vikings,Chicago Bears,NFL_134941,NFL_134938,30,12,42,18,home,pro_football_reference
+NFL_202412160rai,2024,15.0,regular,2024-12-16,Las Vegas Raiders,Atlanta Falcons,NFL_134932,NFL_134942,9,15,24,6,away,pro_football_reference
+NFL_202412190sdg,2024,16.0,regular,2024-12-19,Los Angeles Chargers,Denver Broncos,NFL_135908,NFL_134930,34,27,61,7,home,pro_football_reference
+NFL_202412210kan,2024,16.0,regular,2024-12-21,Kansas City Chiefs,Houston Texans,NFL_134931,NFL_134926,27,19,46,8,home,pro_football_reference
+NFL_202412210rav,2024,16.0,regular,2024-12-21,Baltimore Ravens,Pittsburgh Steelers,NFL_134922,NFL_134925,34,17,51,17,home,pro_football_reference
+NFL_202412220atl,2024,16.0,regular,2024-12-22,Atlanta Falcons,New York Giants,NFL_134942,NFL_134935,34,7,41,27,home,pro_football_reference
+NFL_202412220buf,2024,16.0,regular,2024-12-22,Buffalo Bills,New England Patriots,NFL_134918,NFL_134920,24,21,45,3,home,pro_football_reference
+NFL_202412220car,2024,16.0,regular,2024-12-22,Carolina Panthers,Arizona Cardinals,NFL_134943,NFL_134946,36,30,66,6,home,pro_football_reference
+NFL_202412220chi,2024,16.0,regular,2024-12-22,Chicago Bears,Detroit Lions,NFL_134938,NFL_134939,17,34,51,17,away,pro_football_reference
+NFL_202412220cin,2024,16.0,regular,2024-12-22,Cincinnati Bengals,Cleveland Browns,NFL_134923,NFL_134924,24,6,30,18,home,pro_football_reference
+NFL_202412220clt,2024,16.0,regular,2024-12-22,Indianapolis Colts,Tennessee Titans,NFL_134927,NFL_134929,38,30,68,8,home,pro_football_reference
+NFL_202412220dal,2024,16.0,regular,2024-12-22,Dallas Cowboys,Tampa Bay Buccaneers,NFL_134934,NFL_134945,26,24,50,2,home,pro_football_reference
+NFL_202412220mia,2024,16.0,regular,2024-12-22,Miami Dolphins,San Francisco 49ers,NFL_134919,NFL_134948,29,17,46,12,home,pro_football_reference
+NFL_202412220nyj,2024,16.0,regular,2024-12-22,New York Jets,Los Angeles Rams,NFL_134921,NFL_135907,9,19,28,10,away,pro_football_reference
+NFL_202412220rai,2024,16.0,regular,2024-12-22,Las Vegas Raiders,Jacksonville Jaguars,NFL_134932,NFL_134928,19,14,33,5,home,pro_football_reference
+NFL_202412220sea,2024,16.0,regular,2024-12-22,Seattle Seahawks,Minnesota Vikings,NFL_134949,NFL_134941,24,27,51,3,away,pro_football_reference
+NFL_202412220was,2024,16.0,regular,2024-12-22,Washington Commanders,Philadelphia Eagles,NFL_134937,NFL_134936,36,33,69,3,home,pro_football_reference
+NFL_202412230gnb,2024,16.0,regular,2024-12-23,Green Bay Packers,New Orleans Saints,NFL_134940,NFL_134944,34,0,34,34,home,pro_football_reference
+NFL_202412250htx,2024,17.0,regular,2024-12-25,Houston Texans,Baltimore Ravens,NFL_134926,NFL_134922,2,31,33,29,away,pro_football_reference
+NFL_202412250pit,2024,17.0,regular,2024-12-25,Pittsburgh Steelers,Kansas City Chiefs,NFL_134925,NFL_134931,10,29,39,19,away,pro_football_reference
+NFL_202412260chi,2024,17.0,regular,2024-12-26,Chicago Bears,Seattle Seahawks,NFL_134938,NFL_134949,3,6,9,3,away,pro_football_reference
+NFL_202412280cin,2024,17.0,regular,2024-12-28,Cincinnati Bengals,Denver Broncos,NFL_134923,NFL_134930,30,24,54,6,home,pro_football_reference
+NFL_202412280nwe,2024,17.0,regular,2024-12-28,New England Patriots,Los Angeles Chargers,NFL_134920,NFL_135908,7,40,47,33,away,pro_football_reference
+NFL_202412280ram,2024,17.0,regular,2024-12-28,Los Angeles Rams,Arizona Cardinals,NFL_135907,NFL_134946,13,9,22,4,home,pro_football_reference
+NFL_202412290buf,2024,17.0,regular,2024-12-29,Buffalo Bills,New York Jets,NFL_134918,NFL_134921,40,14,54,26,home,pro_football_reference
+NFL_202412290cle,2024,17.0,regular,2024-12-29,Cleveland Browns,Miami Dolphins,NFL_134924,NFL_134919,3,20,23,17,away,pro_football_reference
+NFL_202412290jax,2024,17.0,regular,2024-12-29,Jacksonville Jaguars,Tennessee Titans,NFL_134928,NFL_134929,20,13,33,7,home,pro_football_reference
+NFL_202412290min,2024,17.0,regular,2024-12-29,Minnesota Vikings,Green Bay Packers,NFL_134941,NFL_134940,27,25,52,2,home,pro_football_reference
+NFL_202412290nor,2024,17.0,regular,2024-12-29,New Orleans Saints,Las Vegas Raiders,NFL_134944,NFL_134932,10,25,35,15,away,pro_football_reference
+NFL_202412290nyg,2024,17.0,regular,2024-12-29,New York Giants,Indianapolis Colts,NFL_134935,NFL_134927,45,33,78,12,home,pro_football_reference
+NFL_202412290phi,2024,17.0,regular,2024-12-29,Philadelphia Eagles,Dallas Cowboys,NFL_134936,NFL_134934,41,7,48,34,home,pro_football_reference
+NFL_202412290tam,2024,17.0,regular,2024-12-29,Tampa Bay Buccaneers,Carolina Panthers,NFL_134945,NFL_134943,48,14,62,34,home,pro_football_reference
+NFL_202412290was,2024,17.0,regular,2024-12-29,Washington Commanders,Atlanta Falcons,NFL_134937,NFL_134942,30,24,54,6,home,pro_football_reference
+NFL_202412300sfo,2024,17.0,regular,2024-12-30,San Francisco 49ers,Detroit Lions,NFL_134948,NFL_134939,34,40,74,6,away,pro_football_reference
+NFL_202501040pit,2024,18.0,regular,2025-01-04,Pittsburgh Steelers,Cincinnati Bengals,NFL_134925,NFL_134923,17,19,36,2,away,pro_football_reference
+NFL_202501040rav,2024,18.0,regular,2025-01-04,Baltimore Ravens,Cleveland Browns,NFL_134922,NFL_134924,35,10,45,25,home,pro_football_reference
+NFL_202501050atl,2024,18.0,regular,2025-01-05,Atlanta Falcons,Carolina Panthers,NFL_134942,NFL_134943,38,44,82,6,away,pro_football_reference
+NFL_202501050clt,2024,18.0,regular,2025-01-05,Indianapolis Colts,Jacksonville Jaguars,NFL_134927,NFL_134928,26,23,49,3,home,pro_football_reference
+NFL_202501050crd,2024,18.0,regular,2025-01-05,Arizona Cardinals,San Francisco 49ers,NFL_134946,NFL_134948,47,24,71,23,home,pro_football_reference
+NFL_202501050dal,2024,18.0,regular,2025-01-05,Dallas Cowboys,Washington Commanders,NFL_134934,NFL_134937,19,23,42,4,away,pro_football_reference
+NFL_202501050den,2024,18.0,regular,2025-01-05,Denver Broncos,Kansas City Chiefs,NFL_134930,NFL_134931,38,0,38,38,home,pro_football_reference
+NFL_202501050det,2024,18.0,regular,2025-01-05,Detroit Lions,Minnesota Vikings,NFL_134939,NFL_134941,31,9,40,22,home,pro_football_reference
+NFL_202501050gnb,2024,18.0,regular,2025-01-05,Green Bay Packers,Chicago Bears,NFL_134940,NFL_134938,22,24,46,2,away,pro_football_reference
+NFL_202501050nwe,2024,18.0,regular,2025-01-05,New England Patriots,Buffalo Bills,NFL_134920,NFL_134918,23,16,39,7,home,pro_football_reference
+NFL_202501050nyj,2024,18.0,regular,2025-01-05,New York Jets,Miami Dolphins,NFL_134921,NFL_134919,32,20,52,12,home,pro_football_reference
+NFL_202501050oti,2024,18.0,regular,2025-01-05,Tennessee Titans,Houston Texans,NFL_134929,NFL_134926,14,23,37,9,away,pro_football_reference
+NFL_202501050phi,2024,18.0,regular,2025-01-05,Philadelphia Eagles,New York Giants,NFL_134936,NFL_134935,20,13,33,7,home,pro_football_reference
+NFL_202501050rai,2024,18.0,regular,2025-01-05,Las Vegas Raiders,Los Angeles Chargers,NFL_134932,NFL_135908,20,34,54,14,away,pro_football_reference
+NFL_202501050ram,2024,18.0,regular,2025-01-05,Los Angeles Rams,Seattle Seahawks,NFL_135907,NFL_134949,25,30,55,5,away,pro_football_reference
+NFL_202501050tam,2024,18.0,regular,2025-01-05,Tampa Bay Buccaneers,New Orleans Saints,NFL_134945,NFL_134944,27,19,46,8,home,pro_football_reference
+NFL_202501110htx,2024,19.0,wildcard,2025-01-11,Houston Texans,Los Angeles Chargers,NFL_134926,NFL_135908,32,12,44,20,home,pro_football_reference
+NFL_202501110rav,2024,19.0,wildcard,2025-01-11,Baltimore Ravens,Pittsburgh Steelers,NFL_134922,NFL_134925,28,14,42,14,home,pro_football_reference
+NFL_202501120buf,2024,19.0,wildcard,2025-01-12,Buffalo Bills,Denver Broncos,NFL_134918,NFL_134930,31,7,38,24,home,pro_football_reference
+NFL_202501120phi,2024,19.0,wildcard,2025-01-12,Philadelphia Eagles,Green Bay Packers,NFL_134936,NFL_134940,22,10,32,12,home,pro_football_reference
+NFL_202501120tam,2024,19.0,wildcard,2025-01-12,Tampa Bay Buccaneers,Washington Commanders,NFL_134945,NFL_134937,20,23,43,3,away,pro_football_reference
+NFL_202501130ram,2024,19.0,wildcard,2025-01-13,Los Angeles Rams,Minnesota Vikings,NFL_135907,NFL_134941,27,9,36,18,home,pro_football_reference
+NFL_202501180det,2024,20.0,divisional,2025-01-18,Detroit Lions,Washington Commanders,NFL_134939,NFL_134937,31,45,76,14,away,pro_football_reference
+NFL_202501180kan,2024,20.0,divisional,2025-01-18,Kansas City Chiefs,Houston Texans,NFL_134931,NFL_134926,23,14,37,9,home,pro_football_reference
+NFL_202501190buf,2024,20.0,divisional,2025-01-19,Buffalo Bills,Baltimore Ravens,NFL_134918,NFL_134922,27,25,52,2,home,pro_football_reference
+NFL_202501190phi,2024,20.0,divisional,2025-01-19,Philadelphia Eagles,Los Angeles Rams,NFL_134936,NFL_135907,28,22,50,6,home,pro_football_reference
+NFL_202501260kan,2024,21.0,conference,2025-01-26,Kansas City Chiefs,Buffalo Bills,NFL_134931,NFL_134918,32,29,61,3,home,pro_football_reference
+NFL_202501260phi,2024,21.0,conference,2025-01-26,Philadelphia Eagles,Washington Commanders,NFL_134936,NFL_134937,55,23,78,32,home,pro_football_reference
+NFL_202502090phi,2024,22.0,superbowl,2025-02-09,Philadelphia Eagles,Kansas City Chiefs,NFL_134936,NFL_134931,40,22,62,18,home,pro_football_reference
