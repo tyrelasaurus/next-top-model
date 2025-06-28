@@ -66,9 +66,10 @@ async def health_check():
 
 
 # Import and include routers
-from .api.v1 import teams, games, players
+from .api.v1 import teams, games, players, data_management
 from .core.config import settings
 
 app.include_router(teams.router, prefix=f"{settings.API_V1_STR}/teams", tags=["teams"])
 app.include_router(games.router, prefix=f"{settings.API_V1_STR}/games", tags=["games"])
 app.include_router(players.router, prefix=f"{settings.API_V1_STR}/players", tags=["players"])
+app.include_router(data_management.router, prefix=f"{settings.API_V1_STR}/data", tags=["data-management"])

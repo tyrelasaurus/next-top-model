@@ -48,6 +48,172 @@ class ProFootballReferenceScraper:
             self.driver.quit()
             logger.info("WebDriver closed")
     
+    def get_week_schedule(self, season: int, week: int) -> List[Dict]:
+        """Get games for a specific week"""
+        season_games = self.scrape_season_schedule(season)
+        return [game for game in season_games if game.get('week') == week]
+    
+    def get_playoff_games(self, season: int, round_name: str) -> List[Dict]:
+        """Get playoff games for a specific round"""
+        # Playoff games are typically in the next calendar year
+        playoff_year = season + 1
+        
+        # Map round names to game types
+        round_mapping = {
+            "Wild Card": "wildcard",
+            "Divisional": "divisional", 
+            "Conference Championships": "conference",
+            "Super Bowl": "superbowl"
+        }
+        
+        game_type = round_mapping.get(round_name, "playoff")
+        
+        # Get all games for the season and filter for playoffs
+        all_games = self.scrape_season_schedule(season)
+        playoff_games = []
+        
+        for game in all_games:
+            # Check if game is in playoff timeframe (typically Jan-Feb)
+            game_date = game.get('date', '')
+            if game_date and (game_date.startswith(f"{playoff_year}-01") or game_date.startswith(f"{playoff_year}-02")):
+                # Determine playoff type based on date and context
+                if "wildcard" in game.get('game_type', '').lower() or (game_date.startswith(f"{playoff_year}-01") and "15" <= game_date.split('-')[2] <= "22"):
+                    game['game_type'] = 'wildcard'
+                elif "divisional" in game.get('game_type', '').lower() or (game_date.startswith(f"{playoff_year}-01") and "25" <= game_date.split('-')[2] <= "31"):
+                    game['game_type'] = 'divisional'
+                elif "conference" in game.get('game_type', '').lower() or (game_date.startswith(f"{playoff_year}-01") and game_date.split('-')[2] >= "28"):
+                    game['game_type'] = 'conference'
+                elif "super" in game.get('game_type', '').lower() or game_date.startswith(f"{playoff_year}-02"):
+                    game['game_type'] = 'superbowl'
+                
+                if game.get('game_type') == game_type:
+                    playoff_games.append(game)
+        
+        return playoff_games
+    
+    def get_game_boxscore(self, game_id: str) -> Optional[Dict]:
+        """Get detailed boxscore data for a specific game"""
+        # Extract year and game info from game_id (format: NFL_YYYYMMDDTEM)
+        try:
+            parts = game_id.split('_')
+            if len(parts) >= 2:
+                date_team = parts[1]
+                year = date_team[:4]
+                month = date_team[4:6]
+                day = date_team[6:8]
+                team = date_team[8:]
+                
+                # Construct boxscore URL
+                boxscore_url = f"{self.base_url}/boxscores/{year}{month}{day}0{team}.htm"
+                
+                logger.info(f"Fetching boxscore from: {boxscore_url}")
+                self.driver.get(boxscore_url)
+                
+                # Wait for page to load
+                WebDriverWait(self.driver, 10).until(
+                    EC.presence_of_element_located((By.CLASS_NAME, "scorebox"))
+                )
+                
+                # Extract basic game info
+                boxscore_data = {
+                    "game_id": game_id,
+                    "url": boxscore_url,
+                    "collected_at": datetime.utcnow().isoformat()
+                }
+                
+                # Extract team stats if available
+                try:
+                    team_stats_table = self.driver.find_element(By.ID, "team_stats")
+                    # Parse team statistics table
+                    boxscore_data["team_stats"] = self._parse_team_stats_table(team_stats_table)
+                except NoSuchElementException:
+                    logger.warning(f"No team stats table found for {game_id}")
+                
+                return boxscore_data
+                
+        except Exception as e:
+            logger.error(f"Failed to get boxscore for {game_id}: {e}")
+            return None
+    
+    def get_game_player_stats(self, game_id: str) -> Optional[Dict]:
+        """Get player statistics for a specific game"""
+        try:
+            # This would require navigating to the boxscore page first
+            boxscore_data = self.get_game_boxscore(game_id)
+            if not boxscore_data:
+                return None
+                
+            player_stats = {
+                "game_id": game_id,
+                "passing": [],
+                "rushing": [],
+                "receiving": [],
+                "defense": []
+            }
+            
+            # Extract player stat tables
+            stat_tables = [
+                ("passing", "#passing"),
+                ("rushing", "#rushing"), 
+                ("receiving", "#receiving"),
+                ("defense", "#defense")
+            ]
+            
+            for stat_type, selector in stat_tables:
+                try:
+                    table = self.driver.find_element(By.CSS_SELECTOR, selector)
+                    player_stats[stat_type] = self._parse_player_stats_table(table)
+                except NoSuchElementException:
+                    logger.debug(f"No {stat_type} table found for {game_id}")
+            
+            return player_stats
+            
+        except Exception as e:
+            logger.error(f"Failed to get player stats for {game_id}: {e}")
+            return None
+    
+    def _parse_team_stats_table(self, table) -> Dict:
+        """Parse team statistics table"""
+        stats = {}
+        try:
+            rows = table.find_elements(By.TAG_NAME, "tr")
+            for row in rows[1:]:  # Skip header
+                cells = row.find_elements(By.TAG_NAME, "td")
+                if len(cells) >= 3:
+                    stat_name = cells[0].text.strip()
+                    away_value = cells[1].text.strip()
+                    home_value = cells[2].text.strip()
+                    stats[stat_name] = {"away": away_value, "home": home_value}
+        except Exception as e:
+            logger.error(f"Error parsing team stats table: {e}")
+        return stats
+    
+    def _parse_player_stats_table(self, table) -> List[Dict]:
+        """Parse player statistics table"""
+        players = []
+        try:
+            rows = table.find_elements(By.TAG_NAME, "tr")
+            if len(rows) < 2:
+                return players
+                
+            # Get headers
+            header_row = rows[0]
+            headers = [th.text.strip() for th in header_row.find_elements(By.TAG_NAME, "th")]
+            
+            # Parse data rows
+            for row in rows[1:]:
+                cells = row.find_elements(By.TAG_NAME, "td")
+                if len(cells) >= len(headers):
+                    player_data = {}
+                    for i, header in enumerate(headers):
+                        if i < len(cells):
+                            player_data[header] = cells[i].text.strip()
+                    if player_data:
+                        players.append(player_data)
+        except Exception as e:
+            logger.error(f"Error parsing player stats table: {e}")
+        return players
+    
     def __enter__(self):
         return self
     

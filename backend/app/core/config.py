@@ -8,7 +8,7 @@ class Settings(BaseSettings):
     API_V1_STR: str = "/api/v1"
     
     # Database
-    DATABASE_URL: str = "postgresql://user:password@localhost/sda_db"
+    DATABASE_URL: str = "sqlite:///./sports_data.db"
     
     # API Keys
     THESPORTSDB_API_KEY: Optional[str] = None
