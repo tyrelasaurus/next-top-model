@@ -1,5 +1,6 @@
 use rusqlite::{Connection, Result};
 use serde::{Deserialize, Serialize};
+use std::path::Path;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Team {
@@ -17,7 +18,7 @@ pub struct Team {
 pub struct Game {
     game_uid: String,
     season: i32,
-    week: Option<i32>,
+    week: Option<f64>,
     game_type: Option<String>,
     home_team_uid: Option<String>,
     away_team_uid: Option<String>,
@@ -30,19 +31,42 @@ pub struct Game {
 
 fn get_db_connection() -> Result<Connection> {
     let db_path = "/Volumes/Extreme SSD/next_top_model/backend/nfl_data.db";
-    Connection::open(db_path)
+    
+    // Check if file exists
+    if !Path::new(db_path).exists() {
+        eprintln!("Database file not found at: {}", db_path);
+        return Err(rusqlite::Error::SqliteFailure(
+            rusqlite::ffi::Error::new(rusqlite::ffi::SQLITE_CANTOPEN),
+            Some("Database file not found".to_string())
+        ));
+    }
+    
+    let conn = Connection::open(db_path)?;
+    
+    // Test the connection
+    let _: i32 = conn.query_row("SELECT 1", [], |row| row.get(0))?;
+    
+    Ok(conn)
 }
 
 #[tauri::command]
 fn get_teams() -> Result<Vec<Team>, String> {
-    let conn = get_db_connection().map_err(|e| e.to_string())?;
+    println!("get_teams called");
+    
+    let conn = get_db_connection().map_err(|e| {
+        println!("Teams: Database connection error: {}", e);
+        e.to_string()
+    })?;
     
     let mut stmt = conn.prepare("
         SELECT team_uid, city, name, abbreviation, stadium_name, 
                stadium_capacity, conference, division 
         FROM teams 
         ORDER BY conference, division, name
-    ").map_err(|e| e.to_string())?;
+    ").map_err(|e| {
+        println!("Teams: Query preparation error: {}", e);
+        e.to_string()
+    })?;
     
     let team_iter = stmt.query_map([], |row| {
         Ok(Team {
@@ -55,19 +79,31 @@ fn get_teams() -> Result<Vec<Team>, String> {
             conference: row.get(6)?,
             division: row.get(7)?,
         })
-    }).map_err(|e| e.to_string())?;
+    }).map_err(|e| {
+        println!("Teams: Query execution error: {}", e);
+        e.to_string()
+    })?;
     
     let mut teams = Vec::new();
     for team in team_iter {
-        teams.push(team.map_err(|e| e.to_string())?);
+        teams.push(team.map_err(|e| {
+            println!("Teams: Row processing error: {}", e);
+            e.to_string()
+        })?);
     }
     
+    println!("Retrieved {} teams", teams.len());
     Ok(teams)
 }
 
 #[tauri::command]
 fn get_games(season: Option<i32>, team_uid: Option<String>) -> Result<Vec<Game>, String> {
-    let conn = get_db_connection().map_err(|e| e.to_string())?;
+    println!("get_games called with season: {:?}, team_uid: {:?}", season, team_uid);
+    
+    let conn = get_db_connection().map_err(|e| {
+        println!("Database connection error: {}", e);
+        e.to_string()
+    })?;
     
     let mut query = "
         SELECT game_uid, season, week, game_type, home_team_uid, away_team_uid,
@@ -91,7 +127,12 @@ fn get_games(season: Option<i32>, team_uid: Option<String>) -> Result<Vec<Game>,
     
     query.push_str(" ORDER BY game_datetime DESC");
     
-    let mut stmt = conn.prepare(&query).map_err(|e| e.to_string())?;
+    println!("Executing query: {}", query);
+    
+    let mut stmt = conn.prepare(&query).map_err(|e| {
+        println!("Query preparation error: {}", e);
+        e.to_string()
+    })?;
     
     let param_refs: Vec<&dyn rusqlite::types::ToSql> = params.iter().map(|p| p.as_ref()).collect();
     
@@ -109,21 +150,55 @@ fn get_games(season: Option<i32>, team_uid: Option<String>) -> Result<Vec<Game>,
             away_score: row.get(9)?,
             overtime: row.get(10)?,
         })
-    }).map_err(|e| e.to_string())?;
+    }).map_err(|e| {
+        println!("Query execution error: {}", e);
+        e.to_string()
+    })?;
     
     let mut games = Vec::new();
     for game in game_iter {
-        games.push(game.map_err(|e| e.to_string())?);
+        games.push(game.map_err(|e| {
+            println!("Row processing error: {}", e);
+            e.to_string()
+        })?);
     }
     
+    println!("Retrieved {} games", games.len());
     Ok(games)
+}
+
+#[tauri::command]
+fn test_db_connection() -> Result<String, String> {
+    let db_path = "/Volumes/Extreme SSD/next_top_model/backend/nfl_data.db";
+    
+    if !Path::new(db_path).exists() {
+        return Ok(format!("Database file not found at: {}", db_path));
+    }
+    
+    match get_db_connection() {
+        Ok(conn) => {
+            match conn.prepare("SELECT COUNT(*) FROM games") {
+                Ok(mut stmt) => {
+                    match stmt.query_row([], |row| {
+                        let count: i64 = row.get(0)?;
+                        Ok(count)
+                    }) {
+                        Ok(count) => Ok(format!("Database connected successfully. Games count: {}", count)),
+                        Err(e) => Ok(format!("Error querying games: {}", e))
+                    }
+                },
+                Err(e) => Ok(format!("Error preparing query: {}", e))
+            }
+        },
+        Err(e) => Ok(format!("Database connection error: {}", e))
+    }
 }
 
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
     tauri::Builder::default()
         .plugin(tauri_plugin_opener::init())
-        .invoke_handler(tauri::generate_handler![get_teams, get_games])
+        .invoke_handler(tauri::generate_handler![get_teams, get_games, test_db_connection])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
 }

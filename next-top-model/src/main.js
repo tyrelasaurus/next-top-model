@@ -3,6 +3,8 @@ const { invoke } = window.__TAURI__.core;
 let currentPage = 'dashboard';
 let teamsData = [];
 let gamesData = [];
+let currentGamesPage = 1;
+let gamesPerPage = 50;
 
 // API functions
 async function getTeams() {
@@ -52,13 +54,13 @@ function renderDashboard() {
 
       <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Quick Actions</h2>
       <div class="flex flex-wrap gap-4 p-4">
-        <button class="flex min-w-[200px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-6 bg-[#2e2348] text-white text-sm font-bold leading-normal" onclick="switchPage('teams')">
+        <button class="quick-action-btn flex min-w-[200px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-6 bg-[#2e2348] text-white text-sm font-bold leading-normal" data-page="teams">
           View All Teams
         </button>
-        <button class="flex min-w-[200px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-6 bg-[#2e2348] text-white text-sm font-bold leading-normal" onclick="switchPage('games')">
+        <button class="quick-action-btn flex min-w-[200px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-6 bg-[#2e2348] text-white text-sm font-bold leading-normal" data-page="games">
           Browse Games
         </button>
-        <button class="flex min-w-[200px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-6 bg-[#2e2348] text-white text-sm font-bold leading-normal" onclick="switchPage('standings')">
+        <button class="quick-action-btn flex min-w-[200px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-6 bg-[#2e2348] text-white text-sm font-bold leading-normal" data-page="standings">
           View Standings
         </button>
       </div>
@@ -70,8 +72,27 @@ function renderDashboard() {
 }
 
 async function loadDashboardData() {
-  const games = await getGames();
-  document.getElementById('games-count').textContent = games.length;
+  try {
+    // Test database connection first
+    const dbTest = await invoke("test_db_connection");
+    console.log('Database test result:', dbTest);
+    
+    const games = await getGames();
+    console.log('Dashboard loaded games:', games.length);
+    document.getElementById('games-count').textContent = games.length;
+    
+    // Add event listeners for quick action buttons
+    document.querySelectorAll('.quick-action-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const page = btn.getAttribute('data-page');
+        console.log('Quick action clicked:', page);
+        switchPage(page);
+      });
+    });
+  } catch (error) {
+    console.error('Error loading dashboard data:', error);
+    document.getElementById('games-count').textContent = 'Error';
+  }
 }
 
 function renderTeams() {
@@ -114,8 +135,16 @@ function renderTeams() {
 }
 
 async function loadTeams() {
-  teamsData = await getTeams();
-  renderTeamsGrid(teamsData);
+  try {
+    console.log('Loading teams...');
+    teamsData = await getTeams();
+    console.log('Teams loaded:', teamsData.length);
+    renderTeamsGrid(teamsData);
+  } catch (error) {
+    console.error('Error loading teams:', error);
+    const grid = document.getElementById('teams-grid');
+    grid.innerHTML = `<p class="text-red-400 text-center col-span-full">Error loading teams: ${error}</p>`;
+  }
 }
 
 function renderTeamsGrid(teams) {
@@ -132,11 +161,20 @@ function renderTeamsGrid(teams) {
         <p class="text-[#a292c9] text-sm font-normal leading-normal">Stadium: ${team.stadium_name || 'N/A'}</p>
         <p class="text-[#a292c9] text-sm font-normal leading-normal">Capacity: ${team.stadium_capacity ? team.stadium_capacity.toLocaleString() : 'N/A'}</p>
       </div>
-      <button class="flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-[#423267] text-white text-sm font-medium leading-normal" onclick="viewTeamGames('${team.team_uid}', '${team.name}')">
+      <button class="team-games-btn flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-[#423267] text-white text-sm font-medium leading-normal" data-team-uid="${team.team_uid}" data-team-name="${team.name}">
         View Games
       </button>
     </div>
   `).join('');
+  
+  // Add event listeners for team games buttons
+  document.querySelectorAll('.team-games-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const teamUid = btn.getAttribute('data-team-uid');
+      const teamName = btn.getAttribute('data-team-name');
+      viewTeamGames(teamUid, teamName);
+    });
+  });
 }
 
 function filterTeams() {
@@ -194,8 +232,16 @@ function renderGames() {
 }
 
 async function loadGames() {
-  gamesData = await getGames();
-  renderGamesTable(gamesData);
+  try {
+    console.log('Loading games...');
+    gamesData = await getGames();
+    console.log('Games loaded:', gamesData.length);
+    renderGamesTable(gamesData);
+  } catch (error) {
+    console.error('Error loading games:', error);
+    const container = document.getElementById('games-container');
+    container.innerHTML = `<p class="text-red-400 text-center">Error loading games: ${error}</p>`;
+  }
 }
 
 function renderGamesTable(games) {
@@ -232,7 +278,7 @@ function renderGamesTable(games) {
                   'Not played'}
               </td>
               <td class="px-4 py-2 text-[#a292c9] text-sm font-normal leading-normal">
-                ${game.game_type || 'N/A'}
+                ${game.game_type || 'N/A'}${game.week ? ` (Week ${Math.floor(game.week)})` : ''}
               </td>
               <td class="px-4 py-2 text-[#a292c9] text-sm font-normal leading-normal">
                 ${game.season}
@@ -300,10 +346,18 @@ function renderStandings() {
 }
 
 async function loadStandings() {
-  const season = document.getElementById('standings-season').value;
-  const seasonGames = await getGames(parseInt(season));
-  const standings = calculateStandings(seasonGames);
-  renderStandingsTable(standings);
+  try {
+    const season = document.getElementById('standings-season').value;
+    console.log('Loading standings for season:', season);
+    const seasonGames = await getGames(parseInt(season));
+    console.log('Season games loaded:', seasonGames.length);
+    const standings = calculateStandings(seasonGames);
+    renderStandingsTable(standings);
+  } catch (error) {
+    console.error('Error loading standings:', error);
+    const container = document.getElementById('standings-content');
+    container.innerHTML = `<p class="text-red-400 text-center">Error loading standings: ${error}</p>`;
+  }
 }
 
 function calculateStandings(games) {
