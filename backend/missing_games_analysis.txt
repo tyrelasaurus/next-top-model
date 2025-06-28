@@ -1,0 +1,156 @@
+Missing Games Analysis
+=====================
+
+Total missing: 224
+Preseason (August): 45
+Critical missing (regular/playoff): 147
+Real coverage: 81.3%
+
+Critical missing games:
+Kansas City Chiefs @ Tampa Bay Buccaneers (2022-10-03) - regular
+Los Angeles Rams @ San Francisco 49ers (2022-10-04) - regular
+Indianapolis Colts @ Denver Broncos (2022-10-07) - regular
+Cincinnati Bengals @ Baltimore Ravens (2022-10-10) - regular
+Las Vegas Raiders @ Kansas City Chiefs (2022-10-11) - regular
+Washington Commanders @ Chicago Bears (2022-10-14) - regular
+Dallas Cowboys @ Philadelphia Eagles (2022-10-17) - regular
+Denver Broncos @ Los Angeles Chargers (2022-10-18) - regular
+New Orleans Saints @ Arizona Cardinals (2022-10-21) - regular
+Pittsburgh Steelers @ Miami Dolphins (2022-10-24) - regular
+Chicago Bears @ New England Patriots (2022-10-25) - regular
+Baltimore Ravens @ Tampa Bay Buccaneers (2022-10-28) - regular
+Green Bay Packers @ Buffalo Bills (2022-10-31) - regular
+Cincinnati Bengals @ Cleveland Browns (2022-11-01) - regular
+Philadelphia Eagles @ Houston Texans (2022-11-04) - regular
+Tennessee Titans @ Kansas City Chiefs (2022-11-07) - regular
+Baltimore Ravens @ New Orleans Saints (2022-11-08) - regular
+Atlanta Falcons @ Carolina Panthers (2022-11-11) - regular
+Los Angeles Chargers @ San Francisco 49ers (2022-11-14) - regular
+Washington Commanders @ Philadelphia Eagles (2022-11-15) - regular
+Tennessee Titans @ Green Bay Packers (2022-11-18) - regular
+San Francisco 49ers @ Arizona Cardinals (2022-11-22) - regular
+New England Patriots @ Minnesota Vikings (2022-11-25) - regular
+Green Bay Packers @ Philadelphia Eagles (2022-11-28) - regular
+Pittsburgh Steelers @ Indianapolis Colts (2022-11-29) - regular
+Buffalo Bills @ New England Patriots (2022-12-02) - regular
+Indianapolis Colts @ Dallas Cowboys (2022-12-05) - regular
+New Orleans Saints @ Tampa Bay Buccaneers (2022-12-06) - regular
+Las Vegas Raiders @ Los Angeles Rams (2022-12-09) - regular
+Miami Dolphins @ Los Angeles Chargers (2022-12-12) - regular
+New England Patriots @ Arizona Cardinals (2022-12-13) - regular
+San Francisco 49ers @ Seattle Seahawks (2022-12-16) - regular
+Miami Dolphins @ Buffalo Bills (2022-12-18) - regular
+New York Giants @ Washington Commanders (2022-12-19) - regular
+Los Angeles Rams @ Green Bay Packers (2022-12-20) - regular
+Jacksonville Jaguars @ New York Jets (2022-12-23) - regular
+Las Vegas Raiders @ Pittsburgh Steelers (2022-12-25) - regular
+Tampa Bay Buccaneers @ Arizona Cardinals (2022-12-26) - regular
+Los Angeles Chargers @ Indianapolis Colts (2022-12-27) - regular
+Dallas Cowboys @ Tennessee Titans (2022-12-30) - regular
+Kansas City Chiefs @ New York Jets (2023-10-02) - regular
+Seattle Seahawks @ New York Giants (2023-10-03) - regular
+Chicago Bears @ Washington Commanders (2023-10-06) - regular
+Dallas Cowboys @ San Francisco 49ers (2023-10-09) - regular
+Green Bay Packers @ Las Vegas Raiders (2023-10-10) - regular
+Denver Broncos @ Kansas City Chiefs (2023-10-13) - regular
+New York Giants @ Buffalo Bills (2023-10-16) - regular
+Dallas Cowboys @ Los Angeles Chargers (2023-10-17) - regular
+Jacksonville Jaguars @ New Orleans Saints (2023-10-20) - regular
+Miami Dolphins @ Philadelphia Eagles (2023-10-23) - regular
+San Francisco 49ers @ Minnesota Vikings (2023-10-24) - regular
+Tampa Bay Buccaneers @ Buffalo Bills (2023-10-27) - regular
+Chicago Bears @ Los Angeles Chargers (2023-10-30) - regular
+Las Vegas Raiders @ Detroit Lions (2023-10-31) - regular
+Tennessee Titans @ Pittsburgh Steelers (2023-11-03) - regular
+Buffalo Bills @ Cincinnati Bengals (2023-11-06) - regular
+Los Angeles Chargers @ New York Jets (2023-11-07) - regular
+Carolina Panthers @ Chicago Bears (2023-11-10) - regular
+New York Jets @ Las Vegas Raiders (2023-11-13) - regular
+Denver Broncos @ Buffalo Bills (2023-11-14) - regular
+Cincinnati Bengals @ Baltimore Ravens (2023-11-17) - regular
+Minnesota Vikings @ Denver Broncos (2023-11-20) - regular
+Philadelphia Eagles @ Kansas City Chiefs (2023-11-21) - regular
+San Francisco 49ers @ Seattle Seahawks (2023-11-24) - regular
+Baltimore Ravens @ Los Angeles Chargers (2023-11-27) - regular
+Chicago Bears @ Minnesota Vikings (2023-11-28) - regular
+Seattle Seahawks @ Dallas Cowboys (2023-12-01) - regular
+Kansas City Chiefs @ Green Bay Packers (2023-12-04) - regular
+Cincinnati Bengals @ Jacksonville Jaguars (2023-12-05) - regular
+New England Patriots @ Pittsburgh Steelers (2023-12-08) - regular
+Philadelphia Eagles @ Dallas Cowboys (2023-12-11) - regular
+Tennessee Titans @ Miami Dolphins (2023-12-12) - regular
+Green Bay Packers @ New York Giants (2023-12-12) - regular
+Los Angeles Chargers @ Las Vegas Raiders (2023-12-15) - regular
+Denver Broncos @ Detroit Lions (2023-12-17) - regular
+Baltimore Ravens @ Jacksonville Jaguars (2023-12-18) - regular
+Philadelphia Eagles @ Seattle Seahawks (2023-12-19) - regular
+New Orleans Saints @ Los Angeles Rams (2023-12-22) - regular
+Buffalo Bills @ Los Angeles Chargers (2023-12-24) - regular
+New England Patriots @ Denver Broncos (2023-12-25) - regular
+Baltimore Ravens @ San Francisco 49ers (2023-12-26) - regular
+New York Jets @ Cleveland Browns (2023-12-29) - regular
+Detroit Lions @ Dallas Cowboys (2023-12-31) - regular
+Seattle Seahawks @ Detroit Lions (2024-10-01) - regular
+Tampa Bay Buccaneers @ Atlanta Falcons (2024-10-04) - regular
+Dallas Cowboys @ Pittsburgh Steelers (2024-10-07) - regular
+New Orleans Saints @ Kansas City Chiefs (2024-10-08) - regular
+San Francisco 49ers @ Seattle Seahawks (2024-10-11) - regular
+Cincinnati Bengals @ New York Giants (2024-10-14) - regular
+Buffalo Bills @ New York Jets (2024-10-15) - regular
+Denver Broncos @ New Orleans Saints (2024-10-18) - regular
+New York Jets @ Pittsburgh Steelers (2024-10-21) - regular
+Baltimore Ravens @ Tampa Bay Buccaneers (2024-10-22) - regular
+Los Angeles Chargers @ Arizona Cardinals (2024-10-22) - regular
+Minnesota Vikings @ Los Angeles Rams (2024-10-25) - regular
+Dallas Cowboys @ San Francisco 49ers (2024-10-28) - regular
+New York Giants @ Pittsburgh Steelers (2024-10-29) - regular
+Houston Texans @ New York Jets (2024-11-01) - regular
+Indianapolis Colts @ Minnesota Vikings (2024-11-04) - regular
+Tampa Bay Buccaneers @ Kansas City Chiefs (2024-11-05) - regular
+Cincinnati Bengals @ Baltimore Ravens (2024-11-08) - regular
+Detroit Lions @ Houston Texans (2024-11-11) - regular
+Miami Dolphins @ Los Angeles Rams (2024-11-12) - regular
+Washington Commanders @ Philadelphia Eagles (2024-11-15) - regular
+Cincinnati Bengals @ Los Angeles Chargers (2024-11-18) - regular
+Houston Texans @ Dallas Cowboys (2024-11-19) - regular
+Pittsburgh Steelers @ Cleveland Browns (2024-11-22) - regular
+Philadelphia Eagles @ Los Angeles Rams (2024-11-25) - regular
+Baltimore Ravens @ Los Angeles Chargers (2024-11-26) - regular
+Miami Dolphins @ Green Bay Packers (2024-11-29) - regular
+San Francisco 49ers @ Buffalo Bills (2024-12-02) - regular
+Cleveland Browns @ Denver Broncos (2024-12-03) - regular
+Green Bay Packers @ Detroit Lions (2024-12-06) - regular
+Los Angeles Chargers @ Kansas City Chiefs (2024-12-09) - regular
+Cincinnati Bengals @ Dallas Cowboys (2024-12-10) - regular
+Los Angeles Rams @ San Francisco 49ers (2024-12-13) - regular
+Green Bay Packers @ Seattle Seahawks (2024-12-16) - regular
+Chicago Bears @ Minnesota Vikings (2024-12-17) - regular
+Atlanta Falcons @ Las Vegas Raiders (2024-12-17) - regular
+Denver Broncos @ Los Angeles Chargers (2024-12-20) - regular
+Tampa Bay Buccaneers @ Dallas Cowboys (2024-12-23) - regular
+New Orleans Saints @ Green Bay Packers (2024-12-24) - regular
+Seattle Seahawks @ Chicago Bears (2024-12-27) - regular
+Arizona Cardinals @ Los Angeles Rams (2024-12-29) - regular
+Atlanta Falcons @ Washington Commanders (2024-12-30) - regular
+Detroit Lions @ San Francisco 49ers (2024-12-31) - regular
+Pittsburgh Steelers @ Baltimore Ravens (2023-01-02) - playoff
+Buffalo Bills @ Cincinnati Bengals (2023-01-03) - playoff
+Tennessee Titans @ Jacksonville Jaguars (2023-01-08) - playoff
+Detroit Lions @ Green Bay Packers (2023-01-09) - playoff
+Los Angeles Chargers @ Jacksonville Jaguars (2023-01-15) - playoff
+Baltimore Ravens @ Cincinnati Bengals (2023-01-16) - playoff
+Dallas Cowboys @ Tampa Bay Buccaneers (2023-01-17) - playoff
+New York Giants @ Philadelphia Eagles (2023-01-22) - playoff
+Green Bay Packers @ Minnesota Vikings (2024-01-01) - playoff
+Houston Texans @ Indianapolis Colts (2024-01-07) - playoff
+Buffalo Bills @ Miami Dolphins (2024-01-08) - playoff
+Miami Dolphins @ Kansas City Chiefs (2024-01-14) - playoff
+Los Angeles Rams @ Detroit Lions (2024-01-15) - playoff
+Philadelphia Eagles @ Tampa Bay Buccaneers (2024-01-16) - playoff
+Green Bay Packers @ San Francisco 49ers (2024-01-21) - playoff
+Cincinnati Bengals @ Pittsburgh Steelers (2025-01-05) - playoff
+Minnesota Vikings @ Detroit Lions (2025-01-06) - playoff
+Pittsburgh Steelers @ Baltimore Ravens (2025-01-12) - playoff
+Washington Commanders @ Tampa Bay Buccaneers (2025-01-13) - playoff
+Minnesota Vikings @ Los Angeles Rams (2025-01-14) - playoff
+Washington Commanders @ Detroit Lions (2025-01-19) - playoff

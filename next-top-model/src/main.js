@@ -5,6 +5,8 @@ let teamsData = [];
 let gamesData = [];
 let currentGamesPage = 1;
 let gamesPerPage = 50;
+let gamesSortBy = 'date';
+let gamesSortDirection = 'desc';
 
 // API functions
 async function getTeams() {
@@ -18,11 +20,35 @@ async function getTeams() {
 
 async function getGames(season = null, teamUid = null) {
   try {
-    return await invoke("get_games", { season, team_uid: teamUid });
+    const games = await invoke("get_games", { season, team_uid: teamUid });
+    // Fix game types based on date (database has incorrect classifications)
+    return games.map(game => ({
+      ...game,
+      game_type: correctGameType(game)
+    }));
   } catch (error) {
     console.error("Error fetching games:", error);
     return [];
   }
+}
+
+function correctGameType(game) {
+  if (!game.game_datetime) return game.game_type;
+  
+  const gameDate = new Date(game.game_datetime);
+  const month = gameDate.getMonth() + 1; // JavaScript months are 0-indexed
+  
+  // Fix misclassified game types based on date
+  if (month >= 8 && month <= 8) { // August
+    return 'preseason';
+  } else if (month >= 9 && month <= 12) { // September-December
+    return 'regular';
+  } else if (month >= 1 && month <= 2) { // January-February
+    return 'playoff';
+  }
+  
+  // Default to original type if date doesn't fit pattern
+  return game.game_type;
 }
 
 // Page rendering functions
@@ -210,9 +236,9 @@ function renderGames() {
         </select>
         <select id="game-type-filter" class="rounded-lg bg-[#2e2348] text-white border border-[#423267] px-3 py-2">
           <option value="">All Game Types</option>
-          <option value="Regular Season">Regular Season</option>
-          <option value="Playoffs">Playoffs</option>
-          <option value="Preseason">Preseason</option>
+          <option value="preseason">Preseason</option>
+          <option value="regular">Regular Season</option>
+          <option value="playoff">Playoffs</option>
         </select>
         <input type="text" id="team-search" placeholder="Search team name..." class="rounded-lg bg-[#2e2348] text-white border border-[#423267] px-3 py-2">
       </div>
@@ -236,6 +262,11 @@ async function loadGames() {
     console.log('Loading games...');
     gamesData = await getGames();
     console.log('Games loaded:', gamesData.length);
+    
+    // Apply default sort (newest games first)
+    gamesData = sortGames(gamesData, gamesSortBy, gamesSortDirection);
+    filteredGamesData = gamesData; // Initialize filtered data
+    currentGamesPage = 1; // Reset pagination
     renderGamesTable(gamesData);
   } catch (error) {
     console.error('Error loading games:', error);
@@ -251,21 +282,34 @@ function renderGamesTable(games) {
     return;
   }
   
+  const totalPages = Math.ceil(games.length / gamesPerPage);
+  const startIndex = (currentGamesPage - 1) * gamesPerPage;
+  const endIndex = startIndex + gamesPerPage;
+  const currentGames = games.slice(startIndex, endIndex);
+  
   container.innerHTML = `
     <div class="flex overflow-hidden rounded-xl border border-[#423267] bg-[#161122]">
       <table class="flex-1">
         <thead>
           <tr class="bg-[#211933]">
-            <th class="px-4 py-3 text-left text-white text-sm font-medium leading-normal">Date</th>
-            <th class="px-4 py-3 text-left text-white text-sm font-medium leading-normal">Matchup</th>
-            <th class="px-4 py-3 text-left text-white text-sm font-medium leading-normal">Score</th>
+            <th class="sortable-header px-4 py-3 text-left text-white text-sm font-medium leading-normal cursor-pointer hover:bg-[#2e2348]" data-sort="date">
+              Date ${getSortIcon('date')}
+            </th>
+            <th class="sortable-header px-4 py-3 text-left text-white text-sm font-medium leading-normal cursor-pointer hover:bg-[#2e2348]" data-sort="matchup">
+              Matchup ${getSortIcon('matchup')}
+            </th>
+            <th class="sortable-header px-4 py-3 text-left text-white text-sm font-medium leading-normal cursor-pointer hover:bg-[#2e2348]" data-sort="score">
+              Score ${getSortIcon('score')}
+            </th>
             <th class="px-4 py-3 text-left text-white text-sm font-medium leading-normal">Type</th>
-            <th class="px-4 py-3 text-left text-white text-sm font-medium leading-normal">Season</th>
+            <th class="sortable-header px-4 py-3 text-left text-white text-sm font-medium leading-normal cursor-pointer hover:bg-[#2e2348]" data-sort="season">
+              Season ${getSortIcon('season')}
+            </th>
           </tr>
         </thead>
         <tbody>
-          ${games.slice(0, 50).map(game => `
-            <tr class="border-t border-t-[#423267]">
+          ${currentGames.map((game, index) => `
+            <tr class="border-t border-t-[#423267] hover:bg-[#2e2348] cursor-pointer game-row" data-game-uid="${game.game_uid}">
               <td class="px-4 py-2 text-[#a292c9] text-sm font-normal leading-normal">
                 ${game.game_datetime ? new Date(game.game_datetime).toLocaleDateString() : 'TBD'}
               </td>
@@ -278,7 +322,7 @@ function renderGamesTable(games) {
                   'Not played'}
               </td>
               <td class="px-4 py-2 text-[#a292c9] text-sm font-normal leading-normal">
-                ${game.game_type || 'N/A'}${game.week ? ` (Week ${Math.floor(game.week)})` : ''}
+                ${getGameTypeDisplay(game.game_type)}${game.week ? ` (Week ${Math.floor(game.week)})` : ''}
               </td>
               <td class="px-4 py-2 text-[#a292c9] text-sm font-normal leading-normal">
                 ${game.season}
@@ -288,8 +332,73 @@ function renderGamesTable(games) {
         </tbody>
       </table>
     </div>
-    ${games.length > 50 ? `<p class="text-[#a292c9] text-center mt-4">Showing first 50 of ${games.length} games</p>` : ''}
+    
+    <!-- Pagination -->
+    <div class="flex items-center justify-between mt-4">
+      <p class="text-[#a292c9] text-sm">
+        Showing ${startIndex + 1}-${Math.min(endIndex, games.length)} of ${games.length} games
+      </p>
+      <div class="flex gap-2">
+        <button 
+          class="prev-btn px-3 py-1 rounded bg-[#2e2348] text-white text-sm ${currentGamesPage === 1 ? 'opacity-50 cursor-not-allowed' : 'hover:bg-[#423267]'}"
+          ${currentGamesPage === 1 ? 'disabled' : ''}
+        >
+          Previous
+        </button>
+        <span class="px-3 py-1 text-white text-sm">
+          Page ${currentGamesPage} of ${totalPages}
+        </span>
+        <button 
+          class="next-btn px-3 py-1 rounded bg-[#2e2348] text-white text-sm ${currentGamesPage === totalPages ? 'opacity-50 cursor-not-allowed' : 'hover:bg-[#423267]'}"
+          ${currentGamesPage === totalPages ? 'disabled' : ''}
+        >
+          Next
+        </button>
+      </div>
+    </div>
   `;
+  
+  // Add click handlers for game rows
+  document.querySelectorAll('.game-row').forEach(row => {
+    row.addEventListener('click', () => {
+      const gameUid = row.getAttribute('data-game-uid');
+      // For now, just show an alert - later this would navigate to game details
+      alert(`Game details for ${gameUid} - Coming soon when we have more detailed game data!`);
+    });
+  });
+  
+  // Add sortable header event listeners
+  document.querySelectorAll('.sortable-header').forEach(header => {
+    header.addEventListener('click', () => {
+      const sortColumn = header.getAttribute('data-sort');
+      handleSort(sortColumn);
+    });
+  });
+  
+  // Add pagination event listeners
+  const prevBtn = document.querySelector('.prev-btn');
+  const nextBtn = document.querySelector('.next-btn');
+  
+  if (prevBtn && !prevBtn.disabled) {
+    prevBtn.addEventListener('click', () => {
+      changeGamesPage(currentGamesPage - 1);
+    });
+  }
+  
+  if (nextBtn && !nextBtn.disabled) {
+    nextBtn.addEventListener('click', () => {
+      changeGamesPage(currentGamesPage + 1);
+    });
+  }
+}
+
+function changeGamesPage(newPage) {
+  const currentData = filteredGamesData.length > 0 ? filteredGamesData : gamesData;
+  const totalPages = Math.ceil(currentData.length / gamesPerPage);
+  if (newPage >= 1 && newPage <= totalPages) {
+    currentGamesPage = newPage;
+    renderGamesTable(currentData);
+  }
 }
 
 function getTeamName(teamUid) {
@@ -297,12 +406,90 @@ function getTeamName(teamUid) {
   return team ? team.abbreviation || team.name : 'Unknown';
 }
 
+function getGameTypeDisplay(gameType) {
+  switch(gameType) {
+    case 'preseason': return 'Preseason';
+    case 'regular': return 'Regular Season';
+    case 'playoff': return 'Playoffs';
+    default: return gameType || 'N/A';
+  }
+}
+
+function getSortIcon(column) {
+  if (gamesSortBy !== column) {
+    return '<span class="text-[#a292c9] ml-1">↕</span>';
+  }
+  return gamesSortDirection === 'asc' ? 
+    '<span class="text-white ml-1">↑</span>' : 
+    '<span class="text-white ml-1">↓</span>';
+}
+
+function sortGames(games, sortBy, direction) {
+  return [...games].sort((a, b) => {
+    let aVal, bVal;
+    
+    switch(sortBy) {
+      case 'date':
+        aVal = new Date(a.game_datetime || '1900-01-01');
+        bVal = new Date(b.game_datetime || '1900-01-01');
+        break;
+      case 'matchup':
+        aVal = `${getTeamName(a.away_team_uid)} @ ${getTeamName(a.home_team_uid)}`;
+        bVal = `${getTeamName(b.away_team_uid)} @ ${getTeamName(b.home_team_uid)}`;
+        break;
+      case 'score':
+        // Sort by total points scored (home + away)
+        aVal = (a.home_score || 0) + (a.away_score || 0);
+        bVal = (b.home_score || 0) + (b.away_score || 0);
+        break;
+      case 'season':
+        aVal = a.season;
+        bVal = b.season;
+        break;
+      default:
+        return 0;
+    }
+    
+    if (aVal < bVal) return direction === 'asc' ? -1 : 1;
+    if (aVal > bVal) return direction === 'asc' ? 1 : -1;
+    return 0;
+  });
+}
+
+function handleSort(column) {
+  if (gamesSortBy === column) {
+    // Toggle direction if same column
+    gamesSortDirection = gamesSortDirection === 'asc' ? 'desc' : 'asc';
+  } else {
+    // New column, default to ascending except date (descending for newest first)
+    gamesSortBy = column;
+    gamesSortDirection = column === 'date' ? 'desc' : 'asc';
+  }
+  
+  // Sort the current data and re-render
+  const currentData = filteredGamesData.length > 0 ? filteredGamesData : gamesData;
+  const sortedData = sortGames(currentData, gamesSortBy, gamesSortDirection);
+  
+  // Update the data arrays
+  if (filteredGamesData.length > 0) {
+    filteredGamesData = sortedData;
+  } else {
+    gamesData = sortedData;
+  }
+  
+  // Reset to first page and re-render
+  currentGamesPage = 1;
+  renderGamesTable(sortedData);
+}
+
+let filteredGamesData = [];
+
 function filterGames() {
   const seasonFilter = document.getElementById('season-filter').value;
   const gameTypeFilter = document.getElementById('game-type-filter').value;
   const teamSearch = document.getElementById('team-search').value.toLowerCase();
   
-  const filteredGames = gamesData.filter(game => {
+  filteredGamesData = gamesData.filter(game => {
     const seasonMatch = seasonFilter === '' || game.season.toString() === seasonFilter;
     const typeMatch = gameTypeFilter === '' || game.game_type === gameTypeFilter;
     const teamMatch = teamSearch === '' || 
@@ -312,7 +499,12 @@ function filterGames() {
     return seasonMatch && typeMatch && teamMatch;
   });
   
-  renderGamesTable(filteredGames);
+  // Apply current sort to filtered data
+  filteredGamesData = sortGames(filteredGamesData, gamesSortBy, gamesSortDirection);
+  
+  // Reset to first page when filtering
+  currentGamesPage = 1;
+  renderGamesTable(filteredGamesData);
 }
 
 function renderStandings() {
@@ -349,6 +541,13 @@ async function loadStandings() {
   try {
     const season = document.getElementById('standings-season').value;
     console.log('Loading standings for season:', season);
+    
+    // Ensure teams are loaded first
+    if (teamsData.length === 0) {
+      console.log('Loading teams for standings...');
+      teamsData = await getTeams();
+    }
+    
     const seasonGames = await getGames(parseInt(season));
     console.log('Season games loaded:', seasonGames.length);
     const standings = calculateStandings(seasonGames);
@@ -361,6 +560,7 @@ async function loadStandings() {
 }
 
 function calculateStandings(games) {
+  console.log('Calculating standings with', games.length, 'games');
   const teamStats = {};
   
   // Initialize stats for all teams
@@ -374,9 +574,15 @@ function calculateStandings(games) {
     };
   });
   
+  console.log('Initialized stats for', Object.keys(teamStats).length, 'teams');
+  
+  let regularSeasonGames = 0;
+  
   // Calculate stats from games
   games.forEach(game => {
-    if (game.home_score !== null && game.away_score !== null && game.game_type === 'Regular Season') {
+    // Check for regular season games (note: database uses 'regular', not 'Regular Season')
+    if (game.home_score !== null && game.away_score !== null && game.game_type === 'regular') {
+      regularSeasonGames++;
       const homeWin = game.home_score > game.away_score;
       
       if (teamStats[game.home_team_uid]) {
@@ -401,6 +607,8 @@ function calculateStandings(games) {
     }
   });
   
+  console.log('Processed', regularSeasonGames, 'regular season games');
+  
   // Group by conference and division
   const standings = {
     AFC: { East: [], North: [], South: [], West: [] },
@@ -423,6 +631,7 @@ function calculateStandings(games) {
     });
   });
   
+  console.log('Standings calculated for', Object.keys(standings).length, 'conferences');
   return standings;
 }
 
@@ -498,11 +707,14 @@ function switchPage(page) {
 
 function viewTeamGames(teamUid, teamName) {
   switchPage('games');
-  // Wait for the games page to load, then filter by team
+  // Wait for the games page to load, then filter by team abbreviation
   setTimeout(() => {
     const teamSearch = document.getElementById('team-search');
     if (teamSearch) {
-      teamSearch.value = teamName;
+      // Find the team to get its abbreviation
+      const team = teamsData.find(t => t.team_uid === teamUid);
+      const searchTerm = team ? (team.abbreviation || team.name) : teamName;
+      teamSearch.value = searchTerm;
       filterGames();
     }
   }, 100);
