@@ -21,6 +21,36 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Database connectivity issues with proper Python path configuration
 - Import dependencies for pydantic-settings package
 
+## [2025-06-28] - Successful TheSportsDB V2 API Integration
+
+### Added
+- **TheSportsDB V2 API Integration** as primary data source for NFL schedules and results
+- Support for collecting any NFL season from 1960 to present
+- Flexible multi-season collection script (`collect_nfl_seasons.py`)
+- Successfully collected 3 complete seasons (2021-2023) with 955 total games:
+  - 2021: 287 games (240 regular + 47 playoff)
+  - 2022: 334 games (241 regular + 93 playoff, includes preseason)
+  - 2023: 334 games (255 regular + 79 playoff, includes preseason)
+- Hybrid data collection approach:
+  - TheSportsDB V2 API: Primary source for complete schedules/results
+  - Pro Football Reference: Secondary source for detailed team statistics
+
+### Changed
+- Refactored data collection to use TheSportsDB as primary source instead of scraping-first approach
+- Updated API client to handle NFL season format (single year, not year ranges)
+- Optimized collection process by deferring PFR augmentation to separate batch process
+
+### Fixed
+- TheSportsDB API season format for NFL (uses single year like "2023", not "2023-2024")
+- Database schema to support flexible data integration from multiple sources
+- Foreign key constraints for proper team relationships
+
+### Technical Notes
+- NFL seasons span two calendar years but TheSportsDB uses starting year only
+- TheSportsDB includes preseason games in season data (August games)
+- API rate limits: 30-120 requests/minute depending on tier
+- Authentication via X-API-KEY header
+
 ## [2025-06-27] - Major Data Pipeline Completion
 
 ### Added

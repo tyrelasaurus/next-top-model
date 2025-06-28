@@ -61,21 +61,43 @@ class TheSportsDBClient:
         return teams[0] if teams else None
     
     def get_schedule(self, league_id: str, season: str) -> List[Dict]:
-        """Get schedule for a league and season"""
-        # For NFL: league_id = 4391, season format = "2023-2024"
-        # Try the full schedule endpoint first
+        """Get complete schedule for a league and season using V2 API"""
+        # For NFL: league_id = 4391, season format = just year e.g. "2023"
+        # Note: NFL seasons on TheSportsDB use single year format (starting year)
+        
+        # Extract just the year if a range was provided
+        if "-" in season:
+            season = season.split("-")[0]
+            logger.info(f"Converted season format to single year: {season}")
+        
+        logger.info(f"Getting complete season schedule from TheSportsDB V2 API: {league_id}/{season}")
+        
         try:
+            # Use V2 API for complete historical season schedule
             result = self._get(f"schedule/league/{league_id}/{season}")
-            if result and result.get("events"):
-                return result["events"]
-        except:
+            if result:
+                # Check for different possible event keys
+                for key in ['schedule', 'events', 'list']:
+                    if result.get(key) and isinstance(result[key], list):
+                        logger.info(f"Found {len(result[key])} events in '{key}' field for {season} season")
+                        return result[key]
+                
+                # Log unexpected structure
+                logger.warning(f"Unexpected V2 API response structure: {list(result.keys())}")
+                
+        except Exception as e:
+            logger.error(f"V2 API schedule endpoint failed: {e}")
             pass
         
-        # Fallback to previous events (gets recent games)
+        # Fallback to previous events (gets recent games only)
         try:
+            logger.info("Falling back to previous events endpoint")
             result = self._get(f"schedule/previous/league/{league_id}")
-            return result.get("schedule", []) if result else []
-        except:
+            events = result.get("schedule", []) if result else []
+            logger.info(f"Retrieved {len(events)} recent events from fallback")
+            return events
+        except Exception as e:
+            logger.error(f"Fallback endpoint also failed: {e}")
             return []
     
     def get_past_events(self, team_id: str, limit: int = 10) -> List[Dict]:

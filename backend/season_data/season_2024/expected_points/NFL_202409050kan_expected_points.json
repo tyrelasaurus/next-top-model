@@ -1,0 +1,52 @@
+{
+  "game_id": "NFL_202409050kan",
+  "season": 2024,
+  "week": 1,
+  "game_type": "regular",
+  "date": "2024-09-05",
+  "home_team": "Kansas City Chiefs",
+  "away_team": "Baltimore Ravens",
+  "home_team_uid": "NFL_134931",
+  "away_team_uid": "NFL_134922",
+  "home_score": 27,
+  "away_score": 20,
+  "scraped_at": "2025-06-28T00:02:35.565968",
+  "expected_points": [
+    {
+      "": "Chiefs",
+      "Offense": "7.00",
+      "Defense": "11.81",
+      "Special Teams": "13.68",
+      "col_4": "-0.53",
+      "col_5": "-3.99",
+      "col_6": "-9.42",
+      "col_7": "0.14",
+      "col_8": "-9.89",
+      "col_9": "4.93",
+      "col_10": "2.11",
+      "col_11": "-5.64",
+      "col_12": "4.11",
+      "col_13": "0.22",
+      "col_14": "-0.55",
+      "col_15": "3.97"
+    },
+    {
+      "": "Ravens",
+      "Offense": "-7.00",
+      "Defense": "9.42",
+      "Special Teams": "-0.14",
+      "col_4": "9.89",
+      "col_5": "-4.93",
+      "col_6": "-11.81",
+      "col_7": "-13.68",
+      "col_8": "0.53",
+      "col_9": "3.99",
+      "col_10": "-2.11",
+      "col_11": "-4.11",
+      "col_12": "5.64",
+      "col_13": "0.55",
+      "col_14": "-0.22",
+      "col_15": "-3.97"
+    }
+  ]
+}

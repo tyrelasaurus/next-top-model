@@ -1,0 +1,17 @@
+{
+  "total_games": 285,
+  "games_with_results": 285,
+  "games_missing_teams": 0,
+  "duplicate_game_ids": [],
+  "games_by_type": {
+    "regular": 272,
+    "wildcard": 6,
+    "divisional": 4,
+    "conference": 2,
+    "superbowl": 1
+  },
+  "date_range": {
+    "earliest": "2024-09-05",
+    "latest": "2025-02-09"
+  }
+}

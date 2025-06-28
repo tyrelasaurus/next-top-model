@@ -156,39 +156,116 @@ class NFLDataCollector:
         }
     
     def _store_games(self, games: List[Dict], season: int):
-        """Store games in the database"""
+        """Store games in the database with proper field mapping"""
         for game_data in games:
             try:
+                # Map scraper fields to database fields
+                mapped_data = self._map_game_data(game_data, season)
+                
                 # Check if game already exists
                 existing_game = self.db.query(Game).filter(
-                    Game.game_uid == game_data.get('game_id')
+                    Game.game_uid == mapped_data.get('game_uid')
                 ).first()
                 
                 if existing_game:
                     # Update existing game
-                    for key, value in game_data.items():
-                        if hasattr(existing_game, key):
+                    for key, value in mapped_data.items():
+                        if hasattr(existing_game, key) and value is not None:
                             setattr(existing_game, key, value)
+                    existing_game.updated_at = datetime.utcnow()
                 else:
                     # Create new game
-                    game = Game(
-                        game_uid=game_data.get('game_id'),
-                        season=season,
-                        week=game_data.get('week'),
-                        game_type=game_data.get('game_type', 'regular'),
-                        game_datetime=game_data.get('date'),
-                        home_team_uid=game_data.get('home_team_uid'),
-                        away_team_uid=game_data.get('away_team_uid'),
-                        home_score=game_data.get('home_score'),
-                        away_score=game_data.get('away_score')
-                    )
+                    game = Game(**mapped_data)
                     self.db.add(game)
                 
                 self.db.commit()
+                logger.debug(f"Successfully stored game {mapped_data.get('game_uid')}")
                 
             except Exception as e:
-                logger.error(f"Failed to store game {game_data.get('game_id')}: {e}")
+                logger.error(f"Failed to store game {game_data.get('game_id', 'unknown')}: {e}")
                 self.db.rollback()
+    
+    def _map_game_data(self, game_data: Dict, season: int) -> Dict:
+        """Map scraper data to database fields"""
+        # Parse date - handle both string and datetime objects
+        game_datetime = None
+        if game_data.get('date'):
+            if isinstance(game_data['date'], datetime):
+                game_datetime = game_data['date']
+            else:
+                try:
+                    game_datetime = datetime.strptime(game_data['date'], '%Y-%m-%d')
+                except ValueError:
+                    logger.warning(f"Could not parse date: {game_data.get('date')}")
+        
+        # Extract team UIDs from team names (create simple mapping)
+        home_team_uid = self._get_or_create_team_uid(game_data.get('home_team'))
+        away_team_uid = self._get_or_create_team_uid(game_data.get('away_team'))
+        
+        return {
+            'game_uid': game_data.get('game_id', game_data.get('game_uid')),
+            'league': 'NFL',
+            'season': season,
+            'week': game_data.get('week'),
+            'game_type': game_data.get('game_type', 'regular'),
+            'home_team_uid': home_team_uid,
+            'away_team_uid': away_team_uid,
+            'game_datetime': game_datetime,
+            'home_score': game_data.get('home_score'),
+            'away_score': game_data.get('away_score'),
+            'source': game_data.get('source', 'pro_football_reference'),
+            'created_at': datetime.utcnow(),
+            'updated_at': datetime.utcnow()
+        }
+    
+    def _get_or_create_team_uid(self, team_name: str) -> Optional[str]:
+        """Get or create team UID from team name"""
+        if not team_name:
+            return None
+            
+        # Simple team name to UID mapping for NFL teams
+        team_mapping = {
+            'Arizona Cardinals': 'NFL_134946',
+            'Atlanta Falcons': 'NFL_134942',
+            'Baltimore Ravens': 'NFL_134922',
+            'Buffalo Bills': 'NFL_134918',
+            'Carolina Panthers': 'NFL_134943',
+            'Chicago Bears': 'NFL_134938',
+            'Cincinnati Bengals': 'NFL_134923',
+            'Cleveland Browns': 'NFL_134924',
+            'Dallas Cowboys': 'NFL_134934',
+            'Denver Broncos': 'NFL_134930',
+            'Detroit Lions': 'NFL_134939',
+            'Green Bay Packers': 'NFL_134940',
+            'Houston Texans': 'NFL_134926',
+            'Indianapolis Colts': 'NFL_134927',
+            'Jacksonville Jaguars': 'NFL_134928',
+            'Kansas City Chiefs': 'NFL_134931',
+            'Las Vegas Raiders': 'NFL_134932',
+            'Los Angeles Chargers': 'NFL_135908',
+            'Los Angeles Rams': 'NFL_135907',
+            'Miami Dolphins': 'NFL_134919',
+            'Minnesota Vikings': 'NFL_134941',
+            'New England Patriots': 'NFL_134920',
+            'New Orleans Saints': 'NFL_134944',
+            'New York Giants': 'NFL_134935',
+            'New York Jets': 'NFL_134921',
+            'Philadelphia Eagles': 'NFL_134936',
+            'Pittsburgh Steelers': 'NFL_134925',
+            'San Francisco 49ers': 'NFL_134948',
+            'Seattle Seahawks': 'NFL_134949',
+            'Tampa Bay Buccaneers': 'NFL_134945',
+            'Tennessee Titans': 'NFL_134929',
+            'Washington Commanders': 'NFL_134937'
+        }
+        
+        team_uid = team_mapping.get(team_name)
+        if not team_uid:
+            # Create a simple UID if not found
+            team_uid = f"NFL_{team_name.replace(' ', '').replace('.', '').upper()[:10]}"
+            logger.warning(f"Created new team UID for {team_name}: {team_uid}")
+        
+        return team_uid
     
     def _get_existing_games(self, season: int) -> List[Game]:
         """Get existing games for a season from database"""

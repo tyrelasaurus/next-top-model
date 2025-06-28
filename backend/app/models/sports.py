@@ -16,7 +16,7 @@ class Team(Base):
     __tablename__ = "teams"
     
     team_uid = Column(String, primary_key=True, index=True)
-    league = Column(Enum(League), nullable=False)
+    league = Column(String, nullable=False, default="NFL")
     city = Column(String)
     name = Column(String, nullable=False)
     abbreviation = Column(String)
@@ -43,13 +43,13 @@ class Game(Base):
     __tablename__ = "games"
     
     game_uid = Column(String, primary_key=True, index=True)
-    league = Column(Enum(League), nullable=False)
+    league = Column(String, nullable=False, default="NFL")  # Allow string for easier integration
     season = Column(Integer, nullable=False)
-    week = Column(Integer)
-    game_type = Column(String)  # regular, playoff, championship
+    week = Column(Float)  # Allow float for proper CSV compatibility
+    game_type = Column(String, default="regular")  # regular, playoff, championship
     
-    home_team_uid = Column(String, ForeignKey("teams.team_uid"))
-    away_team_uid = Column(String, ForeignKey("teams.team_uid"))
+    home_team_uid = Column(String, ForeignKey("teams.team_uid"), nullable=True)  # Allow NULL temporarily for easier integration
+    away_team_uid = Column(String, ForeignKey("teams.team_uid"), nullable=True)  # Allow NULL temporarily for easier integration
     
     game_datetime = Column(DateTime, nullable=True)  # Temporarily allow NULL while fixing parsing
     location = Column(String)

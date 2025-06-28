@@ -3,12 +3,12 @@ from typing import Optional
 
 
 class Settings(BaseSettings):
-    PROJECT_NAME: str = "Sports Data Aggregator"
+    PROJECT_NAME: str = "NFL Data Aggregator"
     VERSION: str = "0.1.0"
     API_V1_STR: str = "/api/v1"
     
     # Database
-    DATABASE_URL: str = "sqlite:///./sports_data.db"
+    DATABASE_URL: str = "sqlite:///./nfl_data.db"
     
     # API Keys
     THESPORTSDB_API_KEY: Optional[str] = None

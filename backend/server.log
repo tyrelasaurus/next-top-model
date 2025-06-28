@@ -579,3 +579,59 @@ INFO:     Started server process [29108]
 INFO:     Waiting for application startup.
 2025-06-27 13:27:36,117 - app.main - INFO - Starting up Sports Data Aggregator API...
 INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'boxscore_scraper.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-06-27 13:38:30,791 - app.main - INFO - Shutting down Sports Data Aggregator API...
+INFO:     Application shutdown complete.
+INFO:     Finished server process [29108]
+INFO:     Started server process [30729]
+INFO:     Waiting for application startup.
+2025-06-27 13:38:31,493 - app.main - INFO - Starting up Sports Data Aggregator API...
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'boxscore_scraper.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-06-27 13:40:53,054 - app.main - INFO - Shutting down Sports Data Aggregator API...
+INFO:     Application shutdown complete.
+INFO:     Finished server process [30729]
+INFO:     Started server process [31008]
+INFO:     Waiting for application startup.
+2025-06-27 13:40:53,821 - app.main - INFO - Starting up Sports Data Aggregator API...
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'test_specific_boxscore.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-06-27 13:41:11,504 - app.main - INFO - Shutting down Sports Data Aggregator API...
+INFO:     Application shutdown complete.
+INFO:     Finished server process [31008]
+INFO:     Started server process [31039]
+INFO:     Waiting for application startup.
+2025-06-27 13:41:12,221 - app.main - INFO - Starting up Sports Data Aggregator API...
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'detailed_game_scraper.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-06-27 13:42:41,755 - app.main - INFO - Shutting down Sports Data Aggregator API...
+INFO:     Application shutdown complete.
+INFO:     Finished server process [31039]
+INFO:     Started server process [31441]
+INFO:     Waiting for application startup.
+2025-06-27 13:42:42,433 - app.main - INFO - Starting up Sports Data Aggregator API...
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'detailed_game_scraper.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-06-27 13:42:48,800 - app.main - INFO - Shutting down Sports Data Aggregator API...
+INFO:     Application shutdown complete.
+INFO:     Finished server process [31441]
+INFO:     Started server process [31461]
+INFO:     Waiting for application startup.
+2025-06-27 13:42:49,460 - app.main - INFO - Starting up Sports Data Aggregator API...
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-06-27 13:47:04,163 - app.main - INFO - Shutting down Sports Data Aggregator API...
+INFO:     Application shutdown complete.
+INFO:     Finished server process [31461]
+INFO:     Stopping reloader process [16540]

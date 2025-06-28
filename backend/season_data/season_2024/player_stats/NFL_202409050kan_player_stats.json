@@ -1,0 +1,38 @@
+{
+  "game_id": "NFL_202409050kan",
+  "season": 2024,
+  "week": 1,
+  "game_type": "regular",
+  "date": "2024-09-05",
+  "home_team": "Kansas City Chiefs",
+  "away_team": "Baltimore Ravens",
+  "home_team_uid": "NFL_134931",
+  "away_team_uid": "NFL_134922",
+  "home_score": 27,
+  "away_score": 20,
+  "scraped_at": "2025-06-28T00:02:35.565968",
+  "player_stats": {
+    "kicking": [
+      {
+        "": "BAL",
+        "Scoring": "2",
+        "Punting": "2"
+      },
+      {
+        "": "BAL",
+        "Scoring": "",
+        "Punting": ""
+      },
+      {
+        "": "KAN",
+        "Scoring": "3",
+        "Punting": "3"
+      },
+      {
+        "": "KAN",
+        "Scoring": "",
+        "Punting": ""
+      }
+    ]
+  }
+}

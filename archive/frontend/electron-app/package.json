@@ -1,0 +1,25 @@
+{
+  "name": "next-top-model-desktop",
+  "version": "1.0.0",
+  "description": "Next Top Model Desktop App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "dist": "electron-builder --mac"
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.nexttopmodel.app",
+    "productName": "Next Top Model",
+    "directories": {
+      "output": "dist"
+    },
+    "mac": {
+      "category": "public.app-category.sports"
+    }
+  }
+}
