@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debug NFL App</title>
+    <style>
+        body { font-family: monospace; background: #1a1a1a; color: white; padding: 20px; }
+        .section { margin: 20px 0; padding: 15px; border: 1px solid #333; }
+        button { background: #444; color: white; border: none; padding: 10px; margin: 5px; cursor: pointer; }
+        button:hover { background: #666; }
+        .result { background: #222; padding: 10px; margin: 10px 0; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #333; padding: 8px; text-align: left; }
+        th { background: #333; }
+    </style>
+</head>
+<body>
+    <h1>NFL App Debug Console</h1>
+    
+    <div class="section">
+        <h3>Test 1: Teams Data Loading</h3>
+        <button onclick="testTeamsLoading()">Test Teams Loading</button>
+        <div id="teams-result" class="result"></div>
+    </div>
+    
+    <div class="section">
+        <h3>Test 2: Games Data Loading</h3>
+        <button onclick="testGamesLoading()">Test Games Loading</button>
+        <div id="games-result" class="result"></div>
+    </div>
+    
+    <div class="section">
+        <h3>Test 3: Standings Calculation</h3>
+        <select id="season-select">
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+        </select>
+        <button onclick="testStandingsCalculation()">Test Standings</button>
+        <div id="standings-result" class="result"></div>
+    </div>
+    
+    <div class="section">
+        <h3>Test 4: Game Detail Navigation</h3>
+        <button onclick="testGameSelection()">Load Sample Games</button>
+        <div id="game-selection-result" class="result"></div>
+    </div>
+
+    <script>
+        const { invoke } = window.__TAURI__.core;
+        
+        let teamsData = [];
+        let gamesData = [];
+        
+        async function testTeamsLoading() {
+            const result = document.getElementById('teams-result');
+            result.innerHTML = 'Loading teams...';
+            
+            try {
+                teamsData = await invoke("get_teams");
+                result.innerHTML = `
+                    <strong>SUCCESS:</strong> Loaded ${teamsData.length} teams<br>
+                    <strong>Sample Teams:</strong><br>
+                    ${teamsData.slice(0, 5).map(t => `${t.abbreviation || 'NO_ABB'}: ${t.city} ${t.name} (UID: ${t.team_uid})`).join('<br>')}
+                `;
+            } catch (error) {
+                result.innerHTML = `<strong>ERROR:</strong> ${error}`;
+            }
+        }
+        
+        async function testGamesLoading() {
+            const result = document.getElementById('games-result');
+            result.innerHTML = 'Loading games...';
+            
+            try {
+                gamesData = await invoke("get_games", { season: null, team_uid: null });
+                
+                // Apply game type correction
+                gamesData = gamesData.map(game => ({
+                    ...game,
+                    game_type: correctGameType(game)
+                }));
+                
+                const gameTypes = {};
+                const seasons = {};
+                
+                gamesData.forEach(game => {
+                    gameTypes[game.game_type] = (gameTypes[game.game_type] || 0) + 1;
+                    seasons[game.season] = (seasons[game.season] || 0) + 1;
+                });
+                
+                result.innerHTML = `
+                    <strong>SUCCESS:</strong> Loaded ${gamesData.length} games<br>
+                    <strong>Game Types:</strong> ${JSON.stringify(gameTypes)}<br>
+                    <strong>By Season:</strong> ${JSON.stringify(seasons)}<br>
+                    <strong>Sample Game:</strong> ${JSON.stringify(gamesData[0], null, 2)}
+                `;
+            } catch (error) {
+                result.innerHTML = `<strong>ERROR:</strong> ${error}`;
+            }
+        }
+        
+        function correctGameType(game) {
+            if (!game.game_datetime) return game.game_type;
+            
+            const gameDate = new Date(game.game_datetime);
+            const month = gameDate.getMonth() + 1;
+            
+            if (game.game_type === 'playoff' && month === 8) {
+                return 'preseason';
+            }
+            
+            if (game.game_type === 'playoff' && (month >= 9 && month <= 12)) {
+                return 'regular';
+            }
+            
+            return game.game_type;
+        }
+        
+        async function testStandingsCalculation() {
+            const result = document.getElementById('standings-result');
+            const season = parseInt(document.getElementById('season-select').value);
+            result.innerHTML = 'Calculating standings...';
+            
+            if (teamsData.length === 0) {
+                await testTeamsLoading();
+            }
+            
+            if (gamesData.length === 0) {
+                await testGamesLoading();
+            }
+            
+            // Filter games for the season
+            const seasonGames = gamesData.filter(g => g.season === season);
+            
+            // Calculate standings
+            const teamStats = {};
+            
+            teamsData.forEach(team => {
+                teamStats[team.team_uid] = {
+                    team: team,
+                    wins: 0,
+                    losses: 0,
+                    ties: 0,
+                    gamesPlayed: 0
+                };
+            });
+            
+            let regularSeasonGames = 0;
+            let gamesWithScores = 0;
+            
+            seasonGames.forEach(game => {
+                if (game.home_score !== null && game.away_score !== null) {
+                    gamesWithScores++;
+                    
+                    if (game.game_type === 'regular') {
+                        regularSeasonGames++;
+                        
+                        const homeWin = game.home_score > game.away_score;
+                        const tie = game.home_score === game.away_score;
+                        
+                        if (teamStats[game.home_team_uid]) {
+                            teamStats[game.home_team_uid].gamesPlayed++;
+                            if (tie) {
+                                teamStats[game.home_team_uid].ties++;
+                            } else if (homeWin) {
+                                teamStats[game.home_team_uid].wins++;
+                            } else {
+                                teamStats[game.home_team_uid].losses++;
+                            }
+                        }
+                        
+                        if (teamStats[game.away_team_uid]) {
+                            teamStats[game.away_team_uid].gamesPlayed++;
+                            if (tie) {
+                                teamStats[game.away_team_uid].ties++;
+                            } else if (!homeWin) {
+                                teamStats[game.away_team_uid].wins++;
+                            } else {
+                                teamStats[game.away_team_uid].losses++;
+                            }
+                        }
+                    }
+                }
+            });
+            
+            // Display results
+            const sampleTeams = Object.values(teamStats).slice(0, 10);
+            const teamRecords = sampleTeams.map(ts => 
+                `${ts.team.abbreviation}: ${ts.wins}-${ts.losses}-${ts.ties} (${ts.gamesPlayed} games)`
+            );
+            
+            result.innerHTML = `
+                <strong>Season ${season} Analysis:</strong><br>
+                Total games in season: ${seasonGames.length}<br>
+                Games with scores: ${gamesWithScores}<br>
+                Regular season games: ${regularSeasonGames}<br>
+                Expected regular games: ${season >= 2021 ? 272 : 256}<br>
+                <br>
+                <strong>Sample Team Records:</strong><br>
+                ${teamRecords.join('<br>')}
+            `;
+        }
+        
+        async function testGameSelection() {
+            const result = document.getElementById('game-selection-result');
+            result.innerHTML = 'Loading sample games...';
+            
+            if (gamesData.length === 0) {
+                await testGamesLoading();
+            }
+            
+            if (teamsData.length === 0) {
+                await testTeamsLoading();
+            }
+            
+            function getTeamName(teamUid) {
+                const team = teamsData.find(t => t.team_uid === teamUid);
+                return team ? (team.abbreviation || team.name) : 'Unknown';
+            }
+            
+            const sampleGames = gamesData
+                .filter(g => g.game_type === 'regular' && g.home_score !== null)
+                .slice(0, 10);
+            
+            const gameRows = sampleGames.map(game => `
+                <tr onclick="testGameClick('${game.game_uid}')" style="cursor: pointer; background: #333;">
+                    <td>${game.game_uid}</td>
+                    <td>${getTeamName(game.away_team_uid)} @ ${getTeamName(game.home_team_uid)}</td>
+                    <td>${game.away_score}-${game.home_score}</td>
+                    <td>${game.season}</td>
+                </tr>
+            `).join('');
+            
+            result.innerHTML = `
+                <strong>Sample Games (Click to test):</strong><br>
+                <table>
+                    <thead>
+                        <tr><th>Game UID</th><th>Matchup</th><th>Score</th><th>Season</th></tr>
+                    </thead>
+                    <tbody>
+                        ${gameRows}
+                    </tbody>
+                </table>
+                <div id="game-click-result"></div>
+            `;
+        }
+        
+        function testGameClick(gameUid) {
+            const result = document.getElementById('game-click-result');
+            const game = gamesData.find(g => g.game_uid === gameUid);
+            
+            result.innerHTML = `
+                <strong>Game Click Test SUCCESS!</strong><br>
+                Game UID: ${gameUid}<br>
+                Found Game: ${game ? 'YES' : 'NO'}<br>
+                ${game ? `Details: ${JSON.stringify(game, null, 2)}` : ''}
+            `;
+        }
+        
+        // Auto-load teams on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            testTeamsLoading();
+        });
+    </script>
+</body>
+</html>

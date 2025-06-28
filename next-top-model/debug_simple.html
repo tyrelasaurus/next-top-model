@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple NFL Debug</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #222; color: white; }
+        .test { margin: 20px 0; padding: 15px; border: 1px solid #444; background: #333; }
+        button { background: #555; color: white; border: none; padding: 10px; margin: 5px; cursor: pointer; }
+        button:hover { background: #777; }
+        .result { background: #111; padding: 10px; margin: 10px 0; border-left: 3px solid #0ff; }
+        table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+        th, td { border: 1px solid #555; padding: 8px; text-align: left; }
+        th { background: #444; }
+        .clickable { cursor: pointer; background: #333; }
+        .clickable:hover { background: #555; }
+    </style>
+</head>
+<body>
+    <h1>Simple NFL App Debug</h1>
+    
+    <div class="test">
+        <h3>Step 1: Test Backend Connection</h3>
+        <button onclick="testBackend()">Test Backend</button>
+        <div id="backend-result" class="result">Not tested yet</div>
+    </div>
+    
+    <div class="test">
+        <h3>Step 2: Test Team Names</h3>
+        <button onclick="testTeamNames()">Test Team Names</button>
+        <div id="team-names-result" class="result">Not tested yet</div>
+    </div>
+    
+    <div class="test">
+        <h3>Step 3: Test Click Handling</h3>
+        <button onclick="createTestTable()">Create Test Table</button>
+        <div id="click-test-result" class="result">Not tested yet</div>
+        <div id="test-table-container"></div>
+    </div>
+    
+    <div class="test">
+        <h3>Step 4: Test Standings Math</h3>
+        <button onclick="testStandingsMath()">Test Standings</button>
+        <div id="standings-result" class="result">Not tested yet</div>
+    </div>
+
+    <script>
+        const { invoke } = window.__TAURI__.core;
+        
+        let teams = [];
+        let games = [];
+        
+        async function testBackend() {
+            const result = document.getElementById('backend-result');
+            result.innerHTML = 'Testing backend...';
+            
+            try {
+                console.log('=== TESTING BACKEND ===');
+                
+                // Test teams
+                teams = await invoke("get_teams");
+                console.log('Teams loaded:', teams.length);
+                console.log('First team:', teams[0]);
+                
+                // Test games  
+                games = await invoke("get_games", { season: null, team_uid: null });
+                console.log('Games loaded:', games.length);
+                console.log('First game:', games[0]);
+                
+                result.innerHTML = `
+                    ✅ Backend working!<br>
+                    Teams: ${teams.length}<br>
+                    Games: ${games.length}<br>
+                    <strong>Check console for details</strong>
+                `;
+                
+            } catch (error) {
+                console.error('Backend error:', error);
+                result.innerHTML = `❌ Backend failed: ${error}`;
+            }
+        }
+        
+        async function testTeamNames() {
+            const result = document.getElementById('team-names-result');
+            
+            if (teams.length === 0) {
+                await testBackend();
+            }
+            
+            if (games.length === 0) {
+                result.innerHTML = '❌ Need to load games first';
+                return;
+            }
+            
+            console.log('=== TESTING TEAM NAMES ===');
+            
+            function getTeamName(teamUid) {
+                console.log('Looking for team with UID:', teamUid);
+                console.log('Available teams:', teams.length);
+                console.log('Sample team UIDs:', teams.slice(0, 3).map(t => t.team_uid));
+                
+                const team = teams.find(t => t.team_uid === teamUid);
+                console.log('Found team:', team);
+                
+                if (!team) {
+                    console.warn('Team not found for UID:', teamUid);
+                    return 'Unknown';
+                }
+                return team.abbreviation || team.name;
+            }
+            
+            // Test with first 5 games
+            const testGames = games.slice(0, 5);
+            let results = [];
+            
+            testGames.forEach(game => {
+                const homeName = getTeamName(game.home_team_uid);
+                const awayName = getTeamName(game.away_team_uid);
+                const matchup = `${awayName} @ ${homeName}`;
+                
+                results.push(`${game.game_uid}: ${matchup}`);
+                console.log(`Game ${game.game_uid}: ${matchup}`);
+            });
+            
+            const unknownCount = results.filter(r => r.includes('Unknown')).length;
+            
+            result.innerHTML = `
+                <strong>Team Name Test Results:</strong><br>
+                Unknown matchups: ${unknownCount} / ${testGames.length}<br>
+                ${results.join('<br>')}
+                <br><strong>Check console for detailed logs</strong>
+            `;
+        }
+        
+        function createTestTable() {
+            const result = document.getElementById('click-test-result');
+            const container = document.getElementById('test-table-container');
+            
+            if (games.length === 0) {
+                result.innerHTML = '❌ Need to load games first';
+                return;
+            }
+            
+            console.log('=== TESTING CLICK HANDLING ===');
+            
+            const testGames = games.slice(0, 5);
+            
+            const tableHTML = `
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Game ID</th>
+                            <th>Season</th>
+                            <th>Test Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${testGames.map(game => `
+                            <tr class="clickable test-row" data-game-id="${game.game_uid}">
+                                <td>${game.game_uid}</td>
+                                <td>${game.season}</td>
+                                <td>Click to test</td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+            `;
+            
+            container.innerHTML = tableHTML;
+            
+            // Test multiple click handling approaches
+            console.log('Adding click handlers...');
+            
+            // Approach 1: Individual row listeners
+            document.querySelectorAll('.test-row').forEach(row => {
+                console.log('Adding listener to row:', row.dataset.gameId);
+                
+                row.addEventListener('click', function() {
+                    const gameId = this.dataset.gameId;
+                    console.log('Row clicked:', gameId);
+                    this.style.background = '#090';
+                    this.cells[2].textContent = 'CLICKED!';
+                    
+                    result.innerHTML = `✅ Click working! Game: ${gameId}`;
+                });
+            });
+            
+            result.innerHTML = 'Click test table created. Try clicking rows above.';
+        }
+        
+        async function testStandingsMath() {
+            const result = document.getElementById('standings-result');
+            
+            if (games.length === 0) {
+                await testBackend();
+            }
+            
+            console.log('=== TESTING STANDINGS MATH ===');
+            
+            // Test 2024 season
+            const season2024 = games.filter(g => g.season === 2024);
+            const regularSeason = season2024.filter(g => g.game_type === 'regular' && g.home_score !== null);
+            
+            console.log(`2024 total games: ${season2024.length}`);
+            console.log(`2024 regular season with scores: ${regularSeason.length}`);
+            
+            // Count games per team
+            const teamGameCount = {};
+            
+            regularSeason.forEach(game => {
+                teamGameCount[game.home_team_uid] = (teamGameCount[game.home_team_uid] || 0) + 1;
+                teamGameCount[game.away_team_uid] = (teamGameCount[game.away_team_uid] || 0) + 1;
+            });
+            
+            const gameCounts = Object.values(teamGameCount);
+            const avgGamesPerTeam = gameCounts.length > 0 ? 
+                (gameCounts.reduce((sum, count) => sum + count, 0) / gameCounts.length) : 0;
+            
+            console.log('Games per team:', teamGameCount);
+            console.log('Average games per team:', avgGamesPerTeam);
+            
+            result.innerHTML = `
+                <strong>2024 Season Analysis:</strong><br>
+                Total 2024 games: ${season2024.length}<br>
+                Regular season with scores: ${regularSeason.length}<br>
+                Teams tracked: ${gameCounts.length}<br>
+                Average games per team: ${avgGamesPerTeam.toFixed(1)}<br>
+                Expected: 17 games per team<br>
+                <strong>Check console for detailed breakdown</strong>
+            `;
+        }
+        
+        // Auto-run backend test
+        window.addEventListener('DOMContentLoaded', () => {
+            console.log('Simple debug page loaded');
+            setTimeout(testBackend, 1000);
+        });
+    </script>
+</body>
+</html>

@@ -27,6 +27,34 @@ pub struct Game {
     home_score: Option<i32>,
     away_score: Option<i32>,
     overtime: Option<i32>,
+    weather_temp: Option<f64>,
+    weather_condition: Option<String>,
+    attendance: Option<i32>,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct TeamGameStat {
+    stat_uid: String,
+    game_uid: String,
+    team_uid: String,
+    is_home_team: Option<i32>,
+    total_yards: Option<i32>,
+    passing_yards: Option<i32>,
+    rushing_yards: Option<i32>,
+    first_downs: Option<i32>,
+    turnovers: Option<i32>,
+    penalties: Option<i32>,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct TeamSeasonStat {
+    stat_uid: String,
+    team_uid: String,
+    season: i32,
+    wins: Option<i32>,
+    losses: Option<i32>,
+    ties: Option<i32>,
+    win_percentage: Option<f64>,
 }
 
 fn get_db_connection() -> Result<Connection> {
@@ -107,7 +135,7 @@ fn get_games(season: Option<i32>, team_uid: Option<String>) -> Result<Vec<Game>,
     
     let mut query = "
         SELECT game_uid, season, week, game_type, home_team_uid, away_team_uid,
-               game_datetime, venue, home_score, away_score, overtime
+               game_datetime, venue, home_score, away_score, overtime, weather_temp, weather_condition, attendance
         FROM games
         WHERE 1=1
     ".to_string();
@@ -149,6 +177,9 @@ fn get_games(season: Option<i32>, team_uid: Option<String>) -> Result<Vec<Game>,
             home_score: row.get(8)?,
             away_score: row.get(9)?,
             overtime: row.get(10)?,
+            weather_temp: row.get(11)?,
+            weather_condition: row.get(12)?,
+            attendance: row.get(13)?,
         })
     }).map_err(|e| {
         println!("Query execution error: {}", e);
@@ -165,6 +196,140 @@ fn get_games(season: Option<i32>, team_uid: Option<String>) -> Result<Vec<Game>,
     
     println!("Retrieved {} games", games.len());
     Ok(games)
+}
+
+#[tauri::command]
+fn get_team_season_stats(season: Option<i32>, team_uid: Option<String>) -> Result<Vec<TeamSeasonStat>, String> {
+    println!("get_team_season_stats called with season: {:?}, team_uid: {:?}", season, team_uid);
+    
+    let conn = get_db_connection().map_err(|e| {
+        println!("Database connection error: {}", e);
+        e.to_string()
+    })?;
+    
+    let mut query = "
+        SELECT stat_uid, team_uid, season, wins, losses, ties, win_percentage
+        FROM team_season_stats
+        WHERE 1=1
+    ".to_string();
+    
+    let mut params: Vec<Box<dyn rusqlite::types::ToSql>> = Vec::new();
+    
+    if let Some(s) = season {
+        query.push_str(" AND season = ?");
+        params.push(Box::new(s));
+    }
+    
+    if let Some(team) = team_uid {
+        query.push_str(" AND team_uid = ?");
+        params.push(Box::new(team));
+    }
+    
+    query.push_str(" ORDER BY season DESC, win_percentage DESC");
+    
+    println!("Executing query: {}", query);
+    
+    let mut stmt = conn.prepare(&query).map_err(|e| {
+        println!("Query preparation error: {}", e);
+        e.to_string()
+    })?;
+    
+    let param_refs: Vec<&dyn rusqlite::types::ToSql> = params.iter().map(|p| p.as_ref()).collect();
+    
+    let stats_iter = stmt.query_map(&param_refs[..], |row| {
+        Ok(TeamSeasonStat {
+            stat_uid: row.get(0)?,
+            team_uid: row.get(1)?,
+            season: row.get(2)?,
+            wins: row.get(3)?,
+            losses: row.get(4)?,
+            ties: row.get(5)?,
+            win_percentage: row.get(6)?,
+        })
+    }).map_err(|e| {
+        println!("Query execution error: {}", e);
+        e.to_string()
+    })?;
+    
+    let mut stats = Vec::new();
+    for stat in stats_iter {
+        stats.push(stat.map_err(|e| {
+            println!("Row processing error: {}", e);
+            e.to_string()
+        })?);
+    }
+    
+    println!("Retrieved {} team season stats", stats.len());
+    Ok(stats)
+}
+
+#[tauri::command]
+fn get_team_game_stats(game_uid: Option<String>, team_uid: Option<String>) -> Result<Vec<TeamGameStat>, String> {
+    println!("get_team_game_stats called with game_uid: {:?}, team_uid: {:?}", game_uid, team_uid);
+    
+    let conn = get_db_connection().map_err(|e| {
+        println!("Database connection error: {}", e);
+        e.to_string()
+    })?;
+    
+    let mut query = "
+        SELECT stat_uid, game_uid, team_uid, is_home_team, total_yards, 
+               passing_yards, rushing_yards, first_downs, turnovers, penalties
+        FROM team_game_stats
+        WHERE 1=1
+    ".to_string();
+    
+    let mut params: Vec<Box<dyn rusqlite::types::ToSql>> = Vec::new();
+    
+    if let Some(game) = game_uid {
+        query.push_str(" AND game_uid = ?");
+        params.push(Box::new(game));
+    }
+    
+    if let Some(team) = team_uid {
+        query.push_str(" AND team_uid = ?");
+        params.push(Box::new(team));
+    }
+    
+    query.push_str(" ORDER BY game_uid DESC");
+    
+    println!("Executing query: {}", query);
+    
+    let mut stmt = conn.prepare(&query).map_err(|e| {
+        println!("Query preparation error: {}", e);
+        e.to_string()
+    })?;
+    
+    let param_refs: Vec<&dyn rusqlite::types::ToSql> = params.iter().map(|p| p.as_ref()).collect();
+    
+    let stats_iter = stmt.query_map(&param_refs[..], |row| {
+        Ok(TeamGameStat {
+            stat_uid: row.get(0)?,
+            game_uid: row.get(1)?,
+            team_uid: row.get(2)?,
+            is_home_team: row.get(3)?,
+            total_yards: row.get(4)?,
+            passing_yards: row.get(5)?,
+            rushing_yards: row.get(6)?,
+            first_downs: row.get(7)?,
+            turnovers: row.get(8)?,
+            penalties: row.get(9)?,
+        })
+    }).map_err(|e| {
+        println!("Query execution error: {}", e);
+        e.to_string()
+    })?;
+    
+    let mut stats = Vec::new();
+    for stat in stats_iter {
+        stats.push(stat.map_err(|e| {
+            println!("Row processing error: {}", e);
+            e.to_string()
+        })?);
+    }
+    
+    println!("Retrieved {} team game stats", stats.len());
+    Ok(stats)
 }
 
 #[tauri::command]
@@ -198,7 +363,7 @@ fn test_db_connection() -> Result<String, String> {
 pub fn run() {
     tauri::Builder::default()
         .plugin(tauri_plugin_opener::init())
-        .invoke_handler(tauri::generate_handler![get_teams, get_games, test_db_connection])
+        .invoke_handler(tauri::generate_handler![get_teams, get_games, get_team_season_stats, get_team_game_stats, test_db_connection])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
 }
